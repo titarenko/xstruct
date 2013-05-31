@@ -1,0 +1,15 @@
+{
+	"fetch": "http://dou.ua/forums/topic/7337/",
+	"extract": {
+		"scope": "#commentsList",
+		"item": "b-comment",
+		"properties": {
+			"date": {".comment": "@date"},
+			"name": {".g-avatar": "@title"},
+			"text": {".l-text": "text"}
+		}
+	},
+	"convert": {
+		"date": {"moment": "YYYY/MM/DD hh:mm:ss"}
+	}
+}
