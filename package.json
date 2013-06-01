@@ -16,7 +16,7 @@
     "async": "~0.2.9",
     "winston": "~0.7.1"
   },
-  "repository": "",
+  "repository": "https://github.com/titarenko/node-xstruct",
   "keywords": [
     "web",
     "structured data",
