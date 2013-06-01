@@ -13,7 +13,8 @@
     "request": "~2.14.0",
     "iconv": "~1.2.4",
     "moment": "~2.0.0",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "winston": "~0.7.1"
   },
   "repository": "",
   "keywords": [
