@@ -10,6 +10,6 @@
 		}
 	},
 	"convert": {
-		"date": {"moment": "YYYY/MM/DD hh:mm:ss"}
+		"date": {"moment": "YYYY/MM/DD HH:mm:ss"}
 	}
 }
