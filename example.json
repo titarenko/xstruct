@@ -2,7 +2,7 @@
 	"fetch": "http://dou.ua/forums/topic/7337/",
 	"extract": {
 		"scope": "#commentsList",
-		"item": "b-comment",
+		"items": ".b-comment",
 		"properties": {
 			"date": {".comment": "@date"},
 			"name": {".g-avatar": "@title"},
