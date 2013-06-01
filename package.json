@@ -25,5 +25,9 @@
     "data mining"
   ],
   "author": "Constantin Titarenko",
-  "license": "BSD"
+  "license": "BSD",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
 }
