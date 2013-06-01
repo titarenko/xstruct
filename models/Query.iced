@@ -5,7 +5,8 @@ Converter = require './Converter'
 
 module.exports = class Query
 
-	constructor: (@definition) ->
+	constructor: (definition) ->
+		@definition = definition
 
 	execute: (done) ->
 		async.waterfall [
@@ -16,7 +17,7 @@ module.exports = class Query
 
 	_fetch: (done) ->
 		document = new Document url: @
-		document.fetch (error) -> 
+		document.fetch (error) ->
 			done error, document
 
 	_extract: (document, done) ->
