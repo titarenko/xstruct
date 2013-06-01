@@ -1,4 +1,4 @@
-modeule.exports = class Extractor
+module.exports = class Extractor
 
 	@_valueSelectors =
 		attribute: (attributeName, node) -> node.attr attributeName

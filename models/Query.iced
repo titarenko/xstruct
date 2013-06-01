@@ -1,3 +1,4 @@
+async = require 'async'
 Document = require './Document'
 Extractor = require './Extractor'
 Converter = require './Converter'
