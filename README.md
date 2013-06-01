@@ -45,6 +45,7 @@ Mechanics
 4. Items are extracted
 5. For each item: properties are extracted
 6. For each item: values of properties are converted (if requested)
+7. Array of items is serialized to JSON and sent back to client
 
 Query Format Description
 ------------------------
@@ -66,7 +67,7 @@ Query Format Description
 ```
 
 - `<url>` -- document address
-`<scope node selector>` -- CSS selector of page block with desired items (will be used to select single node where nodes of interest are contained)
+- `<scope node selector>` -- CSS selector of page block with desired items (will be used to select single node where nodes of interest are contained)
 - `<item node selector>` -- CSS selector of single item node (will be used to select nodes of all items)
 - `<property name>` -- desired name for certain property of extracted object
 - `<property node selector>` -- CSS selector for node of current property (will be used to select property node contained in item node)
