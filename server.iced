@@ -5,6 +5,9 @@ app = express()
 
 app.use express.bodyParser()
 
+app.get "/", (req, res) ->
+	res.redirect "https://github.com/titarenko/node-xstruct"
+
 app.post "/", (req, res) ->
 	await (new Query req.body).execute defer error, items
 	if error
