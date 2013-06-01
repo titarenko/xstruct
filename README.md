@@ -27,7 +27,7 @@ Following is the example of query (can be found in `example.json` as well):
 }
 ```
 
-To query data, simply POST your query formed using format like above as body to root, as result you'll got either `500` with error description or `200` with array of objects of desired structure. 
+To query data, simply POST your query formed using format like above as body to root, as result you'll get either `500` with error description or `200` with array of objects of desired structure. 
 
 Live Demo
 ---------
