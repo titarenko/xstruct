@@ -26,4 +26,4 @@ module.exports = class Document
 		@title = if match then match[1] else @uri
 
 	_initializeRoot: ->
-		@root = cheerio.load @body
+		@root = cheerio.load(@body) "body"
