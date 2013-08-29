@@ -16,13 +16,13 @@ module.exports = class Document
 	Fetches document.
 	###
 	fetch: (done) ->
-		await request {uri: @uri, encoding: "binary"}, defer error, response, body
-		return done(error or response.statusCode) if error or response.statusCode is not 200
-		@body = body
-		@_decode()
-		@_extractTitle()
-		@_initializeRoot()
-		done null
+		request {uri: @uri, encoding: "binary"}, (error, response, body) =>
+			return done(error or response.statusCode) if error or response.statusCode is not 200
+			@body = body
+			@_decode()
+			@_extractTitle()
+			@_initializeRoot()
+			done null
 
 	_decode: ->
 		buffer = new Buffer(@body, "binary")
