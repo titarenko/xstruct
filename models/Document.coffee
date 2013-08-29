@@ -17,7 +17,7 @@ module.exports = class Document
 	###
 	fetch: (done) ->
 		request {uri: @uri, encoding: "binary"}, (error, response, body) =>
-			return done(error or response.statusCode) if error or response.statusCode is not 200
+			return done(error or response.statusCode) if error or response.statusCode isnt 200
 			@body = body
 			@_decode()
 			@_extractTitle()
