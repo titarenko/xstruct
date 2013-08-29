@@ -15,3 +15,12 @@ describe "Extractor", ->
 
 			result.should.have.keys "prop1"
 			result.prop1.should.eql "<p>Para</p>"
+
+	describe "#ctor()", ->
+
+		it "should throw if unknown selector was encountered", ->
+
+			(-> 
+				new Extractor
+					prop1: ".class": "unknownValueSelector"
+			).should.throw "Extractor knows nothing about following value selector: unknownValueSelector."
