@@ -1,4 +1,5 @@
 nock = require 'nock'
+should = require 'should'
 Document = require '../models/Document'
 
 describe "Document", ->
@@ -15,4 +16,17 @@ describe "Document", ->
 
 			document.fetch (error) ->
 				error.should.eql 404
+				done()
+
+		it "should use document URI as title if title tag was not found", (done) ->
+
+			nock("http://titleless.com")
+				.get("/")
+				.reply(200, "<html></html>")
+
+			document = new Document "http://titleless.com/"
+
+			document.fetch (error) ->
+				should.not.exist error
+				document.title.should.eql "http://titleless.com/"
 				done()
