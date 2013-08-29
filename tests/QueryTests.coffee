@@ -20,6 +20,12 @@ describe "Query", ->
 					properties:
 						name: {".g-avatar": "@title"}
 						text: {".l-text": "text"}
+						time: {".date": "text"}
+				convert:
+					time: 
+						moment: 
+							lang: "ru"
+							format: "D MMM YYYY HH:mm"
 
 			query.execute (error, results) ->
 
@@ -29,10 +35,11 @@ describe "Query", ->
 
 				last = results[245]
 
-				last.should.have.keys "name", "text"
+				last.should.have.keys "name", "text", "time"
 
 				last.name.should.eql "gorik"
 				last.text.should.eql "И свою не разглашаю, и зарплатой других не интересуюсь. Откуда знаю? Некоторые друзья-знакомые сами спешат похвастаться. Еще довольно часто хожу по собеседованиям, где часто получаю офферы."
+				last.time.should.eql new Date Date.UTC 2013, 7, 22, 20, 45
 
 				done()
 
@@ -52,7 +59,7 @@ describe "Query", ->
 						message: {".comment-text": "text"}
 						timestamp: {".comment-permalink > span": "text"}
 				convert:
-					timestamp: {"moment": "YYYY-MM-DD HH:mm"}
+					timestamp: moment: "YYYY-MM-DD HH:mm"
 
 			query.execute (error, results) ->
 
