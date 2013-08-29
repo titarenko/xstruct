@@ -3,11 +3,20 @@ Document = require './Document'
 Extractor = require './Extractor'
 Converter = require './Converter'
 
+###
+Represents query, acts as facade which provides high-level extraction operation described by given definition.
+###
 module.exports = class Query
 
+	###
+	Constructs query using given definition.
+	###
 	constructor: (definition) ->
 		@definition = definition
 
+	###
+	Executes query and returns its results.
+	###
 	execute: (done) ->
 		async.waterfall [
 			@_fetch.bind @, @definition.fetch
