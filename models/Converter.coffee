@@ -9,7 +9,7 @@ module.exports = class Converter
 	Dictionary of functions-converters (name: function).
 	###
 	@_converters =
-		moment: (format, value) -> moment(value, format)._d
+		moment: (format, value) -> moment.utc(value, format)._d
 
 	###
 	Constructs converter for object with given properties.
