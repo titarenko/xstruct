@@ -5,7 +5,7 @@
   "main": "server.iced",
   "scripts": {
     "start": "nodemon --exec iced back/server.iced",
-    "test": "mocha --compilers coffee:coffee-script --recursive tests -R spec -r should"
+    "test": "mocha --compilers coffee:coffee-script --recursive tests -R spec -r should -t 10000"
   },
   "dependencies": {
     "express": "~3.1.0",

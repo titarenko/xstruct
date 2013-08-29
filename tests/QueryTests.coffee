@@ -4,13 +4,20 @@ Query = require '../models/Query'
 
 describe "Query", ->
 
+	beforeEach ->		
+		nock.disableNetConnect()
+
+	afterEach ->
+		nock.enableNetConnect()
+		nock.restore()
+
 	describe "#execute()", ->
 
 		it "should parse example page from dou.ua", (done) ->
 
 			nock("http://dou.ua")
 				.get('/forums/topic/8046/')				
-				.replyWithFile(200, "#{__dirname}/data/http___dou.ua_forums_topic_8046_.html");
+				.replyWithFile(200, "#{__dirname}/data/http___dou.ua_forums_topic_8046_.html")
 
 			query = new Query
 				fetch: "http://dou.ua/forums/topic/8046/"
@@ -34,5 +41,34 @@ describe "Query", ->
 				last.name.should.eql "gorik"
 				last.text.should.eql "И свою не разглашаю, и зарплатой других не интересуюсь. Откуда знаю? Некоторые друзья-знакомые сами спешат похвастаться. Еще довольно часто хожу по собеседованиям, где часто получаю офферы."
 
-				nock.restore()
+				done()
+
+		it "should parse example page from livejournal.com", (done) ->
+
+			nock("http://pauluskp.livejournal.com")
+				.get('/407584.html')
+				.replyWithFile(200, "#{__dirname}/data/http___pauluskp.livejournal.com_407584.html")
+
+			query = new Query
+				fetch: "http://pauluskp.livejournal.com/407584.html"
+				extract:
+					scope: "#comments"
+					items: ".comment-wrap"
+					properties:
+						author: {".comment-head-in > p:first-child": "text"}
+						message: {".comment-text": "text"}
+
+			query.execute (error, results) ->
+
+				should.not.exist error
+				
+				results.should.have.lengthOf 45
+
+				last = results[4]
+
+				last.should.have.keys "author", "message"
+
+				last.author.should.eql "Constantin Titarenko"
+				last.message.should.eql "Вот это поворот! Значит можно сбивать всех, кто способен найти деньги на лечение? Вы действительно хотите жить в таком обществе?"
+
 				done()
