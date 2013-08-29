@@ -2,10 +2,19 @@ request = require "request"
 cheerio = require "cheerio"
 iconv = require "iconv"
 
+###
+Represents HTML document.
+###
 module.exports = class Document
 	
+	###
+	Constructs instance using given URI.
+	###
 	constructor: (@uri) ->
 
+	###
+	Fetches document.
+	###
 	fetch: (done) ->
 		await request {uri: @uri, encoding: "binary"}, defer error, response, body
 		return done(error or response.statusCode) if error or response.statusCode is not 200
