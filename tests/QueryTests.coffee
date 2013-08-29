@@ -50,6 +50,9 @@ describe "Query", ->
 					properties:
 						author: {".comment-head-in > p:first-child": "text"}
 						message: {".comment-text": "text"}
+						timestamp: {".comment-permalink > span": "text"}
+				convert:
+					timestamp: {"moment": "YYYY-MM-DD HH:mm"}
 
 			query.execute (error, results) ->
 
@@ -59,9 +62,10 @@ describe "Query", ->
 
 				last = results[4]
 
-				last.should.have.keys "author", "message"
+				last.should.have.keys "author", "message", "timestamp"
 
 				last.author.should.eql "Constantin Titarenko"
 				last.message.should.eql "Вот это поворот! Значит можно сбивать всех, кто способен найти деньги на лечение? Вы действительно хотите жить в таком обществе?"
+				last.timestamp.should.eql new Date Date.UTC 2013, 6, 28, 20, 3
 
 				done()
