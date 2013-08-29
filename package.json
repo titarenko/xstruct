@@ -1,21 +1,17 @@
 {
-  "name": "node-xstruct",
+  "name": "xstruct",
   "version": "0.1.0",
-  "description": "Implementation of REST API for extracting structured data from web pages.",
-  "main": "server.iced",
+  "description": "Implementation of straightforward extraction of structured data from web pages.",
+  "main": "index.coffee",
   "scripts": {
-    "start": "nodemon --exec iced back/server.iced",
-    "test": "coffee -c . && istanbul cover node_modules/mocha/bin/_mocha -- --recursive tests -R spec -r should"
+    "test": "coffee -co js . && istanbul cover node_modules/mocha/bin/_mocha -- --recursive tests -R spec -r should"
   },
   "dependencies": {
-    "express": "~3.1.0",
     "cheerio": "~0.10.7",
     "request": "~2.14.0",
     "iconv": "~1.2.4",
     "moment": "~2.0.0",
     "async": "~0.2.9",
-    "winston": "~0.7.1",
-    "iced-coffee-script": "~1.6.2d",
     "coffee-script": "~1.6.3"
   },
   "repository": "https://github.com/titarenko/node-xstruct",
@@ -28,10 +24,6 @@
   ],
   "author": "Constantin Titarenko",
   "license": "BSD",
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  },
   "devDependencies": {
     "should": "~1.2.2",
     "nock": "~0.22.1",
