@@ -4,13 +4,6 @@ Query = require '../models/Query'
 
 describe "Query", ->
 
-	beforeEach ->		
-		nock.disableNetConnect()
-
-	afterEach ->
-		nock.enableNetConnect()
-		nock.restore()
-
 	describe "#execute()", ->
 
 		it "should parse example page from dou.ua", (done) ->
