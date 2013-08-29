@@ -4,7 +4,7 @@
   "description": "Implementation of straightforward extraction of structured data from web pages.",
   "main": "index.coffee",
   "scripts": {
-    "test": "coffee -co js . && istanbul cover node_modules/mocha/bin/_mocha -- --recursive tests -R spec -r should"
+    "test": "coffee -co js . && cp -R tests/data js/tests/data && istanbul cover node_modules/mocha/bin/_mocha -- --recursive js/tests -R spec -r should"
   },
   "dependencies": {
     "cheerio": "~0.10.7",
