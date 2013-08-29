@@ -1,5 +1,8 @@
 $ = require 'cheerio'
 
+###
+Extracts structured data from HTML document.
+###
 module.exports = class Extractor
 
 	@_nodeSelector = (selector, node) -> node.find selector
@@ -9,6 +12,9 @@ module.exports = class Extractor
 		text: (node) -> node.text()
 		html: (node) -> node.html() 
 
+	###
+	Constructs extractor for given set of properties (name: query).
+	###
 	constructor: (properties) ->
 		@selectors = {}
 		for name, selectorObject of properties
@@ -17,6 +23,9 @@ module.exports = class Extractor
 					node: Extractor._nodeSelector.bind @, nodeSelector
 					value: @_getValueSelector valueSelectorDefinition
 
+	###
+	Extracts structured object from given node.
+	###
 	extract: (node) ->
 		result = {}
 		for name, selector of @selectors
