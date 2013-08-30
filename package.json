@@ -2,9 +2,9 @@
   "name": "xstruct",
   "version": "0.1.0",
   "description": "Implementation of straightforward extraction of structured data from web pages.",
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
-    "test": "coffee -co js . && cp -R tests/data js/tests/data && istanbul cover node_modules/mocha/bin/_mocha -- --recursive js/tests -R spec -r should"
+    "test": "cp README.md package.json js/ && coffee -co js . && cp -R tests/data js/tests/data && istanbul cover node_modules/mocha/bin/_mocha -- --recursive js/tests -R spec -r should"
   },
   "dependencies": {
     "cheerio": "~0.10.7",
