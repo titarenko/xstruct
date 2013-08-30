@@ -46,11 +46,11 @@ Mechanics
 
 1. Page is downloaded using specified URL
 2. Page is decoded using encoding provided in its header (if any)
-3. Scope (items container node) is extracted
-4. Items are extracted
+3. Scope node (items container) is extracted
+4. Item nodes are extracted
 5. For each item: properties are extracted
 6. For each item: values of properties are converted (if requested)
-7. Array of items is serialized to JSON and sent back to client
+7. Items are passed to callback (as second argument)
 
 Query Specification
 -------------------
