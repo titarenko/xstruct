@@ -3,13 +3,20 @@ XStruct
 
 Implementation of straightforward extraction of structured data from web pages.
 
+Status
+------
+
+Current status is **stable beta**. Code **test coverage according to [istanbul](https://github.com/gotwarlost/istanbul): 100%**.
+
+[![Build Status](https://travis-ci.org/titarenko/node-xstruct.png)](https://travis-ci.org/titarenko/node-xstruct)
+
 Usage
 -----
 
 ```js
-Query = require("xstruct").Query;
+var Query = require("xstruct").Query;
 
-query = xstruct.Query({
+var query = xstruct.Query({
 	fetch: "http://dou.ua/forums/topic/7337/",
 	extract: {
 		scope: "#commentsList",
@@ -68,11 +75,6 @@ Query Specification
 - `<property value selector>` -- defines rule how actual value (string at this stage) will be selected from property node, allowed values: `text` (node content as text), `html` (node content as HTML) and `@<attribute name>` (value of certain node's attribute)
 - `<converter name>` -- name of property converter, allowed values are: `moment` (string to date parsing, format string should be passed as converter parameters: see [moment js documentation on format details](http://momentjs.com/docs/#/parsing/string-format/)) 
 - `<converter parameters>` -- any entity (string, object, whatsoever) which will be used to configure converter 
-
-Current Status
---------------
-
-Status is **stable beta**. Code **test coverage: 100%**.
 
 License (BSD)
 -------------
