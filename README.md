@@ -1,40 +1,34 @@
 XStruct
 =======
 
-Implementation of REST API for extracting structured data from web pages.
+Implementation of straightforward extraction of structured data from web pages.
 
 Usage
 -----
 
-There is only one endpoint -- root, which is used for querying. 
+```js
+Query = require("xstruct").Query;
 
-Following is the example of query (can be found in `example.json` as well):
-```json
-{
-	"fetch": "http://dou.ua/forums/topic/7337/",
-	"extract": {
-		"scope": "#commentsList",
-		"items": ".b-comment",
-		"properties": {
-			"date": {".comment": "@date"},
-			"name": {".g-avatar": "@title"},
-			"text": {".l-text": "text"}
+query = xstruct.Query({
+	fetch: "http://dou.ua/forums/topic/7337/",
+	extract: {
+		scope: "#commentsList",
+		items: ".b-comment",
+		properties: {
+			date: {".comment": "@date"},
+			name: {".g-avatar": "@title"},
+			text: {".l-text": "text"}
 		}
 	},
-	"convert": {
-		"date": {"moment": "YYYY/MM/DD HH:mm:ss"}
+	convert: {
+		date: {moment: "YYYY/MM/DD HH:mm:ss"}
 	}
-}
+});
+
+query.fetch(function (error, items) {
+	console.log(error || items);
+});
 ```
-
-To query data, simply POST your query formed using format like above as body to root, as result you'll get either `500` with error description or `200` with array of objects of desired structure. 
-
-Live Demo
----------
-
-Application is deployed to Heroku and available via `http://xstruct.herokuapp.com/`.
-
-Try posting `example.json` using `curl`: `curl -H "Content-Type: application/json" -d @example.json http://xstruct.herokuapp.com/`.
 
 Mechanics
 ---------
@@ -47,8 +41,8 @@ Mechanics
 6. For each item: values of properties are converted (if requested)
 7. Array of items is serialized to JSON and sent back to client
 
-Query Format Description
-------------------------
+Query Specification
+-------------------
 
 ```json
 {
@@ -74,6 +68,11 @@ Query Format Description
 - `<property value selector>` -- defines rule how actual value (string at this stage) will be selected from property node, allowed values: `text` (node content as text), `html` (node content as HTML) and `@<attribute name>` (value of certain node's attribute)
 - `<converter name>` -- name of property converter, allowed values are: `moment` (string to date parsing, format string should be passed as converter parameters: see [moment js documentation on format details](http://momentjs.com/docs/#/parsing/string-format/)) 
 - `<converter parameters>` -- any entity (string, object, whatsoever) which will be used to configure converter 
+
+Current Status
+--------------
+
+Status is **stable beta**. Code **test coverage: 100%**.
 
 License (BSD)
 -------------
