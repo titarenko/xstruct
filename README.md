@@ -20,7 +20,7 @@ npm install xstruct
 ```js
 var Query = require("xstruct").Query;
 
-var query = xstruct.Query({
+var query = new Query({
 	fetch: "http://dou.ua/forums/topic/7337/",
 	extract: {
 		scope: "#commentsList",
@@ -36,7 +36,7 @@ var query = xstruct.Query({
 	}
 });
 
-query.fetch(function (error, items) {
+query.execute(function (error, items) {
 	console.log(error || items);
 });
 ```
