@@ -13,6 +13,10 @@ Current status is **stable beta**. Code **test coverage according to [istanbul](
 Usage
 -----
 
+```bash
+npm install xstruct
+```
+
 ```js
 var Query = require("xstruct").Query;
 
