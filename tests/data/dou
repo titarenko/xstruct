@@ -1,9 +1,0 @@
-fetch dou.ua
-	select .comments
-		select .a:text | add author
-		select .d:@title | parse yyyy | add date
-		select .message
-			add message
-			extract-urls | add urls
-			extract-images | add images
-			do-pos-tagging | add words
