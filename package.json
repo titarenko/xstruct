@@ -11,8 +11,7 @@
     "request": "~2.14.0",
     "iconv": "~1.2.4",
     "moment": "~2.0.0",
-    "async": "~0.2.9",
-    "string": "~1.6.0"
+    "async": "~0.2.9"
   },
   "repository": "https://github.com/titarenko/node-xstruct",
   "keywords": [
