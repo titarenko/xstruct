@@ -1,5 +1,5 @@
 start 
-	= (Step / Extractor / Command)+
+	= (Step / Command / Extractor)+
 
 _ "whitespace"
 	= [ \t]+
@@ -22,8 +22,10 @@ StringCharacter "character"
 	}
 
 StringLiteral "string" 
-	= Quote literal:StringCharacter+ Quote {
-		return literal.join("");
+	= Quote literal:StringCharacter* Quote {
+		return {
+			constant: literal.join("")
+		};
 	}
 
 Variable "variable name" 
@@ -33,7 +35,9 @@ Variable "variable name"
 
 Integer "integer"
 	= digits:[0-9]+ {
-		return parseInt(digits.join(""), 10);
+		return {
+			constant: parseInt(digits.join(""), 10)
+		};
 	}
 
 DataType "data type"
@@ -59,10 +63,10 @@ Process "process array using given mapper"
 	}
 
 Extract "extract properties from given html document" 
-	= "extract" _ array:Variables _ "from" _ source:Variable EOL { 
+	= "extract" _ columns:Variables _ "from" _ source:Variable EOL { 
 		return {
 			command: "extract", 
-			array: array, 
+			columns: columns, 
 			source: source
 		}; 
 	}
@@ -77,13 +81,18 @@ Variables "list of variables"
 	}
 
 Assign "assign data from source to destination" 
-	= destination:Variable _* "=" _* source:(StringLiteral / Command / Variable / Integer) EOL { 
+	= destination:Variable _* "=" _* source:AssignmentSource  { 
 		return {
 			command: "assign", 
 			source: source, 
 			destination: destination
 		}; 
 	}
+
+AssignmentSource
+	= source:(StringLiteral EOL / Variable EOL / Integer EOL / Command) { 
+		return source[0] || source; 
+	} 
 
 Yield "return given data as a step result" 
 	= "yield" _ result:(Variable / StringLiteral / Integer) EOL { 
@@ -108,6 +117,15 @@ Flatten "flatten array of arrays into array"
 		return {
 			command: "flatten",
 			array: array
+		};
+	}
+
+Concatenate
+	= "concatenate" _ left:(Variable / StringLiteral) _ "and" _ right:(Variable / StringLiteral) EOL {
+		return {
+			command: "concatenate",
+			left: left,
+			right: right
 		};
 	}
 
@@ -154,18 +172,27 @@ ExtractionOperation
 	/ Trim
 	/ Replace
 	/ RegexSelect
+	/ Indexer
 	/ CssSelect
 
 ParseDate "parse date"
-	= "parse" _ format:StringLiteral {
+	= "parse date" _ format:StringLiteral {
 		return {
 			command: "parseDate",
 			format: format
 		};
 	}
 
+Indexer
+	= "index" _ index:Integer {
+		return {
+			command: "indexer",
+			index: index
+		};
+	}
+
 FormatDate "format date"
-	= "format" _ format:StringLiteral {
+	= "format date" _ format:StringLiteral {
 		return {
 			command: "formatDate",
 			format: format
@@ -219,15 +246,17 @@ Replace "replace substring with another one"
 	}
 
 RegexSelect "regular expression select"
-	= "/" regex:[\S]+ "/" {
+	= "/" regex:(!"/" .)+ "/" {
 		return {
 			command: "regexSelect",
-			regex: regex
+			regex: regex.map(function (x) {
+				return x[1];
+			}).join("")
 		}
 	}
 
 CssSelect "CSS select"
-	= css:[^|]+ {
+	= "css" _ css:[^|]+ {
 		return {
 			command: "cssSelect",
 			css: css.join("").replace(/^\s+|\s+$/g, '')
@@ -235,10 +264,11 @@ CssSelect "CSS select"
 	}
 
 Command 
-	= Download 
+	= Assign
+	/ Download 
 	/ Process 
 	/ Extract 
-	/ Assign 
 	/ Yield
 	/ Range
 	/ Flatten
+	/ Concatenate

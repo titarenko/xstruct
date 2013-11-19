@@ -1,27 +1,19 @@
 should = require "should"
 fs = require "fs"
-StepParser = require "../../modules/StepParser"
+Parser = require "../../modules/Parser"
 
-describe "StepParser", ->
+describe "Parser", ->
 
 	describe "#parse()", ->
 
-		it "should parse constant assignment and entry point call", (done) ->
+		it "should parse autoriaua.deq", (done) ->
 
-			code = fs.readFileSync __dirname + "/../data/autoriaua/step1.txt"
+			code = fs.readFileSync __dirname + "/../data/autoriaua.deq"
+			tree = JSON.parse fs.readFileSync __dirname + "/../data/autoriaua.deq.tree.json"
 
-			new StepParser().parse code.toString(), (error, commands) ->
+			new Parser().parse code, (error, commands) ->
 
 				should.not.exist error
-				commands.should.eql [
-					{
-						"command": "assign",
-						"source": "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>",
-						"destination": "catalog_url"
-					},
-					{
-						"command": "yield",
-						"result": "get_ads"
-					}
-				]
+				commands.should.eql tree 
+
 				done()

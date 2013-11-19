@@ -1,0 +1,304 @@
+[
+   {
+      "command": "assign",
+      "source": {
+         "constant": "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
+      },
+      "destination": "catalog_url"
+   },
+   {
+      "command": "yield",
+      "result": "get_ads"
+   },
+   {
+      "command": "step",
+      "name": "get_ads",
+      "args": null,
+      "body": [
+         {
+            "command": "assign",
+            "source": {
+               "command": "download",
+               "dataType": "json",
+               "source": "catalog_url"
+            },
+            "destination": "data"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "range",
+               "from": {
+                  "constant": 0
+               },
+               "to": "data.result.search_result.count",
+               "step": {
+                  "constant": 1000
+               }
+            },
+            "destination": "pages"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "process",
+               "array": "pages",
+               "mapper": "get_ids"
+            },
+            "destination": "chunked_ids"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "flatten",
+               "array": "chunked_ids"
+            },
+            "destination": "ids"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "process",
+               "array": "ids",
+               "mapper": "get_ad"
+            },
+            "destination": "ads"
+         },
+         {
+            "command": "yield",
+            "result": "ads"
+         }
+      ]
+   },
+   {
+      "command": "step",
+      "name": "get_ids",
+      "args": [
+         "page"
+      ],
+      "body": [
+         {
+            "command": "assign",
+            "source": {
+               "command": "concatenate",
+               "left": "catalog_url",
+               "right": {
+                  "constant": "&page=<%= page %>"
+               }
+            },
+            "destination": "page_url"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "download",
+               "dataType": "json",
+               "source": "page_url"
+            },
+            "destination": "data"
+         },
+         {
+            "command": "yield",
+            "result": "data.result.search_result.ids"
+         }
+      ]
+   },
+   {
+      "command": "step",
+      "name": "get_ad",
+      "args": [
+         "id"
+      ],
+      "body": [
+         {
+            "command": "assign",
+            "source": {
+               "constant": "http://auto.ria.ua/blocks_search/view/auto/<%= id %>"
+            },
+            "destination": "ad_url"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "download",
+               "dataType": "html",
+               "source": "ad_url"
+            },
+            "destination": "ad_html"
+         },
+         {
+            "command": "assign",
+            "source": {
+               "command": "extract",
+               "columns": [
+                  "link",
+                  "year",
+                  "mileage",
+                  "location",
+                  "price",
+                  "date",
+                  "phone"
+               ],
+               "source": "ad_html"
+            },
+            "destination": "ad"
+         },
+         {
+            "command": "yield",
+            "result": "ad"
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "link",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": "h3.head-car h1"
+         },
+         {
+            "command": "getAttribute",
+            "name": "href"
+         },
+         {
+            "command": "addPrefix",
+            "prefix": {
+               "constant": "http://auto.ria.ua"
+            }
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "year",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": "h3.head-car h1"
+         },
+         {
+            "command": "getAttribute",
+            "name": "title"
+         },
+         {
+            "command": "trim"
+         },
+         {
+            "command": "regexSelect",
+            "regex": "\\d{4}$"
+         },
+         {
+            "command": "parseInteger"
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "mileage",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": ".characteristic .item-char"
+         },
+         {
+            "command": "indexer",
+            "index": {
+               "constant": 0
+            }
+         },
+         {
+            "command": "getText"
+         },
+         {
+            "command": "regexSelect",
+            "regex": "^\\d+"
+         },
+         {
+            "command": "parseInteger"
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "location",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": "span.city a"
+         },
+         {
+            "command": "getText"
+         },
+         {
+            "command": "trim"
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "price",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": "div.price strong.green"
+         },
+         {
+            "command": "getText"
+         },
+         {
+            "command": "replace",
+            "what": {
+               "constant": " "
+            },
+            "replacement": {
+               "constant": ""
+            }
+         },
+         {
+            "command": "parseInteger"
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "date",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": "span.date-add span"
+         },
+         {
+            "command": "getText"
+         },
+         {
+            "command": "parseDate",
+            "format": {
+               "constant": "DD.MM.YYYY"
+            }
+         },
+         {
+            "command": "formatDate",
+            "format": {
+               "constant": "YYYY-MM-DD"
+            }
+         }
+      ]
+   },
+   {
+      "command": "extractor",
+      "name": "phone",
+      "operations": [
+         {
+            "command": "cssSelect",
+            "css": ".phone"
+         },
+         {
+            "command": "getText"
+         },
+         {
+            "command": "trim"
+         }
+      ]
+   }
+]

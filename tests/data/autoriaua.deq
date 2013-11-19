@@ -1,4 +1,4 @@
-catalog_url = http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>
+catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
 yield get_ads
 
 step get_ads
@@ -19,17 +19,16 @@ step get_ids with argument page
 end of step
 
 step get_ad with argument id
-	ad_url = http://auto.ria.ua/blocks_search/view/auto/<%= id %>
+	ad_url = "http://auto.ria.ua/blocks_search/view/auto/<%= id %>"
 	ad_html = html from ad_url
 	ad = extract link, year, mileage, location, price, date, phone from ad_html
 	yield ad
 end of step
-```
 
-link extractor = h3.head-car h1 | @href | prefix http://auto.ria.ua
-year extractor = h3.head-car h1 | @title | trim | /\d{4}$/ | int 
-mileage extractor = .characteristic .item-char | 1st | text | /^\d+/ | int
-location extractor = span.city a | text | trim
-price extractor = div.price strong.green | text | replace " " with "" | int
-date extractor = span.date-add span | text | parse date "DD.MM.YYYY" | format date "YYYY-MM-DD"
-phone extractor = .phone | text | trim
+link extractor = css h3.head-car h1 | @href | prefix "http://auto.ria.ua"
+year extractor = css h3.head-car h1 | @title | trim | /\d{4}$/ | int 
+mileage extractor = css .characteristic .item-char | index 0 | text | /^\d+/ | int
+location extractor = css span.city a | text | trim
+price extractor = css div.price strong.green | text | replace " " with "" | int
+date extractor = css span.date-add span | text | parse date "DD.MM.YYYY" | format date "YYYY-MM-DD"
+phone extractor = css .phone | text | trim
