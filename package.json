@@ -4,7 +4,7 @@
   "description": "Implementation of straightforward extraction of structured data from web pages.",
   "main": "index.js",
   "scripts": {
-    "test": "coffee -co js . && cp -R tests/data js/tests/data && istanbul cover node_modules/mocha/bin/_mocha -- --recursive js/tests -R spec -r should && cp README.md package.json js/"
+    "test": "rm -rf js && coffee -co js . && cp -p $(find modules/ -name '*.js') js/modules && cp -R tests/data js/tests && istanbul cover node_modules/mocha/bin/_mocha -- --recursive js/tests -R spec -r should && cp README.md package.json js/"
   },
   "dependencies": {
     "cheerio": "~0.10.7",

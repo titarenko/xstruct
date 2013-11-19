@@ -1,0 +1,2 @@
+catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
+yield get_ads

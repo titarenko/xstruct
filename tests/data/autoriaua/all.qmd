@@ -1,0 +1,99 @@
+# Ad Extraction from Auto.Ria.Ua
+
+## Parameters
+- Brand
+	- Daewoo: 18
+- Model
+	- Lanos: 161
+
+## Entry Point
+```
+catalog_url = http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>
+yield get_ads
+```
+
+## Step Get Ads
+```
+data = json from catalog_url
+
+pages = range from 0 to data.result.search_result.count with step 1000
+
+chunked_ids = process pages using get_ids
+ids = flatten chunked_ids
+
+ads = process ids using get_ad
+yield ads
+```
+
+## Step Get IDs With Argument Page  
+```
+page_url = concatenate catalog_url and "&page=<%= page %>"
+data = json from page_url
+yield data.result.search_result.ids
+```
+
+## Step Get Ad With Argument ID
+```
+ad_url = http://auto.ria.ua/blocks_search/view/auto/<%= id %>
+ad_html = html from ad_url
+
+ad = extract link, year, mileage, location, price, date, phone from ad_html
+
+yield ad
+```
+
+## Link Extractor
+```
+h3.head-car h1 | @href | prefix http://auto.ria.ua
+```
+
+## Year Extractor
+```
+h3.head-car h1 | @title | trim | /\d{4}$/ | int 
+```
+
+## Mileage Extractor
+```
+.characteristic .item-char | 1st | text | /^\d+/ | int
+```
+
+## Location Extractor
+```
+span.city a | text | trim
+```
+
+## Price Extractor
+```
+div.price strong.green | text | replace " " with "" | int
+```
+
+## Date Extractor
+```
+span.date-add span | text | parse date "DD.MM.YYYY" | format date "YYYY-MM-DD" 
+```
+
+## Phone Extractor
+```
+.phone | text | trim
+```
+
+## Localization
+```
+Brand = Марка
+Model = Модель
+Link = Ссылка
+Year = Год
+Mileage = Пробег (тыс. км)
+Location = Город
+Price = Цена ($)
+Date = Дата
+Phone = Телефон
+```
+
+## Report
+```
+scatter plots of year vs price, year vs mileage, price vs mileage
+histograms of year, mileage, price
+summary
+correlation
+```
