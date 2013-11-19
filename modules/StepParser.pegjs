@@ -1,5 +1,5 @@
 start 
-	= (Step / Command)+
+	= (Step / Extractor / Command)+
 
 _ "whitespace"
 	= [ \t]+
@@ -123,6 +123,114 @@ Step
 			name: name,
 			args: args || null,
 			body: commands
+		};
+	}
+
+Extractor
+	= name:Variable _ "extractor" _* "=" _* operations:ExtractionOperations EOL {
+		return {
+			command: "extractor",
+			name: name,
+			operations: operations
+		};
+	}
+
+ExtractionOperations
+	= head:ExtractionOperation tail:(_? "|" _? ExtractionOperation)* { 
+	var result = [head];
+		for (var i = 0; i < tail.length; i++) {
+				result.push(tail[i][3]);
+		}
+		return result; 
+	}
+
+ExtractionOperation
+	= ParseDate
+	/ FormatDate
+	/ ParseInteger
+	/ GetText
+	/ GetAttribute
+	/ AddPrefix
+	/ Trim
+	/ Replace
+	/ RegexSelect
+	/ CssSelect
+
+ParseDate "parse date"
+	= "parse" _ format:StringLiteral {
+		return {
+			command: "parseDate",
+			format: format
+		};
+	}
+
+FormatDate "format date"
+	= "format" _ format:StringLiteral {
+		return {
+			command: "formatDate",
+			format: format
+		};
+	}
+
+ParseInteger "parse integer"
+	= "int" {
+		return {
+			command: "parseInteger"
+		};
+	}
+
+GetText "get text"
+	= "text" {
+		return {
+			command: "getText"
+		};
+	}
+
+GetAttribute "get attribute"
+	= "@" name:Variable {
+		return {
+			command: "getAttribute",
+			name: name
+		};
+	}
+
+Trim "trim"
+	= "trim" {
+		return {
+			command: "trim"
+		};
+	}
+
+AddPrefix "add prefix"
+	= "prefix" _ prefix:StringLiteral {
+		return {
+			command: "addPrefix",
+			prefix: prefix
+		};
+	}
+
+Replace "replace substring with another one"
+	= "replace" _ what:StringLiteral _ "with" _ replacement:StringLiteral {
+		return {
+			command: "replace",
+			what: what,
+			replacement: replacement
+		};
+	}
+
+RegexSelect "regular expression select"
+	= "/" regex:[\S]+ "/" {
+		return {
+			command: "regexSelect",
+			regex: regex
+		}
+	}
+
+CssSelect "CSS select"
+	= css:[^|]+ {
+		return {
+			command: "cssSelect",
+			css: css.join("").replace(/^\s+|\s+$/g, '')
 		};
 	}
 
