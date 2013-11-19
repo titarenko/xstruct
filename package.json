@@ -13,7 +13,8 @@
     "moment": "~2.0.0",
     "async": "~0.2.9",
     "string": "~1.6.0",
-    "sinon": "~1.7.3"
+    "sinon": "~1.7.3",
+    "marked": "~0.2.10"
   },
   "repository": "https://github.com/titarenko/node-xstruct",
   "keywords": [
