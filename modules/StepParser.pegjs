@@ -1,17 +1,17 @@
 start 
-	= Command+
+	= (Step / Command)+
 
 _ "whitespace"
 	= [ \t]+
-
-Terminator "line terminator"
-	= [\r\n]
 
 EOL "end of line"
 	= "\n"
 	/ "\r"
 	/ "\r\n" 
 	/ !.
+
+Terminator "line terminator"
+	= ([\r\n] / !.)
 
 Quote "double quote" 
 	= "\""
@@ -108,6 +108,21 @@ Flatten "flatten array of arrays into array"
 		return {
 			command: "flatten",
 			array: array
+		};
+	}
+
+StepArguments
+	= _ ("with arguments" / "with argument") _ args:Variables {
+		return args;
+	}
+
+Step
+	= "step" _ name:Variable args:StepArguments? EOL commands:Command+ "end of step" EOL {
+		return {
+			command: "step",
+			name: name,
+			args: args || null,
+			body: commands
 		};
 	}
 
