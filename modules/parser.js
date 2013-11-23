@@ -136,12 +136,9 @@ module.exports = (function(){
         
         result1 = parse_Block();
         if (result1 === null) {
-          result1 = parse_Assignment();
+          result1 = parse_ConstantAssignment();
           if (result1 === null) {
-            result1 = parse_Yield();
-            if (result1 === null) {
-              result1 = parse_Extractor();
-            }
+            result1 = parse_Extractor();
           }
         }
         if (result1 !== null) {
@@ -150,12 +147,9 @@ module.exports = (function(){
             result0.push(result1);
             result1 = parse_Block();
             if (result1 === null) {
-              result1 = parse_Assignment();
+              result1 = parse_ConstantAssignment();
               if (result1 === null) {
-                result1 = parse_Yield();
-                if (result1 === null) {
-                  result1 = parse_Extractor();
-                }
+                result1 = parse_Extractor();
               }
             }
           }
@@ -2606,9 +2600,10 @@ module.exports = (function(){
         }
         if (result0 !== null) {
           result0 = (function(offset, css) {
+        		var mappedCss = '"' + css.join("").replace(/^\s+|\s+$/g, '') + '"';
         		return {
         			func: "cssSelect",
-        			args: [css.join("").replace(/^\s+|\s+$/g, '')]
+        			args: [mappedCss]
         		};
         	})(pos0, result0[2]);
         }

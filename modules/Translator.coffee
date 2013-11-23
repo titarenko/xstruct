@@ -71,6 +71,7 @@ class Block
 			# 	code.push line
 			code.push operation.toString()
 			code.indent()
+			code.push ""
 		code.toString()
 
 class Call
@@ -95,11 +96,12 @@ class Return
 class CoffeeGenerator
 	generate: (syntaxTree) ->
 		code = new Code
-		code.push "module.exports = (done) ->"
-		code.indent()
+		code.push "module.exports = start"
+		code.push ""
 		for node in syntaxTree
 			expression = Expression.construct node
 			code.push expression.toString()
+			code.push ""
 		code.toString()
 
 class Translator

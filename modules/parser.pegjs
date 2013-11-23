@@ -1,7 +1,6 @@
 start 
 	= (Block 
-	/ Assignment 
-	/ Yield 
+	/ ConstantAssignment 
 	/ Extractor)+
 
 /* Characters */
@@ -300,8 +299,9 @@ RegexSelect "regular expression select"
 
 CssSelect "CSS select"
 	= "css" _ css:[^|]+ {
+		var mappedCss = '"' + css.join("").replace(/^\s+|\s+$/g, '') + '"';
 		return {
 			func: "cssSelect",
-			args: [css.join("").replace(/^\s+|\s+$/g, '')]
+			args: [mappedCss]
 		};
 	}
