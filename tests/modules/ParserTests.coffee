@@ -6,14 +6,10 @@ describe "Parser", ->
 
 	describe "#parse()", ->
 
-		it "should parse autoriaua.deq", (done) ->
+		it "should parse autoriaua.deq", ->
 
 			code = fs.readFileSync __dirname + "/../data/autoriaua.deq"
 			tree = JSON.parse fs.readFileSync __dirname + "/../data/autoriaua.deq.tree.json"
 
-			new Parser().parse code, (error, commands) ->
-
-				should.not.exist error
-				commands.should.eql tree 
-
-				done()
+			parsed = new Parser().parse code
+			parsed.should.eql tree 
