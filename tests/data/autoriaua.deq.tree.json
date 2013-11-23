@@ -1,303 +1,332 @@
 [
    {
-      "command": "assign",
-      "source": {
-         "constant": "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
-      },
-      "destination": "catalog_url"
+      "type": "constant",
+      "name": "catalog_url",
+      "value": "\"http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>\""
    },
    {
-      "command": "yield",
-      "result": "get_ads"
+      "type": "call",
+      "func": "download",
+      "args": [
+         "\"json\"",
+         "catalog_url"
+      ],
+      "result": "data"
    },
    {
-      "command": "step",
-      "name": "get_ads",
-      "args": null,
-      "body": [
-         {
-            "command": "assign",
-            "source": {
-               "command": "download",
-               "dataType": "json",
-               "source": "catalog_url"
-            },
-            "destination": "data"
-         },
-         {
-            "command": "assign",
-            "source": {
-               "command": "range",
-               "from": {
-                  "constant": 0
-               },
-               "to": "data.result.search_result.count",
-               "step": {
-                  "constant": 1000
-               }
-            },
-            "destination": "pages"
-         },
-         {
-            "command": "assign",
-            "source": {
-               "command": "process",
-               "array": "pages",
-               "mapper": "get_ids"
-            },
-            "destination": "chunked_ids"
-         },
-         {
-            "command": "assign",
-            "source": {
-               "command": "flatten",
-               "array": "chunked_ids"
-            },
-            "destination": "ids"
-         },
-         {
-            "command": "assign",
-            "source": {
-               "command": "process",
-               "array": "ids",
-               "mapper": "get_ad"
-            },
-            "destination": "ads"
-         },
-         {
-            "command": "yield",
-            "result": "ads"
-         }
-      ]
+      "type": "call",
+      "func": "range",
+      "args": [
+         0,
+         "data.result.search_result.count",
+         1000
+      ],
+      "result": "pages"
    },
    {
-      "command": "step",
+      "type": "call",
+      "func": "process",
+      "args": [
+         "pages",
+         "get_ids"
+      ],
+      "result": "chunked_ids"
+   },
+   {
+      "type": "call",
+      "func": "flatten",
+      "args": [
+         "chunked_ids"
+      ],
+      "result": "ids"
+   },
+   {
+      "type": "call",
+      "func": "process",
+      "args": [
+         "ids",
+         "get_ad"
+      ],
+      "result": "ads"
+   },
+   {
+      "type": "return",
+      "result": "ads"
+   },
+   {
+      "type": "block",
       "name": "get_ids",
       "args": [
          "page"
       ],
       "body": [
          {
-            "command": "assign",
-            "source": {
-               "command": "concatenate",
-               "left": "catalog_url",
-               "right": {
-                  "constant": "&page=<%= page %>"
-               }
-            },
-            "destination": "page_url"
+            "type": "call",
+            "func": "concatenate",
+            "args": [
+               "catalog_url",
+               "\"&page=<%= page %>\""
+            ],
+            "result": "page_url"
          },
          {
-            "command": "assign",
-            "source": {
-               "command": "download",
-               "dataType": "json",
-               "source": "page_url"
-            },
-            "destination": "data"
+            "type": "call",
+            "func": "download",
+            "args": [
+               "\"json\"",
+               "page_url"
+            ],
+            "result": "data"
          },
          {
-            "command": "yield",
+            "type": "return",
             "result": "data.result.search_result.ids"
          }
       ]
    },
    {
-      "command": "step",
+      "type": "block",
       "name": "get_ad",
       "args": [
          "id"
       ],
       "body": [
          {
-            "command": "assign",
-            "source": {
-               "constant": "http://auto.ria.ua/blocks_search/view/auto/<%= id %>"
-            },
-            "destination": "ad_url"
+            "type": "constant",
+            "name": "ad_url",
+            "value": "\"http://auto.ria.ua/blocks_search/view/auto/<%= id %>\""
          },
          {
-            "command": "assign",
-            "source": {
-               "command": "download",
-               "dataType": "html",
-               "source": "ad_url"
-            },
-            "destination": "ad_html"
+            "type": "call",
+            "func": "download",
+            "args": [
+               "\"html\"",
+               "ad_url"
+            ],
+            "result": "ad_html"
          },
          {
-            "command": "assign",
-            "source": {
-               "command": "extract",
-               "columns": [
-                  "link",
-                  "year",
-                  "mileage",
-                  "location",
-                  "price",
-                  "date",
-                  "phone"
-               ],
-               "source": "ad_html"
-            },
-            "destination": "ad"
+            "type": "call",
+            "func": "extract",
+            "args": [
+               "[\"link\", \"year\", \"mileage\", \"location\", \"price\", \"date\", \"phone\"]",
+               "ad_html"
+            ],
+            "result": "ad"
          },
          {
-            "command": "yield",
+            "type": "return",
             "result": "ad"
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "link",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": "h3.head-car h1"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               "h3.head-car h1"
+            ]
          },
          {
-            "command": "getAttribute",
-            "name": "href"
+            "type": "extractionOperation",
+            "func": "getAttribute",
+            "args": [
+               "href"
+            ]
          },
          {
-            "command": "addPrefix",
-            "prefix": {
-               "constant": "http://auto.ria.ua"
-            }
+            "type": "extractionOperation",
+            "func": "addPrefix",
+            "args": [
+               "\"http://auto.ria.ua\""
+            ]
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "year",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": "h3.head-car h1"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               "h3.head-car h1"
+            ]
          },
          {
-            "command": "getAttribute",
-            "name": "title"
+            "type": "extractionOperation",
+            "func": "getAttribute",
+            "args": [
+               "title"
+            ]
          },
          {
-            "command": "trim"
+            "type": "extractionOperation",
+            "func": "trim",
+            "args": []
          },
          {
-            "command": "regexSelect",
-            "regex": "\\d{4}$"
+            "type": "extractionOperation",
+            "func": "regexSelect",
+            "args": [
+               "\\d{4}$"
+            ]
          },
          {
-            "command": "parseInteger"
+            "type": "extractionOperation",
+            "func": "parseInteger",
+            "args": []
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "mileage",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": ".characteristic .item-char"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               ".characteristic .item-char"
+            ]
          },
          {
-            "command": "indexer",
-            "index": {
-               "constant": 0
-            }
+            "type": "extractionOperation",
+            "func": "indexer",
+            "args": [
+               0
+            ]
          },
          {
-            "command": "getText"
+            "type": "extractionOperation",
+            "func": "getText",
+            "args": []
          },
          {
-            "command": "regexSelect",
-            "regex": "^\\d+"
+            "type": "extractionOperation",
+            "func": "regexSelect",
+            "args": [
+               "^\\d+"
+            ]
          },
          {
-            "command": "parseInteger"
+            "type": "extractionOperation",
+            "func": "parseInteger",
+            "args": []
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "location",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": "span.city a"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               "span.city a"
+            ]
          },
          {
-            "command": "getText"
+            "type": "extractionOperation",
+            "func": "getText",
+            "args": []
          },
          {
-            "command": "trim"
+            "type": "extractionOperation",
+            "func": "trim",
+            "args": []
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "price",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": "div.price strong.green"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               "div.price strong.green"
+            ]
          },
          {
-            "command": "getText"
+            "type": "extractionOperation",
+            "func": "getText",
+            "args": []
          },
          {
-            "command": "replace",
-            "what": {
-               "constant": " "
-            },
-            "replacement": {
-               "constant": ""
-            }
+            "type": "extractionOperation",
+            "func": "replace",
+            "args": [
+               "\" \"",
+               "\"\""
+            ]
          },
          {
-            "command": "parseInteger"
+            "type": "extractionOperation",
+            "func": "parseInteger",
+            "args": []
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "date",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": "span.date-add span"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               "span.date-add span"
+            ]
          },
          {
-            "command": "getText"
+            "type": "extractionOperation",
+            "func": "getText",
+            "args": []
          },
          {
-            "command": "parseDate",
-            "format": {
-               "constant": "DD.MM.YYYY"
-            }
+            "type": "extractionOperation",
+            "func": "parseDate",
+            "args": [
+               "\"DD.MM.YYYY\""
+            ]
          },
          {
-            "command": "formatDate",
-            "format": {
-               "constant": "YYYY-MM-DD"
-            }
+            "type": "extractionOperation",
+            "func": "formatDate",
+            "args": [
+               "\"YYYY-MM-DD\""
+            ]
          }
       ]
    },
    {
-      "command": "extractor",
+      "type": "extractor",
       "name": "phone",
       "operations": [
          {
-            "command": "cssSelect",
-            "css": ".phone"
+            "type": "extractionOperation",
+            "func": "cssSelect",
+            "args": [
+               ".phone"
+            ]
          },
          {
-            "command": "getText"
+            "type": "extractionOperation",
+            "func": "getText",
+            "args": []
          },
          {
-            "command": "trim"
+            "type": "extractionOperation",
+            "func": "trim",
+            "args": []
          }
       ]
    }

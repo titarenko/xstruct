@@ -1,29 +1,26 @@
 catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
-yield get_ads
 
-step get_ads
-	data = json from catalog_url
-	pages = range from 0 to data.result.search_result.count with step 1000
+data = json from catalog_url
+pages = range from 0 to data.result.search_result.count with step 1000
 
-	chunked_ids = process pages using get_ids
-	ids = flatten chunked_ids
+chunked_ids = process pages using get_ids
+ids = flatten chunked_ids
 
-	ads = process ids using get_ad
-	yield ads
-end of step
+ads = process ids using get_ad
+yield ads
 
-step get_ids with argument page
+block get_ids with argument page
 	page_url = concatenate catalog_url and "&page=<%= page %>"
 	data = json from page_url
 	yield data.result.search_result.ids
-end of step
+end of block
 
-step get_ad with argument id
+block get_ad with argument id
 	ad_url = "http://auto.ria.ua/blocks_search/view/auto/<%= id %>"
 	ad_html = html from ad_url
 	ad = extract link, year, mileage, location, price, date, phone from ad_html
 	yield ad
-end of step
+end of block
 
 link extractor = css h3.head-car h1 | @href | prefix "http://auto.ria.ua"
 year extractor = css h3.head-car h1 | @title | trim | /\d{4}$/ | int 

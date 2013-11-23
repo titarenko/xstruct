@@ -67,8 +67,9 @@ class Block
 		code.push "#{@name} = (#{@args.join(", ")}) ->"
 		code.indent()
 		for operation in @body
-			for line in operation.toLineArray()
-				code.push line
+			# for line in operation.toLineArray()
+			# 	code.push line
+			code.push operation.toString()
 			code.indent()
 		code.toString()
 
@@ -80,7 +81,7 @@ class Call
 		@args.push "(error, #{@result})"
 	toString: ->
 		code = new Code
-		code.push "#{@func} #{args.join(", ")} ->"
+		code.push "#{@func} #{@args.join(", ")} ->"
 		code.indent()
 		code.push "return done error if error"
 		code.toString()
