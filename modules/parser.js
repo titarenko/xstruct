@@ -2523,9 +2523,9 @@ module.exports = (function(){
           result0 = (function(offset, regex) {
         		return {
         			func: "regexSelect",
-        			args: [regex.map(function (x) {
+        			args: ["/" + regex.map(function (x) {
         				return x[1];
-        			}).join("")]
+        			}).join("") + "/"]
         		}
         	})(pos0, result0[1]);
         }

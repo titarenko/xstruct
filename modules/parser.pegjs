@@ -291,9 +291,9 @@ RegexSelect "regular expression select"
 	= "/" regex:(!"/" .)+ "/" {
 		return {
 			func: "regexSelect",
-			args: [regex.map(function (x) {
+			args: ["/" + regex.map(function (x) {
 				return x[1];
-			}).join("")]
+			}).join("") + "/"]
 		}
 	}
 

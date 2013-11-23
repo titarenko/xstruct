@@ -33,28 +33,33 @@ class Constant
 	constructor: (expression) ->
 		@name = expression.name
 		@value = expression.value
-	toString: ->
-		"#{@name} = #{@value}"
+	getCode: ->
+		code = new Code
+		code.push "#{@name} = #{@value}"
+		code
 
 class ExtractionOperation
 	constructor: (expression) ->
 		@func = expression.func
 		@args = expression.args
 		@args.unshift "$"
-	toString: ->
-		"$ = #{@func} #{@args.join(", ")}"
+	getCode: ->
+		code = new Code
+		code.push "$ = #{@func} #{@args.join(", ")}"
+		code
 
 class Extractor
 	constructor: (expression) ->
 		@name = expression.name
 		@operations = expression.operations.map Expression.construct
-	toString: ->
+	getCode: ->
 		code = new Code
 		code.push "#{@name}Extractor = ($) ->"
 		code.indent()
 		for operation in @operations
-			code.push operation.toString()
-		code.toString()
+			for line in operation.getCode().toLineArray()
+				code.push line
+		code
 
 class Block
 	constructor: (expression) ->
@@ -62,17 +67,16 @@ class Block
 		@args = expression.args
 		@args.push "done"
 		@body = expression.body.map Expression.construct
-	toString: ->
+	getCode: ->
 		code = new Code
 		code.push "#{@name} = (#{@args.join(", ")}) ->"
 		code.indent()
 		for operation in @body
-			# for line in operation.toLineArray()
-			# 	code.push line
-			code.push operation.toString()
-			code.indent()
+			for line in operation.getCode().toLineArray()
+				code.push line
+			code.indent() if operation instanceof Call
 			code.push ""
-		code.toString()
+		code
 
 class Call
 	constructor: (expression) ->
@@ -80,18 +84,20 @@ class Call
 		@func = expression.func
 		@args = expression.args
 		@args.push "(error, #{@result})"
-	toString: ->
+	getCode: ->
 		code = new Code
 		code.push "#{@func} #{@args.join(", ")} ->"
 		code.indent()
 		code.push "return done error if error"
-		code.toString()
+		code
 
 class Return
 	constructor: (expression) ->
 		@result = expression.result
-	toString: ->
-		"done null, #{@result}"
+	getCode: ->
+		code = new Code
+		code.push "done null, #{@result}"
+		code
 
 class CoffeeGenerator
 	generate: (syntaxTree) ->
@@ -100,7 +106,8 @@ class CoffeeGenerator
 		code.push ""
 		for node in syntaxTree
 			expression = Expression.construct node
-			code.push expression.toString()
+			for line in expression.getCode().toLineArray()
+				code.push line
 			code.push ""
 		code.toString()
 
