@@ -1,1 +1,1 @@
-exports.Query = require './models/Query'
+exports.Translator = require './modules/Translator'
