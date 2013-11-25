@@ -40,7 +40,7 @@ class Constant
 
 class ExtractionOperation
 	constructor: (expression) ->
-		@func = expression.func
+		@func = "std.#{expression.func}"
 		@args = expression.args
 		@args.unshift "$"
 	getCode: ->
@@ -75,13 +75,12 @@ class Block
 			for line in operation.getCode().toLineArray()
 				code.push line
 			code.indent() if operation instanceof Call
-			code.push ""
 		code
 
 class Call
 	constructor: (expression) ->
 		@result = expression.result
-		@func = expression.func
+		@func = "std.#{expression.func}"
 		@args = expression.args
 		@args.push "(error, #{@result})"
 	getCode: ->
@@ -89,6 +88,7 @@ class Call
 		code.push "#{@func} #{@args.join(", ")} ->"
 		code.indent()
 		code.push "return done error if error"
+		code.push ""
 		code
 
 class Return
@@ -102,6 +102,8 @@ class Return
 class CoffeeGenerator
 	generate: (syntaxTree) ->
 		code = new Code
+		code.push "std = require './Library'"
+		code.push ""
 		code.push "module.exports = start"
 		code.push ""
 		for node in syntaxTree

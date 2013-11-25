@@ -9,7 +9,7 @@ describe "Parser", ->
 		it "should parse autoriaua.deq", ->
 
 			code = fs.readFileSync __dirname + "/../data/autoriaua.deq"
-			tree = JSON.parse fs.readFileSync __dirname + "/../data/autoriaua.deq.tree.json"
+			tree = JSON.parse fs.readFileSync __dirname + "/../data/autoriaua.deq.tree"
 
 			parsed = new Parser().parse code
 			parsed.should.eql tree 

@@ -1373,9 +1373,9 @@ module.exports = (function(){
         }
         if (result0 !== null) {
           result0 = (function(offset, columns, source) { 
-        		var mappedColumns = '[' + columns
-        			.map(function (c) { return '"' + c + '"'; })
-        			.join(", ") + ']';
+        		var mappedColumns = '{' + columns
+        			.map(function (c) { return '' + c + ': ' + c + 'Extractor'; })
+        			.join(", ") + '}';
         		return {
         			func: "extract", 
         			args: [mappedColumns, source]

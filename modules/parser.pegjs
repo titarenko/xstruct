@@ -144,9 +144,9 @@ Process "process array using given mapper"
 
 Extract "extract properties from given html document" 
 	= "extract" _ columns:Variables _ "from" _ source:Variable EOL { 
-		var mappedColumns = '[' + columns
-			.map(function (c) { return '"' + c + '"'; })
-			.join(", ") + ']';
+		var mappedColumns = '{' + columns
+			.map(function (c) { return '' + c + ': ' + c + 'Extractor'; })
+			.join(", ") + '}';
 		return {
 			func: "extract", 
 			args: [mappedColumns, source]

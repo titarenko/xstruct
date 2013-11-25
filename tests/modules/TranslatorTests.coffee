@@ -9,7 +9,7 @@ describe "Translator", ->
 		it "should translate autoriaua.deq", ->
 
 			code = fs.readFileSync __dirname + "/../data/autoriaua.deq"
-			# tree = JSON.parse fs.readFileSync __dirname + "/../data/autoriaua.deq.tree.json"
+			expected = fs.readFileSync __dirname + "/../data/autoriaua.deq.code"
 
 			coffee = new Translator().translate code
-			fs.writeFileSync __dirname + "/../data/autoriaua.coffee", coffee 
+			coffee.should.eql expected.toString()

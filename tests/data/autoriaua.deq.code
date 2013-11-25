@@ -1,0 +1,83 @@
+std = require './Library'
+
+module.exports = start
+
+catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
+
+start = (done) ->
+	std.download "json", catalog_url, (error, data) ->
+		return done error if error
+		
+		std.range 0, data.result.search_result.count, 1000, (error, pages) ->
+			return done error if error
+			
+			std.process pages, get_ids, (error, chunked_ids) ->
+				return done error if error
+				
+				std.flatten chunked_ids, (error, ids) ->
+					return done error if error
+					
+					std.process ids, get_ad, (error, ads) ->
+						return done error if error
+						
+						done null, ads
+
+get_ids = (page, done) ->
+	std.concatenate catalog_url, "&page=#{page}", (error, page_url) ->
+		return done error if error
+		
+		std.download "json", page_url, (error, data) ->
+			return done error if error
+			
+			done null, data.result.search_result.ids
+
+get_ad = (id, done) ->
+	ad_url = "http://auto.ria.ua/blocks_search/view/auto/#{id}"
+	std.download "html", ad_url, (error, ad_html) ->
+		return done error if error
+		
+		std.extract {link: linkExtractor, year: yearExtractor, mileage: mileageExtractor, location: locationExtractor, price: priceExtractor, date: dateExtractor, phone: phoneExtractor}, ad_html, (error, ad) ->
+			return done error if error
+			
+			done null, ad
+
+linkExtractor = ($) ->
+	$ = std.cssSelect $, "h3.head-car h1"
+	$ = std.getAttribute $, href
+	$ = std.addPrefix $, "http://auto.ria.ua"
+
+yearExtractor = ($) ->
+	$ = std.cssSelect $, "h3.head-car h1"
+	$ = std.getAttribute $, title
+	$ = std.trim $
+	$ = std.regexSelect $, /\d{4}$/
+	$ = std.parseInteger $
+
+mileageExtractor = ($) ->
+	$ = std.cssSelect $, ".characteristic .item-char"
+	$ = std.indexer $, 0
+	$ = std.getText $
+	$ = std.regexSelect $, /^\d+/
+	$ = std.parseInteger $
+
+locationExtractor = ($) ->
+	$ = std.cssSelect $, "span.city a"
+	$ = std.getText $
+	$ = std.trim $
+
+priceExtractor = ($) ->
+	$ = std.cssSelect $, "div.price strong.green"
+	$ = std.getText $
+	$ = std.replace $, " ", ""
+	$ = std.parseInteger $
+
+dateExtractor = ($) ->
+	$ = std.cssSelect $, "span.date-add span"
+	$ = std.getText $
+	$ = std.parseDate $, "DD.MM.YYYY"
+	$ = std.formatDate $, "YYYY-MM-DD"
+
+phoneExtractor = ($) ->
+	$ = std.cssSelect $, ".phone"
+	$ = std.getText $
+	$ = std.trim $

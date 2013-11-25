@@ -1,4 +1,4 @@
-catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=<%= brand %>&model=<%= model %>"
+catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
 
 block start
 	data = json from catalog_url
@@ -12,13 +12,13 @@ block start
 end of block
 
 block get_ids with argument page
-	page_url = concatenate catalog_url and "&page=<%= page %>"
+	page_url = concatenate catalog_url and "&page=#{page}"
 	data = json from page_url
 	yield data.result.search_result.ids
 end of block
 
 block get_ad with argument id
-	ad_url = "http://auto.ria.ua/blocks_search/view/auto/<%= id %>"
+	ad_url = "http://auto.ria.ua/blocks_search/view/auto/#{id}"
 	ad_html = html from ad_url
 	ad = extract link, year, mileage, location, price, date, phone from ad_html
 	yield ad
