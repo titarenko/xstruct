@@ -1,4 +1,4 @@
-std = require './Library'
+std = require('xstruct').Library
 
 module.exports = start
 

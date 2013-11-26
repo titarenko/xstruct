@@ -118,7 +118,7 @@ class Return
 class CoffeeGenerator
 	generate: (syntaxTree) ->
 		code = new Code
-		code.push "std = require './Library'"
+		code.push "std = require('xstruct').Library"
 		code.push ""
 		code.push "module.exports = start"
 		code.push ""
