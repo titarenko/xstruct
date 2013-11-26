@@ -9,8 +9,4 @@ module.exports = class Parser
 			.map((line) -> S(line).trim().toString())
 			.filter((line) -> line)
 		code = code.join("\n")
-		try
-			tree = parser.parse code
-		catch e
-			tree = null
-		tree
+		parser.parse code
