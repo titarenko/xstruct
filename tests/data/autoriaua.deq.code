@@ -2,9 +2,8 @@ std = require './Library'
 
 module.exports = start
 
-catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
-
-start = (done) ->
+start = (brand, model, done) ->
+	catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
 	std.download "json", catalog_url, (error, data) ->
 		return done error if error
 		
@@ -17,7 +16,7 @@ start = (done) ->
 				std.flatten chunked_ids, (error, ids) ->
 					return done error if error
 					
-					std.process ids, get_ad, (error, ads) ->
+					std.process ids, get_ad, [catalog_url], (error, ads) ->
 						return done error if error
 						
 						done null, ads

@@ -579,6 +579,17 @@ module.exports = (function(){
                 matchFailed("\",\"");
               }
             }
+            if (result3 === null) {
+              if (input.substr(pos, 3) === "and") {
+                result3 = "and";
+                pos += 3;
+              } else {
+                result3 = null;
+                if (reportFailures === 0) {
+                  matchFailed("\"and\"");
+                }
+              }
+            }
             if (result3 !== null) {
               result4 = parse__();
               result4 = result4 !== null ? result4 : "";
@@ -615,6 +626,17 @@ module.exports = (function(){
                 result3 = null;
                 if (reportFailures === 0) {
                   matchFailed("\",\"");
+                }
+              }
+              if (result3 === null) {
+                if (input.substr(pos, 3) === "and") {
+                  result3 = "and";
+                  pos += 3;
+                } else {
+                  result3 = null;
+                  if (reportFailures === 0) {
+                    matchFailed("\"and\"");
+                  }
                 }
               }
               if (result3 !== null) {
@@ -1210,7 +1232,7 @@ module.exports = (function(){
       }
       
       function parse_Process() {
-        var result0, result1, result2, result3, result4, result5, result6, result7;
+        var result0, result1, result2, result3, result4, result5, result6, result7, result8;
         var pos0, pos1;
         
         reportFailures++;
@@ -1246,9 +1268,16 @@ module.exports = (function(){
                   if (result5 !== null) {
                     result6 = parse_Variable();
                     if (result6 !== null) {
-                      result7 = parse_EOL();
+                      result7 = parse_BlockArguments();
+                      result7 = result7 !== null ? result7 : "";
                       if (result7 !== null) {
-                        result0 = [result0, result1, result2, result3, result4, result5, result6, result7];
+                        result8 = parse_EOL();
+                        if (result8 !== null) {
+                          result0 = [result0, result1, result2, result3, result4, result5, result6, result7, result8];
+                        } else {
+                          result0 = null;
+                          pos = pos1;
+                        }
                       } else {
                         result0 = null;
                         pos = pos1;
@@ -1282,12 +1311,12 @@ module.exports = (function(){
           pos = pos1;
         }
         if (result0 !== null) {
-          result0 = (function(offset, array, mapper) { 
+          result0 = (function(offset, array, mapper, args) { 
         		return {
         			func: "process",
-        			args: [array, mapper]
+        			args: args ? [array, mapper, args] : [array, mapper]
         		}; 
-        	})(pos0, result0[2], result0[6]);
+        	})(pos0, result0[2], result0[6], result0[7]);
         }
         if (result0 === null) {
           pos = pos0;

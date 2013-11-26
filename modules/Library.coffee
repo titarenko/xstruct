@@ -15,7 +15,11 @@ module.exports =
 				when "html"
 					done error, document.root
 	
-	process: async.map
+	process: (array, mapper, args, done) ->
+		if args
+			args.unshift @
+			mapper = Function::bind.apply mapper, args 
+		async.map array, mapper, done
 	
 	extract: (columns, source, done) ->
 		try

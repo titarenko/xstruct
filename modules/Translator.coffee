@@ -38,6 +38,19 @@ class Constant
 		code.push "#{@name} = #{@value}"
 		code
 
+class Arguments
+	constructor: (args) ->
+		@args = args.map @_mapper.bind @
+	_mapper: (arg) ->
+		if arg == null
+			"null"
+		else if arg instanceof Array
+			"[#{arg.map(@_mapper.bind @).join(", ")}]"
+		else
+			"#{arg}"
+	toString: ->
+		"#{@args.join(", ")}"
+
 class ExtractionOperation
 	constructor: (expression) ->
 		@func = "std.#{expression.func}"
@@ -45,7 +58,8 @@ class ExtractionOperation
 		@args.unshift "$"
 	getCode: ->
 		code = new Code
-		code.push "$ = #{@func} #{@args.join(", ")}"
+		args = new Arguments @args
+		code.push "$ = #{@func} #{args.toString()}"
 		code
 
 class Extractor
@@ -69,7 +83,8 @@ class Block
 		@body = expression.body.map Expression.construct
 	getCode: ->
 		code = new Code
-		code.push "#{@name} = (#{@args.join(", ")}) ->"
+		args = new Arguments @args
+		code.push "#{@name} = (#{args.toString()}) ->"
 		code.indent()
 		for operation in @body
 			for line in operation.getCode().toLineArray()
@@ -85,7 +100,8 @@ class Call
 		@args.push "(error, #{@result})"
 	getCode: ->
 		code = new Code
-		code.push "#{@func} #{@args.join(", ")} ->"
+		args = new Arguments @args
+		code.push "#{@func} #{args.toString()} ->"
 		code.indent()
 		code.push "return done error if error"
 		code.push ""

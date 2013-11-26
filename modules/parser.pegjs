@@ -51,7 +51,7 @@ Variable "variable name"
 	}
 
 Variables "list of variables" 
-	= head:Variable tail:(_? "," _? Variable)* { 
+	= head:Variable tail:(_? ("," / "and") _? Variable)* { 
 		var result = [head];
 		for (var i = 0; i < tail.length; i++) {
 				result.push(tail[i][3]);
@@ -135,10 +135,10 @@ Download "download data of certain type from given source"
 	}
 
 Process "process array using given mapper" 
-	= "process" _ array:Variable _ "using" _ mapper:Variable EOL { 
+	= "process" _ array:Variable _ "using" _ mapper:Variable args:BlockArguments? EOL { 
 		return {
 			func: "process",
-			args: [array, mapper]
+			args: args ? [array, mapper, args] : [array, mapper]
 		}; 
 	}
 

@@ -1,14 +1,18 @@
 [
-    {
-        "type": "constant",
-        "name": "catalog_url",
-        "value": "\"http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}\""
-    },
+    
     {
         "type": "block",
         "name": "start",
-        "args": [],
+        "args": [
+            "brand",
+            "model"
+        ],
         "body": [
+            {
+                "type": "constant",
+                "name": "catalog_url",
+                "value": "\"http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}\""
+            },
             {
                 "type": "call",
                 "func": "download",
@@ -50,7 +54,10 @@
                 "func": "process",
                 "args": [
                     "ids",
-                    "get_ad"
+                    "get_ad",
+                    [
+                        "catalog_url"
+                    ]
                 ],
                 "result": "ads"
             },

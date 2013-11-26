@@ -1,13 +1,13 @@
-catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
+block start with arguments brand and model
+	catalog_url = "http://auto.ria.ua/blocks_search_ajax/search?marka=#{brand}&model=#{model}"
 
-block start
 	data = json from catalog_url
 	pages = range from 0 to data.result.search_result.count with step 1000
 
 	chunked_ids = process pages using get_ids
 	ids = flatten chunked_ids
 
-	ads = process ids using get_ad
+	ads = process ids using get_ad with argument catalog_url
 	yield ads
 end of block
 
