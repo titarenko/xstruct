@@ -2,6 +2,7 @@ Document = require './Document'
 async = require 'async'
 S = require "string"
 $ = require "cheerio"
+moment = require "moment"
 
 module.exports =
 
@@ -99,7 +100,7 @@ module.exports =
 		string.match(regex)[1]
 
 	cssSelect: (node, css) ->
-		node(css)
+		node.find(css)
 
 	getProperty: (node, data) ->
 		node[data]
