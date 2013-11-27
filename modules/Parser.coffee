@@ -1,4 +1,4 @@
-parser = require "./parser"
+parser = require "./PegParser"
 S = require "string"
 
 module.exports = class Parser
