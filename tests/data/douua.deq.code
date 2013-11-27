@@ -1,0 +1,32 @@
+std = require('xstruct').Library
+
+module.exports = start
+
+start = (done) ->
+	page_url = "http://dou.ua/lenta/articles/software-architect-position"
+	std.download "html", page_url, (error, page_html) ->
+		return done error if error
+		
+		std.select "#commentsList .b-comment", page_html, (error, comments) ->
+			return done error if error
+			
+			std.process comments, extract_message, (error, messages) ->
+				return done error if error
+				
+				done null, messages
+
+extract_message = (html, done) ->
+	std.extract {author: authorExtractor, text: textExtractor}, html, (error, message) ->
+		return done error if error
+		
+		done null, message
+
+textExtractor = ($) ->
+	$ = std.cssSelect $, "".l-text.text.b-typo""
+	$ = std.getText $
+	$ = std.trim $
+
+authorExtractor = ($) ->
+	$ = std.cssSelect $, ""a.avatar""
+	$ = std.getText $
+	$ = std.trim $

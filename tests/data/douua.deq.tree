@@ -1,0 +1,113 @@
+[
+    {
+        "type": "block",
+        "name": "start",
+        "args": [],
+        "body": [
+            {
+                "type": "constant",
+                "name": "page_url",
+                "value": "\"http://dou.ua/lenta/articles/software-architect-position\""
+            },
+            {
+                "type": "call",
+                "func": "download",
+                "args": [
+                    "\"html\"",
+                    "page_url"
+                ],
+                "result": "page_html"
+            },
+            {
+                "type": "call",
+                "func": "select",
+                "args": [
+                    "\"#commentsList .b-comment\"",
+                    "page_html"
+                ],
+                "result": "comments"
+            },
+            {
+                "type": "call",
+                "func": "process",
+                "args": [
+                    "comments",
+                    "extract_message"
+                ],
+                "result": "messages"
+            },
+            {
+                "type": "return",
+                "result": "messages"
+            }
+        ]
+    },
+    {
+        "type": "block",
+        "name": "extract_message",
+        "args": [
+            "html"
+        ],
+        "body": [
+            {
+                "type": "call",
+                "func": "extract",
+                "args": [
+                    "{author: authorExtractor, text: textExtractor}",
+                    "html"
+                ],
+                "result": "message"
+            },
+            {
+                "type": "return",
+                "result": "message"
+            }
+        ]
+    },
+    {
+        "type": "extractor",
+        "name": "text",
+        "operations": [
+            {
+                "type": "extractionOperation",
+                "func": "cssSelect",
+                "args": [
+                    "\"\".l-text.text.b-typo\"\""
+                ]
+            },
+            {
+                "type": "extractionOperation",
+                "func": "getText",
+                "args": []
+            },
+            {
+                "type": "extractionOperation",
+                "func": "trim",
+                "args": []
+            }
+        ]
+    },
+    {
+        "type": "extractor",
+        "name": "author",
+        "operations": [
+            {
+                "type": "extractionOperation",
+                "func": "cssSelect",
+                "args": [
+                    "\"\"a.avatar\"\""
+                ]
+            },
+            {
+                "type": "extractionOperation",
+                "func": "getText",
+                "args": []
+            },
+            {
+                "type": "extractionOperation",
+                "func": "trim",
+                "args": []
+            }
+        ]
+    }
+]

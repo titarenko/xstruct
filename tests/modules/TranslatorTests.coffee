@@ -13,3 +13,11 @@ describe "Translator", ->
 
 			coffee = new Translator().translate code
 			coffee.should.eql expected.toString()
+
+		it "should translate douua.deq", ->
+
+			code = fs.readFileSync __dirname + "/../data/douua.deq"
+			expected = fs.readFileSync __dirname + "/../data/douua.deq.code"
+
+			coffee = new Translator().translate code
+			coffee.should.eql expected.toString()

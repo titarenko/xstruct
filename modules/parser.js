@@ -62,6 +62,7 @@ module.exports = (function(){
         "Range": parse_Range,
         "Flatten": parse_Flatten,
         "Concatenate": parse_Concatenate,
+        "Select": parse_Select,
         "Extractor": parse_Extractor,
         "ExtractionOperations": parse_ExtractionOperations,
         "ExtractionOperation": parse_ExtractionOperation,
@@ -747,6 +748,9 @@ module.exports = (function(){
                 result0 = parse_Flatten();
                 if (result0 === null) {
                   result0 = parse_Concatenate();
+                  if (result0 === null) {
+                    result0 = parse_Select();
+                  }
                 }
               }
             }
@@ -1717,6 +1721,96 @@ module.exports = (function(){
         }
         if (result0 === null) {
           pos = pos0;
+        }
+        return result0;
+      }
+      
+      function parse_Select() {
+        var result0, result1, result2, result3, result4, result5, result6, result7;
+        var pos0, pos1;
+        
+        reportFailures++;
+        pos0 = pos;
+        pos1 = pos;
+        if (input.substr(pos, 6) === "select") {
+          result0 = "select";
+          pos += 6;
+        } else {
+          result0 = null;
+          if (reportFailures === 0) {
+            matchFailed("\"select\"");
+          }
+        }
+        if (result0 !== null) {
+          result1 = parse__();
+          if (result1 !== null) {
+            result2 = parse_StringLiteral();
+            if (result2 !== null) {
+              result3 = parse__();
+              if (result3 !== null) {
+                if (input.substr(pos, 4) === "from") {
+                  result4 = "from";
+                  pos += 4;
+                } else {
+                  result4 = null;
+                  if (reportFailures === 0) {
+                    matchFailed("\"from\"");
+                  }
+                }
+                if (result4 !== null) {
+                  result5 = parse__();
+                  if (result5 !== null) {
+                    result6 = parse_Variable();
+                    if (result6 !== null) {
+                      result7 = parse_EOL();
+                      if (result7 !== null) {
+                        result0 = [result0, result1, result2, result3, result4, result5, result6, result7];
+                      } else {
+                        result0 = null;
+                        pos = pos1;
+                      }
+                    } else {
+                      result0 = null;
+                      pos = pos1;
+                    }
+                  } else {
+                    result0 = null;
+                    pos = pos1;
+                  }
+                } else {
+                  result0 = null;
+                  pos = pos1;
+                }
+              } else {
+                result0 = null;
+                pos = pos1;
+              }
+            } else {
+              result0 = null;
+              pos = pos1;
+            }
+          } else {
+            result0 = null;
+            pos = pos1;
+          }
+        } else {
+          result0 = null;
+          pos = pos1;
+        }
+        if (result0 !== null) {
+          result0 = (function(offset, query, html) {
+        		return {
+        			func: "select",
+        			args: [query, html]
+        		};
+        	})(pos0, result0[2], result0[6]);
+        }
+        if (result0 === null) {
+          pos = pos0;
+        }
+        reportFailures--;
+        if (reportFailures === 0 && result0 === null) {
+          matchFailed("select using CSS");
         }
         return result0;
       }

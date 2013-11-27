@@ -70,7 +70,8 @@ Call "function call"
 	/ Extract 
 	/ Range
 	/ Flatten
-	/ Concatenate) {
+	/ Concatenate
+	/ Select) {
 		return {
 			type: "call",
 			func: func.func,
@@ -174,6 +175,14 @@ Concatenate
 		return {
 			func: "concatenate",
 			args: [left, right]
+		};
+	}
+
+Select "select using CSS"
+	= "select" _ query:StringLiteral _ "from" _ html:Variable EOL {
+		return {
+			func: "select",
+			args: [query, html]
 		};
 	}
 
