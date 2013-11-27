@@ -149,7 +149,7 @@
                 "type": "extractionOperation",
                 "func": "getAttribute",
                 "args": [
-                    "href"
+                    "\"href\""
                 ]
             },
             {
@@ -176,7 +176,7 @@
                 "type": "extractionOperation",
                 "func": "getAttribute",
                 "args": [
-                    "title"
+                    "\"title\""
                 ]
             },
             {

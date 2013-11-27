@@ -269,7 +269,7 @@ GetAttribute "get attribute"
 	= "@" name:Variable {
 		return {
 			func: "getAttribute",
-			args: [name]
+			args: ['"' + name + '"']
 		};
 	}
 

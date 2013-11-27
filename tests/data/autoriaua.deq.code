@@ -42,12 +42,12 @@ get_ad = (id, done) ->
 
 linkExtractor = ($) ->
 	$ = std.cssSelect $, "h3.head-car h1"
-	$ = std.getAttribute $, href
+	$ = std.getAttribute $, "href"
 	$ = std.addPrefix $, "http://auto.ria.ua"
 
 yearExtractor = ($) ->
 	$ = std.cssSelect $, "h3.head-car h1"
-	$ = std.getAttribute $, title
+	$ = std.getAttribute $, "title"
 	$ = std.trim $
 	$ = std.regexSelect $, /\d{4}$/
 	$ = std.parseInteger $

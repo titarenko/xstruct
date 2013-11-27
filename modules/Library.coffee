@@ -1,6 +1,7 @@
 Document = require './Document'
 async = require 'async'
 S = require "string"
+$ = require "cheerio"
 
 module.exports =
 
@@ -16,9 +17,14 @@ module.exports =
 					done error, document.root
 	
 	process: (array, mapper, args, done) ->
+		if not done
+			done = args
+			args = null
 		if args
 			args.unshift @
-			mapper = Function::bind.apply mapper, args 
+			mapper = Function::bind.apply mapper, args
+		if array.html
+			array = array.map (index, element) -> $ element 
 		async.map array, mapper, done
 	
 	extract: (columns, source, done) ->

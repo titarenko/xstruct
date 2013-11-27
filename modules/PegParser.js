@@ -2333,7 +2333,7 @@ module.exports = (function(){
           result0 = (function(offset, name) {
         		return {
         			func: "getAttribute",
-        			args: [name]
+        			args: ['"' + name + '"']
         		};
         	})(pos0, result0[1]);
         }
