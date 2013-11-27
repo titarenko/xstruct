@@ -57,6 +57,9 @@ module.exports =
 		catch e
 			done e
 
+	select: (css, html, done) ->
+		done null, html(css)
+
 	# sync
 
 	parseDate: (date, format) ->
