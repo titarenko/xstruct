@@ -219,6 +219,7 @@ ExtractionOperation "extraction operation"
 	/ Replace
 	/ RegexSelect
 	/ Indexer
+	/ JsSelect
 	/ CssSelect) {
 		return {
 			type: "extractionOperation",
@@ -304,6 +305,14 @@ RegexSelect "regular expression select"
 				return x[1];
 			}).join("") + "/"]
 		}
+	}
+
+JsSelect "JS select"
+	= "js" _ path:Variable {
+		return {
+			func: "jsSelect",
+			args: [path]
+		};
 	}
 
 CssSelect "CSS select"

@@ -100,3 +100,6 @@ module.exports =
 
 	cssSelect: (node, css) ->
 		node(css)
+
+	jsSelect: (node, data) ->
+		data

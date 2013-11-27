@@ -76,6 +76,7 @@ module.exports = (function(){
         "AddPrefix": parse_AddPrefix,
         "Replace": parse_Replace,
         "RegexSelect": parse_RegexSelect,
+        "JsSelect": parse_JsSelect,
         "CssSelect": parse_CssSelect
       };
       
@@ -2056,7 +2057,10 @@ module.exports = (function(){
                         if (result0 === null) {
                           result0 = parse_Indexer();
                           if (result0 === null) {
-                            result0 = parse_CssSelect();
+                            result0 = parse_JsSelect();
+                            if (result0 === null) {
+                              result0 = parse_CssSelect();
+                            }
                           }
                         }
                       }
@@ -2658,6 +2662,58 @@ module.exports = (function(){
         reportFailures--;
         if (reportFailures === 0 && result0 === null) {
           matchFailed("regular expression select");
+        }
+        return result0;
+      }
+      
+      function parse_JsSelect() {
+        var result0, result1, result2;
+        var pos0, pos1;
+        
+        reportFailures++;
+        pos0 = pos;
+        pos1 = pos;
+        if (input.substr(pos, 2) === "js") {
+          result0 = "js";
+          pos += 2;
+        } else {
+          result0 = null;
+          if (reportFailures === 0) {
+            matchFailed("\"js\"");
+          }
+        }
+        if (result0 !== null) {
+          result1 = parse__();
+          if (result1 !== null) {
+            result2 = parse_Variable();
+            if (result2 !== null) {
+              result0 = [result0, result1, result2];
+            } else {
+              result0 = null;
+              pos = pos1;
+            }
+          } else {
+            result0 = null;
+            pos = pos1;
+          }
+        } else {
+          result0 = null;
+          pos = pos1;
+        }
+        if (result0 !== null) {
+          result0 = (function(offset, path) {
+        		return {
+        			func: "jsSelect",
+        			args: [path]
+        		};
+        	})(pos0, result0[2]);
+        }
+        if (result0 === null) {
+          pos = pos0;
+        }
+        reportFailures--;
+        if (reportFailures === 0 && result0 === null) {
+          matchFailed("JS select");
         }
         return result0;
       }
