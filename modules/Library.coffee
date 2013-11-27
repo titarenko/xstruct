@@ -64,7 +64,7 @@ module.exports =
 			done e
 
 	select: (css, html, done) ->
-		done null, html(css)
+		done null, html.find(css)
 
 	# sync
 
