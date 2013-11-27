@@ -76,7 +76,7 @@ module.exports = (function(){
         "AddPrefix": parse_AddPrefix,
         "Replace": parse_Replace,
         "RegexSelect": parse_RegexSelect,
-        "JsSelect": parse_JsSelect,
+        "GetProperty": parse_GetProperty,
         "CssSelect": parse_CssSelect
       };
       
@@ -2057,7 +2057,7 @@ module.exports = (function(){
                         if (result0 === null) {
                           result0 = parse_Indexer();
                           if (result0 === null) {
-                            result0 = parse_JsSelect();
+                            result0 = parse_GetProperty();
                             if (result0 === null) {
                               result0 = parse_CssSelect();
                             }
@@ -2666,20 +2666,20 @@ module.exports = (function(){
         return result0;
       }
       
-      function parse_JsSelect() {
+      function parse_GetProperty() {
         var result0, result1, result2;
         var pos0, pos1;
         
         reportFailures++;
         pos0 = pos;
         pos1 = pos;
-        if (input.substr(pos, 2) === "js") {
-          result0 = "js";
-          pos += 2;
+        if (input.substr(pos, 8) === "property") {
+          result0 = "property";
+          pos += 8;
         } else {
           result0 = null;
           if (reportFailures === 0) {
-            matchFailed("\"js\"");
+            matchFailed("\"property\"");
           }
         }
         if (result0 !== null) {
@@ -2703,8 +2703,8 @@ module.exports = (function(){
         if (result0 !== null) {
           result0 = (function(offset, path) {
         		return {
-        			func: "jsSelect",
-        			args: [path]
+        			func: "getProperty",
+        			args: ['"' + path + '"']
         		};
         	})(pos0, result0[2]);
         }
@@ -2713,7 +2713,7 @@ module.exports = (function(){
         }
         reportFailures--;
         if (reportFailures === 0 && result0 === null) {
-          matchFailed("JS select");
+          matchFailed("get property");
         }
         return result0;
       }

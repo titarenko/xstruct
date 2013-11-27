@@ -219,7 +219,7 @@ ExtractionOperation "extraction operation"
 	/ Replace
 	/ RegexSelect
 	/ Indexer
-	/ JsSelect
+	/ GetProperty
 	/ CssSelect) {
 		return {
 			type: "extractionOperation",
@@ -307,11 +307,11 @@ RegexSelect "regular expression select"
 		}
 	}
 
-JsSelect "JS select"
-	= "js" _ path:Variable {
+GetProperty "get property"
+	= "property" _ path:Variable {
 		return {
-			func: "jsSelect",
-			args: [path]
+			func: "getProperty",
+			args: ['"' + path + '"']
 		};
 	}
 
