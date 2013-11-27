@@ -1,0 +1,17 @@
+block start
+	page_url = "http://dou.ua/lenta/articles/software-architect-position"
+	page_html = html from page_url
+	
+	comments = select "#commentsList .b-comment" from page_html
+	messages = process comments using extract_message
+	
+	yield messages
+end of block
+
+block extract_message with argument html
+	message = extract author, text from html
+	yield message	
+end of block
+
+text extractor = css ".l-text.text.b-typo" | text | trim
+author extractor = css "a.avatar" | text | trim
