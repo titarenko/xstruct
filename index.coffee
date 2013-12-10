@@ -1,1 +1,4 @@
-exports.Query = require './models/Query'
+Api = require "./modules/Api"
+
+module.exports = (root) ->
+	new Api root
