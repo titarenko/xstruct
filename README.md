@@ -3,12 +3,9 @@ XStruct
 
 Implementation of straightforward extraction of structured data from web pages.
 
-Status
-------
+[![Build Status](https://secure.travis-ci.org/titarenko/node-xstruct.png?branch=master)](https://travis-ci.org/titarenko/node-xstruct) [![Code Climate](https://codeclimate.com/github/titarenko/node-xstruct.png)](https://codeclimate.com/github/titarenko/node-xstruct) [![Coverage Status](https://coveralls.io/repos/titarenko/node-xstruct/badge.png)](https://coveralls.io/r/titarenko/node-xstruct)
 
-Current status is **stable beta**. Code **test coverage according to [istanbul](https://github.com/gotwarlost/istanbul): 100%**.
-
-[![Build Status](https://travis-ci.org/titarenko/node-xstruct.png)](https://travis-ci.org/titarenko/node-xstruct)
+[![NPM](https://nodei.co/npm/xstruct.png?downloads=true&stars=true)](https://nodei.co/npm/xstruct/)
 
 Usage
 -----
@@ -17,68 +14,127 @@ Usage
 npm install xstruct
 ```
 
-```js
-var Query = require("xstruct").Query;
+Example of how easy it is to extract comments from [dou.ua forum](http://dou.ua/forum).
 
-var query = new Query({
-	fetch: "http://dou.ua/forums/topic/7337/",
-	extract: {
-		scope: "#commentsList",
-		items: ".b-comment",
-		properties: {
-			date: {".comment": "@date"},
-			name: {".g-avatar": "@title"},
-			text: {".l-text": "text"}
-		}
-	},
-	convert: {
-		date: {moment: "YYYY/MM/DD HH:mm:ss"}
-	}
-});
+```coffee
+xstruct = require "xstruct"
 
-query.execute(function (error, items) {
-	console.log(error || items);
-});
+# ...
+
+xstruct("http://dou.ua")
+
+	.html("/forums/topic/8751")
+
+	.then((html) -> 
+		html.get (el) -> 
+			el(".b-comment")
+				.map (el) ->
+					author: el.get (child) -> child(".avatar").text().trim()
+					time: el.get (child) -> child(".date").text().trim()
+					text: el.get (child) -> child(".text p").text()
+	)
+	
+	.on("progress", (percentage) -> 
+		progressBar.update percentage # this one will change from 0 to 100
+	)
+	
+	.on("error", (error) ->
+		log.error error
+	)
+	
+	.on("log", (message, meta) ->
+		log.debug message, meta # message is textual info describing log event, meta is object with context data
+	)
+
+	.on("finished", (data) ->
+		db.store data # in this example data is array of objects with properties: author, time, text
+	)
+
+	.done()
 ```
 
-Mechanics
----------
+API
+---
 
-1. Page is downloaded using specified URL
-2. Page is decoded using encoding provided in its header (if any)
-3. Scope node (items container) is extracted
-4. Item nodes are extracted
-5. For each item: properties are extracted
-6. For each item: values of properties are converted (if requested)
-7. Items are passed to callback (as second argument)
+# High Level (XStruct API)
 
-Query Specification
--------------------
+## json(url)
 
-```json
-{
-	"fetch": "<url>",
-	"extract": {
-		"scope": "<scope node selector>",
-		"items": "<item node selector>",
-		"properties": {
-			"<property name>": {"<property node selector>": "<property value selector>"}
-		}
-	},
-	"convert": {
-		"<property name>": {"<converter name>": <converter parameters>}
-	}
-}
-```
+downloads JSON using given URL
 
-- `<url>` -- document address
-- `<scope node selector>` -- CSS selector of page block with desired items (will be used to select single node where nodes of interest are contained)
-- `<item node selector>` -- CSS selector of single item node (will be used to select nodes of all items)
-- `<property name>` -- desired name for certain property of extracted object
-- `<property node selector>` -- CSS selector for node of current property (will be used to select property node contained in item node)
-- `<property value selector>` -- defines rule how actual value (string at this stage) will be selected from property node, allowed values: `text` (node content as text), `html` (node content as HTML) and `@<attribute name>` (value of certain node's attribute)
-- `<converter name>` -- name of property converter, allowed values are: `moment` (string to date parsing, format string should be passed as converter parameters: see [moment js documentation on format details](http://momentjs.com/docs/#/parsing/string-format/)) 
-- `<converter parameters>` -- any entity (string, object, whatsoever) which will be used to configure converter 
+## html(url)
+
+downloads HTML using given URL, returns wrapper object to do low-level operations
+
+## then(function)
+
+executes function feeding it with result of previous call
+
+## map(mapper)
+
+allows to map result of previous call treating it as an array
+
+## flatten
+
+flattens result of previous call treating it as an array of arrays
+
+## start
+
+starts progress reporting, should be called before `map` and furtherly accompanied by `advance` calls from `mapper`
+
+## advance
+
+advances progress by one unit (which means next element of array was processed)
+
+# Low Level (HTML wrapper API)
+
+## get(function)
+
+starts extraction by calling specified function feeding it with query root which should be treated as jQuery instance ($)
+
+## attr(name)
+
+extracts attribute by its name
+
+## trim
+
+trims result of previous call
+
+## text
+
+gets text of HTML node
+
+## regex(regex)
+
+returns first match using given regex
+
+## replace(...)
+
+acts like `String::replace` on result of previous call
+
+## float
+
+parses float (converts result of previous call to float)
+
+## parse(format)
+
+parses string to date using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
+
+## format(format)
+
+formats date to string using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
+
+## at(index)
+
+selects element from an array using given index
+
+## map(mapper)
+
+acts like `Array::map` on result of previous call
+
+## coalesce(value)
+
+coalesces result of previous call with given value
 
 License (BSD)
 -------------
@@ -87,12 +143,10 @@ Copyright (c) 2013, Constantin Titarenko
 
 All rights reserved.
 
-
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
+* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
