@@ -3,7 +3,7 @@ XStruct
 
 Implementation of straightforward extraction of structured data from web pages.
 
-[![Build Status](https://secure.travis-ci.org/titarenko/node-xstruct.png?branch=master)](https://travis-ci.org/titarenko/node-xstruct) [![Code Climate](https://codeclimate.com/github/titarenko/node-xstruct.png)](https://codeclimate.com/github/titarenko/node-xstruct) [![Coverage Status](https://coveralls.io/repos/titarenko/node-xstruct/badge.png)](https://coveralls.io/r/titarenko/node-xstruct)
+[![Build Status](https://secure.travis-ci.org/titarenko/node-xstruct.png?branch=master)](https://travis-ci.org/titarenko/node-xstruct) [![Coverage Status](https://coveralls.io/repos/titarenko/node-xstruct/badge.png)](https://coveralls.io/r/titarenko/node-xstruct)
 
 [![NPM](https://nodei.co/npm/xstruct.png?downloads=true&stars=true)](https://nodei.co/npm/xstruct/)
 
