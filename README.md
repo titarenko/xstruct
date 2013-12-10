@@ -56,83 +56,83 @@ xstruct("http://dou.ua")
 API
 ---
 
-# High Level (XStruct API)
+## High Level (XStruct API)
 
-## json(url)
+### json(url)
 
 downloads JSON using given URL
 
-## html(url)
+### html(url)
 
 downloads HTML using given URL, returns wrapper object to do low-level operations
 
-## then(function)
+### then(function)
 
 executes function feeding it with result of previous call
 
-## map(mapper)
+### map(mapper)
 
 allows to map result of previous call treating it as an array
 
-## flatten
+### flatten
 
 flattens result of previous call treating it as an array of arrays
 
-## start
+### start
 
 starts progress reporting, should be called before `map` and furtherly accompanied by `advance` calls from `mapper`
 
-## advance
+### advance
 
 advances progress by one unit (which means next element of array was processed)
 
-# Low Level (HTML wrapper API)
+## Low Level (HTML wrapper API)
 
-## get(function)
+### get(function)
 
 starts extraction by calling specified function feeding it with query root which should be treated as jQuery instance ($)
 
-## attr(name)
+### attr(name)
 
 extracts attribute by its name
 
-## trim
+### trim
 
 trims result of previous call
 
-## text
+### text
 
 gets text of HTML node
 
-## regex(regex)
+### regex(regex)
 
 returns first match using given regex
 
-## replace(...)
+### replace(...)
 
 acts like `String::replace` on result of previous call
 
-## float
+### float
 
 parses float (converts result of previous call to float)
 
-## parse(format)
+### parse(format)
 
 parses string to date using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
 
-## format(format)
+### format(format)
 
 formats date to string using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
 
-## at(index)
+### at(index)
 
 selects element from an array using given index
 
-## map(mapper)
+### map(mapper)
 
 acts like `Array::map` on result of previous call
 
-## coalesce(value)
+### coalesce(value)
 
 coalesces result of previous call with given value
 
