@@ -86,6 +86,10 @@ starts progress reporting, should be called before `map` and furtherly accompani
 
 advances progress by one unit (which means next element of array was processed)
 
+### done
+
+should always close the chain of API calls
+
 ## Low Level (HTML wrapper API)
 
 ### get(function)
