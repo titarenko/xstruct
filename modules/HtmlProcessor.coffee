@@ -1,4 +1,5 @@
 moment = require "moment"
+cheerio = require "cheerio"
 
 module.exports = class HtmlProcessor
 
@@ -10,7 +11,8 @@ module.exports = class HtmlProcessor
 		func(html.css.bind html)._result
 
 	css: (css) ->
-		@_answer "css", @_result(css), 
+		result = if typeof @_result is "function" then @_result(css) else @_result.find(css)
+		@_answer "css", result, 
 			css: css
 			result: (r) -> r.length
 
@@ -48,6 +50,13 @@ module.exports = class HtmlProcessor
 	at: (index) ->
 		@_answer "at", @_result.eq(index),
 			index: index
+			result: (r) -> r.length
+
+	map: (func) ->
+		mapper = (element, index) =>
+			html = new HtmlProcessor cheerio(element), @_emitter
+			func(html, index)
+		@_answer "map", @_result.toArray().map(mapper),
 			result: (r) -> r.length
 
 	coalesce: (value) ->
