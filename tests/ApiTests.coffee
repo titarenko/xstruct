@@ -1,5 +1,17 @@
 should = require "should"
+replay = require "replay"
 xstruct = require "../index"
+
+isLogEnabled = false
+isLiveHttp = false
+
+replay.mode = if isLiveHttp then "record" else "replay"
+replay.fixtures = __dirname + "/../../tests/fixtures"
+
+if isLogEnabled
+	winston = require "winston"
+	winston.remove winston.transports.Console
+	winston.add winston.transports.Console, colorize: true
 
 describe "API", ->
 
@@ -82,11 +94,54 @@ describe "API", ->
 				should.exist meta
 				message.should.be.ok
 				meta.should.be.ok
+				winston.info message, meta if isLogEnabled
 			)
 
 			.on("finished", (data) ->
 				should.exist data
 				data.should.be.ok
+				winston.info data if isLogEnabled
+				done()
+			)
+
+			.done()
+
+	it "should allow to do query for dou.ua forum data", (done) ->
+
+		xstruct("http://dou.ua")
+
+			.html("/forums/topic/8751")
+
+			.then((html) -> 
+				html.get (el) -> 
+					el(".b-comment")
+						.map (el) ->
+							author: el.get (child) -> child(".avatar").text().trim()
+							time: el.get (child) -> child(".date").text().trim()
+							text: el.get (child) -> child(".text p").text()
+			)
+			
+			.on("progress", (percentage) -> 
+				should.exist percentage
+				percentage.should.be.ok
+			)
+			
+			.on("error", (error) ->
+				done error
+			)
+			
+			.on("log", (message, meta) ->
+				should.exist message
+				should.exist meta
+				message.should.be.ok
+				meta.should.be.ok
+				winston.info message, meta if isLogEnabled
+			)
+
+			.on("finished", (data) ->
+				should.exist data
+				data.should.be.ok
+				winston.info "result", data if isLogEnabled
 				done()
 			)
 

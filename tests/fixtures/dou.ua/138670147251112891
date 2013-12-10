@@ -1,0 +1,4973 @@
+GET /forums/topic/8751/
+host: dou.ua
+
+200 HTTP/1.1
+server: nginx/1.1.19
+date: Tue, 10 Dec 2013 18:51:12 GMT
+content-type: text/html; charset=utf-8
+transfer-encoding: chunked
+connection: keep-alive
+vary: Cookie
+set-cookie: csrftoken=23TZBzfxeY1cbka6AyZ50wHz3rYWalvq; Domain=.dou.ua; expires=Tue, 09-Dec-2014 18:51:12 GMT; Max-Age=31449600; Path=/
+set-cookie: sessionid=f94c2ee0d7669269e282883360e91fd6; Domain=.dou.ua; expires=Tue, 24-Dec-2013 18:51:12 GMT; httponly; Max-Age=1209600; Path=/
+access-control-allow-origin: *
+access-control-allow-methods: GET,POST,OPTIONS
+
+<!DOCTYPE HTML>
+<html class=" "
+	lang="ru"
+	xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://ogp.me/ns/fb#"
+	xmlns:addthis="http://www.addthis.com/help/api-spec">
+
+<head>
+
+	<title>Безопасное, опасное будущее | DOU</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Когда, по вашему, автомобиль с автоматическим управление будет безопаснее чем автомобиль которым управляет человек?
+
+Среди некоторых комментариев к моему прошлому топику мне показалось, что присутствует мнение, что автомобиль с автопилотом" />
+
+	<meta property="og:title" content="Безопасное, опасное будущее">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://dou.ua/forums/topic/8751/">
+<meta property="og:site_name" content="ДОУ">
+<meta property="og:image" content="http://s.developers.org.ua/img/avatars/100x100_33605.png">
+<meta property="og:description" content="Когда, по вашему, автомобиль с автоматическим управление будет безопаснее чем автомобиль которым управляет человек?
+
+Среди некоторых комментариев к моему прошлому топику мне показалось, что присутствует мнение, что автомобиль с автопилотом будет безопасне"><meta property="fb:app_id" content="">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@devua">
+<meta name="twitter:url" content="http://dou.ua/forums/topic/8751/">
+<meta name="twitter:title" content="Безопасное, опасное будущее">
+<meta name="twitter:description" content="Когда, по вашему, автомобиль с автоматическим управление будет безопаснее чем автомобиль которым управляет человек?
+
+Среди некоторых комментариев к моему прошлому топику мне показалось, что присутствует мнение, что автомобиль с автопилотом будет безопасне"><meta name="twitter:image" content="http://s.developers.org.ua/img/avatars/100x100_33605.png">
+
+
+	<link rel="shortcut icon" href="http://s.developers.org.ua/assets/img/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" title="Лента" href="http://dou.ua/lenta/feed/">
+
+
+	
+
+
+	<link type="text/css" rel="stylesheet" href="http://s.developers.org.ua/build/built.v856.de91194.css" />
+
+
+
+
+		<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1077267/Forum_240x350', [240, 350], 'div-gpt-ad-1323284253011-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+
+	<meta name="google-translate-customization" content="507dc4a379aa341e-3fa8c894f346bf65-g46b0344323604c0d-6">
+</head>
+
+<body class="page-forum-article" itemscope itemtype="http://schema.org/Article">
+			<div class="modal-wrap">
+	<div class="modal-screen"></div>
+	<div id="_loginDialog" class="b-login-dialog">
+		<div class="head">
+			<h1 class="title">Воспользуйтесь аккаунтом</h1>
+			<div class="close cancel">×</div>
+		</div>
+
+		<div class="border">
+			<div class="step1">
+					<ul class="b-buttons">
+		<li>
+			<a class="button-link" href="javascript:;" l="/login/facebook/" id="btnFb">
+				<div class="login-button btnFb">
+					<div class="layer"></div>
+				</div>
+				<div class="link">Фейсбук</div>
+			</a>
+		</li>
+		<li>
+			<a class='button-link' href="javascript:;" l="/login/google-oauth2/" id="btnGoogle">
+				<div class="login-button btnGoogle">
+					<div class="layer"></div>
+				</div>
+				<div class="link">Гугл</div>
+			</a>
+		</li>
+		<li>
+			<a class='button-link' href="javascript:;" l="/login/linkedin/" id="btnLinkedIn">
+				<div class="login-button btnLin">
+					<div class="layer"></div>
+				</div>
+				<div class="link">Линкедин</div>
+			</a>
+		</li>
+		<li>
+			<a class='button-link' href="javascript:;" l="/login/vk-oauth2/" id="btnLoginVk">
+				<div class="login-button btnLoginVk">
+					<div class="layer"></div>
+				</div>
+				<div class="link">ВКонтакте</div>
+			</a>
+		</li>
+	</ul>
+
+	<div class="alt-login-method">Войти <a id='_loginByMail' href="javascript:;">по почте</a> или
+		<a href="javascript:;" l="/login/twitter/" id="btnTw">твиттеру</a>.</div>
+
+			</div>
+			<div class="step2">
+				<ul class="b-content-menu">
+					<li class="sel" nav='login'>
+						<div class="text wrap">
+							<span>Вход</span>
+							<b class="l"></b>
+							<b class="c"></b>
+							<b class="r"></b>
+						</div>
+					</li>
+					<li nav="register">
+						<div class="wrap">
+							<a href="javascript:;">Регистрация</a>
+						</div>
+					</li>
+					<li nav="reset"><div class="wrap"><a href="javascript:;">Восстановление пароля</a></div></li>
+				</ul>
+					<div class="login view">
+		<div class="b-form">
+			<div class="table form-section">
+				<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+				<div class="row class">
+		<div class="cell"><label class="input-label" for="">Почта</label></div>
+		<div class="cell">
+			<div class="input">
+				<input type="text"
+				 name="username"
+				 value=""
+class="first txtEmail"				 />
+			</div>
+			
+		</div>
+	</div>
+				<div class="row class">
+					<div class="cell"><label class="input-label">Пароль</label></div>
+					<div class="cell">
+						<div class="input">
+							<input type="password" class="txtPassword" value="" name="password">
+						</div>
+						<div id="wrong-password-message">Неправильный пароль</div>
+					</div>
+				</div>
+			</div>
+			<div class = "table button-section">
+				<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+				<div class = "row">
+					<div class = "cell"></div>
+					<div class = "cell b-buttons">
+						<div class = "little-loading"></div>
+						<button class = "big-button btnSubmit">
+							<span class = "out"><span class="button">Войти</span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<div style="display:none;" class="register view b-typo">
+		<div class="table form-section">
+			<div style="line-height:50px;height:50px;text-align:center;font-weight:bold;">Регистрация по email закрыта</div>
+		</div>
+	</div>
+
+					<div style="display:none;" class="reset view">
+		<div class="b-form">
+
+			<div class="table form-section">
+				<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+
+				<div class="row class">
+		<div class="cell"><label class="input-label" for="">Почта</label></div>
+		<div class="cell">
+			<div class="input">
+				<input type="email"
+				 name="username"
+				 value=""
+class="first txtEmail"				 />
+			</div>
+			
+		</div>
+	</div>
+
+			</div>
+
+			<div class="table button-section">
+				<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell b-buttons">
+						<div class="little-loading"></div>
+						<button class="big-button btnSubmit">
+							<span class="out"><span class="button">Сбросить пароль</span></span>
+						</button>
+						<div class="error-msg">
+							<div class="bg"></div>
+							<div class="txt">Вы неверно указали свою почту</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				<div class="alt-login-method">Или <a id='_loginBySN' href="javascript:;">воспользуйтесь аккаунтом</a>.</div>
+			</div>
+				<div class="add-email" style="display:none;">
+		<div class="message" style="font-size:14px;margin-left:16px;margin-bottom:15px;">
+			Для того, чтобы сделать ваш профиль полноценным, укажите вашу почту.<br>Мы отправим вам письмо со ссылкой для подтверждения.
+		</div>
+		<div class="b-form">
+			<form method="POST">
+				<div class="table form-section">
+					<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+
+					<div class="row class">
+		<div class="cell"><label class="input-label" for="">Почта</label></div>
+		<div class="cell">
+			<div class="input">
+				<input type="email"
+				 name="email"
+				 value=""
+class="first txtEmail"				 />
+			</div>
+			
+		</div>
+	</div>
+				</div>
+			</form>
+
+			<div class="table button-section">
+				<div class="colgroup">
+		<div class="col-130px"></div>
+		<div class="col-auto"></div>
+	</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell b-buttons">
+						<div class="little-loading"></div>
+						<button class="big-button btnSubmit">
+							<span class="out"><span class="button">Сохранить</span></span>
+						</button>
+						<div class="error-msg">
+							<div class="bg"></div>
+							<div class="txt">Вы неверно указали свою почту</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+	</div>
+</div>
+
+
+	<div class="g-page">
+
+
+		<div id="topError" class="top-msg">
+			<div class="txt"></div>
+		</div>
+
+
+
+
+
+<header id="header" class="b-head">
+	
+	<ul>
+		<li class="logo"><a href="http://dou.ua/"></a></li>
+			<li><a href="http://dou.ua/">Главная</a></li>
+			<li><a href="http://dou.ua/forums/" class="sel"><span>Форум</span></a></li>
+			<li><a href="http://dou.ua/lenta/">Лента</a></li>
+			<li><a href="http://jobs.dou.ua/salaries/">Зарплаты</a></li>
+			<li><a href="http://jobs.dou.ua/">Работа</a></li>
+			<li><a href="http://dou.ua/calendar/">События</a></li>
+
+			<li class="brand">
+				<a href="http://dou.ua/goto/?id=64&mini" style="background-image:url('http://s.developers.org.ua/mini-headers/д6.png')" target="_blank"></a>
+			</li>
+	</ul>
+
+
+	<div class="right-part">
+				<form class="search" action="http://dou.ua/search/" method="get">
+					<input class="inp" results='5' id="txtGlobalSearch" type="search" placeholder="поиск" name="q">
+				</form>
+
+			<div class="register-login">
+				<a id="login-link" href="javascript:;">Вход и регистрация</a>
+			</div>
+	</div>
+</header>
+
+
+	<div class="l-content m-content">
+			<div class="colgroup">
+				<div class="col col-40px"></div>
+				<div class="col col70"></div>
+				<div class="col col20px"></div>
+				<div class="col col-auto"></div>
+				<div class="col col20px"></div>
+			</div>
+
+		<div class="l-content-wrap">
+				<div class="cell"></div>
+
+			<div class="cell g-right-shadowed m-480-no-right-shadow mobtab-maincol">
+	<section class="b-content-page">
+		<div class="b-info">
+			<a href="http://dou.ua/forums/misc/" class="topic">Разное</a>
+<span class="date">8 декабря, 20:41</span>
+			<div class="author">
+				<div class="img">		<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/25x25_33605.png" width="25" height="25" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+</div>
+				<div class="name"><a href="http://dou.ua/users/albert-tolokonnikov/">Albert Tolokonnikov</a>
+
+
+
+					<span style="margin-left: 32px;">
+						Просмотров: <strong>1393</strong>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="head">
+			<h1 itemprop="name">Безопасное, опасное будущее</h1>
+		</div>
+	</section>
+	<div class="b-content-page">
+		<article>
+			<div class="b-typo" itemprop="description"><div><p>Когда, по вашему, автомобиль с автоматическим управление будет безопаснее чем автомобиль которым управляет человек?</p>
+
+<p>Среди некоторых комментариев к моему прошлому топику мне показалось, что присутствует мнение, что автомобиль с автопилотом будет безопаснее сразу как только вы его купите.</p>
+
+<p>Давайте подумаем — так ли это.</p>
+
+<p>Немного о печальном. В ДТП обычно присутствуют два участника конфликта — виновный и невиновный. Иногда бывает два виновных. Иногда виновных не бывает, поскольку ДТП стало следствием погодных условий или других обстоятельств непреодолимой силы.</p>
+
+<p>Достаточно частыми причинами ДТП, во всяком случае в нашей стране, является умышленный или случайный выезд на встречную полосу, проезд на запрещающий сигнал или несоблюдение безопасной дистанции.</p>
+
+<p>Практически ни в одном из этих случаев автомобиль с автопилотом ничего не сможет поделать для того чтобы защититься от такого нарушителя. То есть не сможет выработать программу которая снизит вероятность травмирования его пассажиров. Это связано с тем что автомобиль обладает фактически одной степенью свободы — он может двигаться по дуге вперёд или назад. Причём, с учётом высокой инертности он не может менять вектор движения быстро. Тем более если его манёвры ограничены существующим вокруг потоком движения.</p>
+
+<p>Таким образом мы достаточно прости видим что до тех пор пока в потоке автомобилей с автопилотом будет меньшинство их безопасность если и вырастит то только за счёт их собственного аккуратного движения.</p>
+
+<p>Мой личный опыт управления велосипедом (не ха ха, а велосипедом!) в плотном городском потоке говорит о том, что существуют чуть чуть более безопасные способы движения но которые нарушают ПДД — например на перекрёстке вылазить вперёд и левее ближе к краю правой полосы так чтобы все видели твой будущий манёвр и те кто стоит в правом на стрелку в том числе. Мой опыт управления автомобилем с пассажирского сиденья говорит, что такие мелочи существуют и в водительской практике. </p>
+
+<p>Здесь сразу возникает ещё одна интересная дилемма которая наверняка уже где-то обсуждалась — должен ли автопилот повысить вероятность травмирования пассажиров автомобиля-нарушителя за счёт снижения такой вероятности для своих пассажиров? Такие манёвры вполне возможны — чужой автомобиль сбоку мягче и т д.</p>
+
+<p>Давайте ещё подумаем — автомобиль с автопилотом стоит перед зеброй. По зебре идёт старичок. К автомобилю с автопилотом на огромной скорости сзади приближается фура с лопнувшим тормозным шлангом. В автомобиле дети. Не хочу тут быть моралистом, но большинство отцов семейства таки переедут старичка. Переедет ли его автопилот? А детскую коляску, в которой бомж везёт картон на вторсырьё?</p>
+
+<p>Я несколько раз попадал в удивительное фигурное катание на автомобиле на полном гололёде, один раз даже с переворотом на крышу. Уверен, что задача управления транспортным средством в таких условиях нерешаемая. Тем не менее, допускаю, что агрессивное, бессмысленное вращение руля и такое же бессмысленное управление газом, возможно, на каком-то интуитивном уровне снижает вероятность встречи с автомобилями со встречной или с кюветом.</p>
+
+<p>Причиной нескольких последних авиакатастроф стало неумение пилотов совершать манёвры в ручном режиме. Они слишком привыкли к автопилоту, а погодные условия или обстановка требовал ручного пилотирования. Можно конечно их специально заставлять налетать несколько сотен часов в плохих условиях на штурвале — многие компании так и делают, но кто будет тренировать умение управлять водителя-пассажира автомобиля с автопилотом? Я слышал, что для более-менее надёжной квалификации опыт управления должен составлять несколько лет.</p>
+
+<p>У меня такое ощущение, что введение автомобилей с автопилотом во время переходного этапа к полному и повсеместному их использованию приведёт к увеличению ДТП, и полностью зафиксирует количество ДТП в плохих погодных условиях, поскольку опыт управления автомобилем в ручном режиме будет полностью утерян.</p>
+
+<p>Ну как-то так.</p>
+
+<p>Прошу высказываться.</p></div></div>
+
+				<div class="b-tags">
+					<span>Темы:</span> <a href="http://dou.ua/forums/tags/%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B5/">опасносте</a>, <a href="http://dou.ua/forums/tags/%D1%85%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%D1%80/">холивар</a>
+				</div>
+		</article>
+	</div>
+
+				<!-- используем для комментариев на всю ширину страницы -->
+	
+
+
+	<a name="comments"></a>
+	<div class="b-comments empty">
+		<a class="traveltocommentform" name='go-to-commentform' href='#go-to-commentform'></a>
+
+			<div id="floatForm" class="hidden-form">
+	<div class="b-comments-form">
+		<div class="auth">
+			<div class="author">
+							<img class="g-avatar" src="/assets/img/anon.png" width="40" height="40">
+
+			</div>
+		</div>
+		<div class="textarea-wrap">
+			<textarea class="first"></textarea>
+		</div>
+
+			<div class="list-tags"><em>Допустимые теги: </em>blockquote, code, em, pre, i, li, ol, strike, strong, u, ul, a.</div>
+
+		<div class="send">
+			<div class="b-buttons">
+				<input class="form-button btn-add-comment disabled" type="submit" value="Добавить комментарий">
+					<div class="hint">Ctrl + Enter</div>
+				<div class="little-loading"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<div class="comments-head" id="fixedableMenuId">
+			<div class="fixed-menu">
+				<a id="upPageLnkId" title="Наверх" href="javascript:;"></a>
+				<h3 id="lblCommentsCount">79 комментариев</h3>
+
+					<a href="#go-to-commentform" class="navigation-comment">Добавить комментарий</a>
+
+				<div class="comment-subscribe">
+					<a id="btnSubsribe" href="javascript:;"><i class="letter"></i><span>Присылать ответы</span></a>
+				</div>
+
+			</div>
+			<div class="wrapper"></div>
+		</div>
+
+
+			<div id="inlineForm"><a name="answer"></a>
+	<div class="b-comments-form">
+		<div class="auth">
+			<div class="author">
+							<img class="g-avatar" src="/assets/img/anon.png" width="40" height="40">
+
+			</div>
+		</div>
+		<div class="textarea-wrap">
+			<textarea class="first"></textarea>
+		</div>
+
+			<div class="list-tags"><em>Допустимые теги: </em>blockquote, code, em, pre, i, li, ol, strike, strong, u, ul, a.</div>
+
+		<div class="send">
+			<div class="b-buttons">
+				<input class="form-button btn-add-comment disabled" type="submit" value="Добавить комментарий">
+					<div class="hint">Ctrl + Enter</div>
+				<div class="little-loading"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<div id="commentsList" class="first">
+			
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399923"></a>
+
+	<div parent_id="None" id="comment_399923"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/trevor-phillips/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_960221_1382388482009804_1697115320_n.jpg" width="40" height="40" alt="Тревор Филлипс" title="Тревор Филлипс">
+						Тревор Филлипс
+					</a>
+				</div>
+
+
+					<span class="prof">
+							CEO
+
+в freelance
+					</span>
+
+				<a class="comment-link" href="#399923">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Вас на велосипеде когда-то гугломобиль подрезал или почему вы их так не любите?<br></p><blockquote>более безопасные способы движения но которые нарушают ПДД — например на перекрёстке вылазить вперёд и левее ближе к краю </blockquote>этот и другие способы связаны с тем что обзор с водительского места ограничен, у автопилота «глаза» находятся совсем не там где у водителя и 90% таких хитростей будут не нужны(мертвой зоны у автопилота тоже нету, потому что стойки ему смотреть не мешают)<br><blockquote>Я несколько раз попадал в удивительное фигурное катание на автомобиле на полном гололёде</blockquote>С очень большой вероятностью автопилот в такие ситуации не попадет, а если и попадет то скорее всего о контр-аварийном вождении будет знать больше чем «бессмысленное вращение руля»</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399923" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399923">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="400047"></a>
+
+	<div parent_id="399923" id="comment_400047"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400047">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Вы слишком оптимистчно настроены относительно автоматических систем управления. Множество казалось бы простых задач не решены из-за алгоритмической или вычислительной сложности. Распознавание образа на картинке 32×32 в учебной задаче это одно, а реальное управление безопорным, по факту, движением на льду, при высоких стохастических процессах и внешних воздействиях — это нечто совсем иное. Посадка самолёта или швартовка судна при наличие течений это не аналог парковки автомобиля. Хотя, например, поддержка заданного курса для самолёта или парохода — достаточно просто решается и давно решена, а вот для автомобиля пока не очень, точнее не полностью.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400047" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400047">
+
+							</div>
+
+						<a class="parent-link" href="#399923">Тревор Филлипс</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="400058"></a>
+
+	<div parent_id="400047" id="comment_400058"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#400058">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>а реальное управление безопорным, по факту, движением на льду, при высоких стохастических процессах и внешних воздействиях — это нечто совсем иное. </blockquote>
+
+<p>Единственное ограничение — вычислительная мощность, влияющая на скорость отклика. А она растет. Если туда всобачить какой-то GPU типа того что стоит в GTX680, то скорость отклика будет в пару миллисекунд, а это в десятки раз быстрее любого водителя.</p>
+
+<p>Новый робот обыгрывает человека в «камень-ножницы-бумага» в 100% случаев<br></p><blockquote>По информации исследователей, у человека на формирование фигуры («камня», «ножниц» или «бумаги») уходит около 60 миллисекунд. Примерно на <nobr>35-й</nobr> миллисекунде действия робот уже понимает ход и показывает «ответную» фигуру. На это он тратит около 20 миллисекунд, то есть он завершает фигуру раньше оппонента.</blockquote><a href="http://korrespondent.net/tech/science/3203972-novyi-robot-obyhryvaet-cheloveka-v-kamen-nozhnytsy-bumaha-v-100-sluchaev">korrespondent.net/...-v-100-sluchaev</a></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400058" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400058">
+
+							</div>
+
+						<a class="parent-link" href="#400047">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="400061"></a>
+
+	<div parent_id="400058" id="comment_400061"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400061">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Это потолочные цифры. Скорость отклика или реакция на ситуацию при вождении не является основной. Основное это правильное распознавание ситуации и выработка верных управляющих команд. Потом уже включается спинной мозг.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400061" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400061">
+
+							</div>
+
+						<a class="parent-link" href="#400058">Alexandr Gavriluk</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="400071"></a>
+
+	<div parent_id="400061" id="comment_400071"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#400071">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Как раз именно скорость реакции в нештатной ситуации все решает, даже без глубокого анализа. А в штатной там особых проблем с выработкой управляющих команд нет.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400071" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400071">
+
+							</div>
+
+						<a class="parent-link" href="#400061">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="400075"></a>
+
+	<div parent_id="400058" id="comment_400075"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/tim-tretyak/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_45593.png" width="40" height="40" alt="Tim Tretyak" title="Tim Tretyak">
+						Tim Tretyak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Manager
+
+в Hewlett-Packard
+					</span>
+
+				<a class="comment-link" href="#400075">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Увы... Напомню, что до сих пор не создан робот, умеющий просто ходить на 2 ногах не по идеальной поверхности. Мощность железа, к сожалению, не ведет автоматически к появлению прорывов в алгоритмах.<br>Да что там ходить — даже простое распознавание образов/сравнение картинок/распознавание речи все еще на порядки отличается от человеческого.<br>Но для рутинных операций роботы однозначно лучше.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400075" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400075">
+
+							</div>
+
+						<a class="parent-link" href="#400058">Alexandr Gavriluk</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="400186"></a>
+
+	<div parent_id="400075" id="comment_400186"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/titarenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_34128.png" width="40" height="40" alt="Constantin Titarenko" title="Constantin Titarenko">
+						Constantin Titarenko
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.NET/JavaScript Developer
+
+					</span>
+
+				<a class="comment-link" href="#400186">
+					<span class="date">
+						54 минуты назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Напомню, что до сих пор не создан робот, умеющий просто ходить на 2 ногах не по идеальной поверхности.</blockquote>Четырехногий хорошо держится на льду: <a href="http://www.youtube.com/watch?v=W1czBcnX1Ww">www.youtube.com/...h?v=W1czBcnX1Ww</a>. Проект двуногого тоже впечатляет: <a href="http://www.youtube.com/watch?v=zkBnFPBV3f0">www.youtube.com/...h?v=zkBnFPBV3f0</a>.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400186" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400186">
+
+							</div>
+
+						<a class="parent-link" href="#400075">Tim Tretyak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399913"></a>
+
+	<div parent_id="None" id="comment_399913"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/tim-tretyak/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_45593.png" width="40" height="40" alt="Tim Tretyak" title="Tim Tretyak">
+						Tim Tretyak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Manager
+
+в Hewlett-Packard
+					</span>
+
+				<a class="comment-link" href="#399913">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Тут дело в статистике. Довольно большой процент людей отвратительно водят автомобили. В лучшем случае не закрывают глаза, когда наступает опасная ситуация )<br>И любая автоматика, пускай она и хуже чем очень хороший водитель, в конечном счете приносит пользу. <br>Как пример — тот же АБС. Очень хороший водитель в общем случае затормозит лучше, кроме того у АБСа есть известные проблемы на сыпучих и сильно неровных поверхностях. Однако в целом он неплохо снижает аварийность и является хорошим компромиссом.<br>То же будет и с автопилотами. При маленьком их количестве принципиально они на аварийность не повлияют (если тебе в лоб со встречки вылетает грузовик на 100 км/ч очень мало кто сможет правильно среагировать за долю секунды до столкновения, ну и автопилот не сможет). Но чем больше их станет — тем меньше грузовиков будет вылетать со встречки.</p>
+
+<p>В конце концов авто для большинства — не более чем удобное средство доставки. И при выборе вести самому или доверить это автопилоту/водителю большинство выберет второе. </p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399913" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399913">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="3456" href="http://dou.ua/users/Soft/">Alexandr Gavriluk</a>
+								<a user="43336" href="http://dou.ua/users/skyboyer/">Евгений Козлов</a>
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+								<a user="71262" href="http://dou.ua/users/trevor-phillips/">Тревор Филлипс</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399775"></a>
+
+	<div parent_id="None" id="comment_399775"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#399775">
+					<span class="date">
+						18 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Причиной нескольких последних авиакатастроф стало неумение пилотов совершать манёвры в ручном режиме. Они слишком привыкли к автопилоту, а погодные условия или обстановка требовал ручного пилотирования. </blockquote>
+
+<p>Здесь нужно смотреть на другое. Какого количества катастроф позволил этот автопилот избежать. Была где-то шутка, что намного безопаснее жить в самолете, чем пойти за пивом в магазин через дорогу из-за вероятности пострадать от автокатастрофы.</p>
+
+<p>Сейчас в США в год от автомобиля гибнет 50 тыс человек (и это только смертельные случаи, не считая выживших), гугломобиль снизит эту статистику до 500. К примеру, исчезнет проблема пенсионеров-водителей.</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399775" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399775">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399882"></a>
+
+	<div parent_id="399775" id="comment_399882"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399882">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Не нужно здесь никуда смотреть. Пример с автопилотом я привёл для того чтобы показать что наличие автопилота снижает скил ручного управления. Статистика аварийности в авиации нерепрезентативна — точнее её можно расширить только на ДТП когда водитель врезается в столб тощо.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399882" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399882">
+
+							</div>
+
+						<a class="parent-link" href="#399775">Alexandr Gavriluk</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399525"></a>
+
+	<div parent_id="None" id="comment_399525"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399525">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Я несколько раз попадал в удивительное фигурное катание на автомобиле на полном гололёде, один раз даже с переворотом на крышу. Уверен, что задача управления транспортным средством в таких условиях нерешаемая.</blockquote>Как раз наоборот, это одна из самых простых проблем.<br><blockquote>Тем не менее, допускаю, что агрессивное, бессмысленное вращение руля и такое же бессмысленное управление газом, возможно, на каком-то интуитивном уровне снижает вероятность встречи с автомобилями со встречной или с кюветом.</blockquote>Если попал в карусель, то только точные и выверенные движения могут спасти, либо просто удача.<br><blockquote>Здесь сразу возникает ещё одна интересная дилемма которая наверняка уже где-то обсуждалась — должен ли автопилот повысить вероятность травмирования пассажиров автомобиля-нарушителя за счёт снижения такой вероятности для своих пассажиров? Такие манёвры вполне возможны — чужой автомобиль сбоку мягче и т д.</blockquote>Автопилот вообще не должен оценивать риски, только вождение по правилам.<br><blockquote>Таким образом мы достаточно прости видим что до тех пор пока в потоке автомобилей с автопилотом будет меньшинство их безопасность если и вырастит то только за счёт их собственного аккуратного движения.</blockquote>И это правильно. Для целей сохранения жизни нужно нанимать автотелохранителя.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399525" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399525">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399468"></a>
+
+	<div parent_id="None" id="comment_399468"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/romashka/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3469.png" width="40" height="40" alt="Roman Brunets" title="Roman Brunets">
+						Roman Brunets
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Программист
+
+в ГЦБиТ
+					</span>
+
+				<a class="comment-link" href="#399468">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Когда, по вашему, автомобиль с автоматическим управление будет безопаснее чем автомобиль которым управляет человек?</blockquote>
+
+<p>Никогда. Есть какой-то уровень аварийности, который социум считает нормальным. Он будет сохраняться, вне зависимости от того, кто или что будет за рулём — компутер или человек. Могут вырасти скорости, может меняться инфраструктура — на уровне аварийности это не скажется никак. </p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399468" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399468">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399472"></a>
+
+	<div parent_id="399468" id="comment_399472"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399472">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Есть какой-то уровень аварийности, который социум считает нормальным</blockquote>ИМХО, тут все гораздо проще:<br>1) Лично вы обосретесь ехать в такой машине<br>2) Этот проект возможен, когда бует реализован AI. Но он не будет реализован никогда.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399472" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399472">
+
+							</div>
+
+						<a class="parent-link" href="#399468">Roman Brunets</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399501"></a>
+
+	<div parent_id="399472" id="comment_399501"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/romashka/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3469.png" width="40" height="40" alt="Roman Brunets" title="Roman Brunets">
+						Roman Brunets
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Программист
+
+в ГЦБиТ
+					</span>
+
+				<a class="comment-link" href="#399501">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>1. Вы недооцениваете человеческую изобретательность. Например, можно убрать окна. ;)<br>2. Для управления ТС AI не нужен. </p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399501" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399501">
+
+							</div>
+
+						<a class="parent-link" href="#399472">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="34237" href="http://dou.ua/users/titarenko/">Constantin Titarenko</a>
+								<a user="4488" href="http://dou.ua/users/lestat/">Mike Gorchak</a>
+								<a user="70485" href="http://dou.ua/users/ilya-ilin/">Илья Ильин</a>
+								<a user="2078" href="http://dou.ua/users/Ljt/">Ljt</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="399766"></a>
+
+	<div parent_id="399501" id="comment_399766"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399766">
+					<span class="date">
+						20 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Для управления ТС AI не нужен</blockquote>Да ну здрасьте. ПДД это че — тупо набор алгоритмов, что ли? А если вдруг будет ситуация, когда нужно мгновенно принять решение: сбить бабку, или долбануть другую машину, вам что, выскочит msgbox с кнопками Yes, No, Cancel?</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399766" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399766">
+
+							</div>
+
+						<a class="parent-link" href="#399501">Roman Brunets</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="399778"></a>
+
+	<div parent_id="399766" id="comment_399778"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399778">
+					<span class="date">
+						13 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Да ну здрасьте. ПДД это че — тупо набор алгоритмов, что ли?</blockquote>Ну да, там же написано, что пешеход должен обозначить себя, если бабка просто попёрлась по пешеходному переходу, как эти бессмертные любят, то её в расход. Это будет как с розетками, через какое-то время все будут знать, что они убивают, если поковырять в дырке гвоздиком. Другое дело — кошка, её сбивать нельзя, поэтому должны быть алгоритмы распознавания животных.<br></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399778" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399778">
+
+							</div>
+
+						<a class="parent-link" href="#399766">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 250px;">
+						<a href="#" class="scroll-wrapper" name="399859"></a>
+
+	<div parent_id="399778" id="comment_399859"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399859">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>должны быть алгоритмы распознавания животных</blockquote>А если это будет чупакабра? Система зависнет?</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399859" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399859">
+
+							</div>
+
+						<a class="parent-link" href="#399778">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="399860"></a>
+
+	<div parent_id="399859" id="comment_399860"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/CB/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_100x100_cb_1.jpg" width="40" height="40" alt="Sergii Voloshyn" title="Sergii Voloshyn">
+						Sergii Voloshyn
+					</a>
+				</div>
+
+
+					<span class="prof">
+							продакт-менеджер и CEO
+
+в DOU и sudoku.org.ua соответственно
+					</span>
+
+				<a class="comment-link" href="#399860">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p><a href="http://xkcd.com/1235/">xkcd.com/1235</a></p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399860" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399860">
+
+							</div>
+
+						<a class="parent-link" href="#399859">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="399872"></a>
+
+	<div parent_id="399859" id="comment_399872"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399872">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Подобные системы уже давно не виснут при анализе, обычно принимается решение бабка vs небабка или кошка vs некошка.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399872" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399872">
+
+							</div>
+
+						<a class="parent-link" href="#399859">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="399879"></a>
+
+	<div parent_id="399872" id="comment_399879"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399879">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Коля, когда в следующий раз будешь возвращаться из будущего, привези мне, пожалуйста, миелофон 3G и сотрудницу института времени Полину.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399879" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399879">
+
+							</div>
+
+						<a class="parent-link" href="#399872">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399889"></a>
+
+	<div parent_id="399879" id="comment_399889"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399889">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Чувак, Великая Отечественная война уже закончилась, можешь выйти из леса.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399889" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399889">
+
+							</div>
+
+						<a class="parent-link" href="#399879">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399892"></a>
+
+	<div parent_id="399889" id="comment_399892"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399892">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Лучше бы дал ссылку на системы которые вне лаборатории могут отличить кошку от бабки</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399892" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399892">
+
+							</div>
+
+						<a class="parent-link" href="#399889">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399898"></a>
+
+	<div parent_id="399892" id="comment_399898"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399898">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Кстати, если бабка-ведьма, то может и не отличить</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399898" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399898">
+
+							</div>
+
+						<a class="parent-link" href="#399892">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399947"></a>
+
+	<div parent_id="399892" id="comment_399947"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399947">
+					<span class="date">
+						6 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Ваша проблема в том, что вы узко мыслите только видимым электромагнитным излучением, что для AI автомобиля недопустипо вовсе, ибо есть туман, дождь, снег. Попробуйте помыслить инфракрасными, ультразвуковыми и микроволновыми диапазонами. Думаю, тогда вы сможете отличить бабку от кошки.</p>
+
+<p>Ссылочка на систему вне лаборатории: <a href="http://www.audi.kiev.ua/model/a8/A8Langversion/characteristics/">www.audi.kiev.ua/...haracteristics</a> , это то, на чём я ездил и тестил совсем не эту систему. Но то, что вас интересует там тоже есть.<br></p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399947" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399947">
+
+							</div>
+
+						<a class="parent-link" href="#399892">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400037"></a>
+
+	<div parent_id="399947" id="comment_400037"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400037">
+					<span class="date">
+						5 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Ничего по ссылке не понял. Так то меня бэха больше интересует.</p>
+
+<p>Моя проблема в том, что я отвечаю на комментарии людей которые даже не прочитали статью в википедии по теме гугл кар.</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400037" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400037">
+
+							</div>
+
+						<a class="parent-link" href="#399947">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400050"></a>
+
+	<div parent_id="400037" id="comment_400050"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#400050">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Ничего по ссылке не понял. Так то меня бэха больше интересует.</blockquote>Ну так вы же просили: «Лучше бы дал ссылку на системы которые вне лаборатории могут отличить кошку от бабки», я дал, а там для вас всё непонятно. 
+
+<p>Ну вот ещё одна ссылка:<br><a href="http://editorial.autos.msn.com/blogs/autosblogpost.aspx?post=9c6922a7-905a-4b93-bb0f-34ef0bac8dfd">editorial.autos.msn.com/...0f-34ef0bac8dfd</a><br></p><blockquote>Моя проблема в том, что я отвечаю на комментарии людей которые даже не прочитали статью в википедии по теме гугл кар.</blockquote>Не только, ваша проблема ещё в том, что вы не видите ничего кроме гугл кар. Гугл кар — это всего лишь один из форков, которые прошли DARPA Challenge.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400050" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400050">
+
+							</div>
+
+						<a class="parent-link" href="#400037">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400053"></a>
+
+	<div parent_id="400050" id="comment_400053"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400053">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Ну так и прочитайте статью по вашей ссылке до конца.</p>
+
+<p>И что гугл из-за того что он один из, не использует вообще чуть ли не весь диапазон ЭМИ плюс визуальное сравнение со стрить вью и наверное даже интуицию и всё это плохо работает в дождь и снег только у гугла?</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400053" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400053">
+
+							</div>
+
+						<a class="parent-link" href="#400050">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400202"></a>
+
+	<div parent_id="400053" id="comment_400202"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#400202">
+					<span class="date">
+						22 минуты назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Конечно, я читал всю статью, что вас там так удивило?</p>
+
+<p>Я перечитал ваш последний абзац раз 10, но так и не понял, что вы хотели сказать, что использует, что не использует. Похоже на какую-то локальную победу искусственного интеллекта. Гугль лажает при сильном дожде и снеге, лидар показывает неактуальную картину мира.</p>
+
+<p>Ну и хорошая статья с объяснениями, почему гугль несёт лажу в этот мир:<br><a href="http://www.forbes.com/sites/haydnshaughnessy/2013/02/04/why-google-will-lose-in-driverless-cars-and-who-will-win/">www.forbes.com/...d-who-will-win</a></p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400202" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400202">
+
+							</div>
+
+						<a class="parent-link" href="#400053">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400215"></a>
+
+	<div parent_id="400202" id="comment_400215"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400215">
+					<span class="date">
+						10 минут назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>The Autoliv system is designed only for nighttime detection and doesn’t apply the brakes to prevent a collision with an animal, although it will alert the driver to an impending collision using visual and audible warnings. Eugensson said that while every type of object is challenging to identify, animals are very tough — especially when the software must decide whether to brake the vehicle autonomously.</p>
+
+<p>“For animals, there’s a decision point on what type of animals we should brake for and what type of animals we are not to brake for,” he said. “One of the biggest challenges is not to have activation when it is not desired, i.e. false positives.”</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400215" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400215">
+
+							</div>
+
+						<a class="parent-link" href="#400202">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400220"></a>
+
+	<div parent_id="400202" id="comment_400220"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#400220">
+					<span class="date">
+						5 минут назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Ваша вторая ссылка скорее всего написана автором который прочитал этот мой топик. Причём в отличие от меня он сомнивается не в высокой безопасности, а вообще в возможности реализации данной инновации, но отдаёт гуглу должное за проторение дорожки. Как альтернативу он приводит ОТДЕЛЬНЫЕ компоненты которые ведущие компании устанавливают для предотвращения столкновений тощо.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400220" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400220">
+
+							</div>
+
+						<a class="parent-link" href="#400202">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400063"></a>
+
+	<div parent_id="399879" id="comment_400063"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#400063">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>У меня один раз система зависла при анализе баркода на отсканеном A4 при большом количестве шумов(работала около 300 секунд). Был жестко отдрючен тимлидом, пришлось пофиксить и больше такого не повторялось.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400063" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400063">
+
+							</div>
+
+						<a class="parent-link" href="#399879">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="399863"></a>
+
+	<div parent_id="399766" id="comment_399863"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/vketsenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_1_8.jpg" width="40" height="40" alt="Виталий Кеценко" title="Виталий Кеценко">
+						Виталий Кеценко
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399863">
+					<span class="date">
+						8 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Я думаю автопилот не будет решать подобных задач. он будет просто останавливаться, а успел — не успел, это уже проблема перебегающей бабки. Но учитывая что автопилот не будет гонять по городу как угорелый, не будет отвлекаться на телефон, не будет вести себя агрессивно на дороге из-за плохого настроения или если его подрежут, плюс благодаря датчикам будет отслеживать перемещение людей\машин и прогнозировать столкновение, не успевать он будет очень редко, разве что когда самоубийца решит прыгнуть под колёса прямо перед авто.<br></p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399863" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399863">
+
+							</div>
+
+						<a class="parent-link" href="#399766">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="45890" href="http://dou.ua/users/yuriyryashko/">Yuriy Ryashko</a>
+								<a user="3456" href="http://dou.ua/users/Soft/">Alexandr Gavriluk</a>
+								<a user="43336" href="http://dou.ua/users/skyboyer/">Евгений Козлов</a>
+								<a user="4488" href="http://dou.ua/users/lestat/">Mike Gorchak</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 250px;">
+						<a href="#" class="scroll-wrapper" name="399896"></a>
+
+	<div parent_id="399863" id="comment_399896"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399896">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>он будет просто останавливаться</blockquote>Просто — это как? По ПДД — это применение экстренного торможения. Ты преставляешь езду с экстренным торможением по каждому пустяку? А если на трассе?<br><blockquote>разве что когда самоубийца</blockquote>следующий коммент 100% будет про выявление самоубийц по температуре тела и зрачкам глаз, через тепловизор и сканирование сетчатки глаза, чтобы при совпадении значений торможение не производить :)</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399896" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399896">
+
+							</div>
+
+						<a class="parent-link" href="#399863">Виталий Кеценко</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="399931"></a>
+
+	<div parent_id="399896" id="comment_399931"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/vketsenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_1_8.jpg" width="40" height="40" alt="Виталий Кеценко" title="Виталий Кеценко">
+						Виталий Кеценко
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399931">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Просто — это как? По ПДД — это применение экстренного торможения. Ты преставляешь езду с экстренным торможением по каждому пустяку? А если на трассе?</blockquote>Во-первых, при прогнозировании столкновения автомобиль может заведомо снизить скорость до 20км\ч, или даже до 5, в таком случае экстренное торможение будет не таким уж экстренным.. <br>Во-вторых, какие такие пустяки? Есть ПДД, его должны соблюдать все участники движения. А значит, люди переходят только в положенном месте, машины не перестраиваются перед мордой без поворотника и т.д. Понятно что если сейчас выпустить гугломобиль в украинском городе, то он и с места не двинется. Для этого нужно подготовить инфраструктуру. Плюс когда таких авто станет большинство, количество экстренных ситуаций значительно уменьшится, т.к. неадекватов за рулём будет мало. А выбегающие собаки и самоуйбицы — это экстренная ситуация, смотрим п.1.<br>По трассе — а что трасса? Ты сам по трассе ездишь? Как часто оттормаживаешься на трассе? А если не гнать? Я лично если за месяц 1 раз отторможусь, то хорошо, и то со 170 до 90, когда один грузовичок решит обогнать другой с разностью скорости в 5 км, а тут я прилетел. Правда у нас (донецкая обл.) дороги в основном односторонние, на двусторонке автопилоту прийдётся скорее всего плестись за фурой, но учитывая что фура едет <nobr>90-110 в</nobr> среднем, не так уж это и плохо</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399931" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399931">
+
+							</div>
+
+						<a class="parent-link" href="#399896">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="399953"></a>
+
+	<div parent_id="399931" id="comment_399953"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#399953">
+					<span class="date">
+						6 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>но учитывая что фура едет <nobr>90-110 в</nobr> среднем, не так уж это и плохо</blockquote>Донецкие фуры очень резвые, николаевские и херсонские обычно едут <nobr>5-20 км/ч</nobr> летом.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399953" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399953">
+
+							</div>
+
+						<a class="parent-link" href="#399931">Виталий Кеценко</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399972"></a>
+
+	<div parent_id="399953" id="comment_399972"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/vketsenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_1_8.jpg" width="40" height="40" alt="Виталий Кеценко" title="Виталий Кеценко">
+						Виталий Кеценко
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399972">
+					<span class="date">
+						6 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Не знаю, или у вас дорог нет, или то не фуры. У нас фура едущая меньше 90 редкость, часто больше, в итоге обгонять фуру на односторонке я лично рискую редко. Зил — да, <nobr>5-10 км.</nobr> Но сколько их на трассе?<br>Хотя опять же, у нас большинство дорог двусторонние, редко приходится обгонять грузовики, т.к. они идут по правой полосе</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399972" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399972">
+
+							</div>
+
+						<a class="parent-link" href="#399953">Mike Gorchak</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="400028"></a>
+
+	<div parent_id="399972" id="comment_400028"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/lestat/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_4478.png" width="40" height="40" alt="Mike Gorchak" title="Mike Gorchak">
+						Mike Gorchak
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Graphics Device Driver Developer
+
+в QNX Software Systems
+					</span>
+
+				<a class="comment-link" href="#400028">
+					<span class="date">
+						5 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Это трасса «Ульяновка-Николаев», один из двух путей на юга, по одной полосе в каждую сторону за исключением 26 км возле Николаева.<br></p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400028" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400028">
+
+							</div>
+
+						<a class="parent-link" href="#399972">Виталий Кеценко</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="399983"></a>
+
+	<div parent_id="399931" id="comment_399983"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399983">
+					<span class="date">
+						6 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>при прогнозировании столкновения</blockquote>Так в том то и дело, что тут не сколько прогнозирования будет, сколько выруливать из конкретной ситуации по факту. Ты на скорости под 200 спрогнозируешь бабку посреди шестиполосной магистрали? Или что кого-то заносит на встречке зимой?</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399983" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399983">
+
+							</div>
+
+						<a class="parent-link" href="#399931">Виталий Кеценко</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399987"></a>
+
+	<div parent_id="399983" id="comment_399987"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/vketsenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_1_8.jpg" width="40" height="40" alt="Виталий Кеценко" title="Виталий Кеценко">
+						Виталий Кеценко
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399987">
+					<span class="date">
+						6 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>А что, мы уже обсуждаем что автопилот едет 200? Может сразу летит со скоростью света?<br>Автопилот едет по ПДД, макс 130 км\ч — это на дороге, где бабки быть не может в принципе. На остальных 90. На 90 при соблюдении дистанции до впереди идущей машины пусть её хоть как заносит, остановиться успеешь. Не успел — значит дистанция маленькая. Если встречку занесло — тут тебя никто не спасёт. Но опять таки, с какого перепугу её занесёт? Только если там сидит водятел, который не думает головой. Автопилот, который едет по трассе 40, потому что по радио передали что гололёд и порекомендовали ехать 40, который не будет резко крутить руль, не будет обгонять через колею — его не занесёт<br>И я не говорю что аварий не будет. От идиотов на дороге мы не избавимся никогда. Но тупых аварий, которые происходят из-за невнимательности водителя, из-за того что он решил кому-то что-то доказть или выпендриться, из-за грубого нарушения ПДД — аварий, которых большинство — их станет значительно меньше.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399987" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399987">
+
+							</div>
+
+						<a class="parent-link" href="#399983">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399988"></a>
+
+	<div parent_id="399983" id="comment_399988"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/vketsenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_1_8.jpg" width="40" height="40" alt="Виталий Кеценко" title="Виталий Кеценко">
+						Виталий Кеценко
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399988">
+					<span class="date">
+						5 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Добавлю, нужно бороться не с последствиям (бабка выбежала, решил проскочить), а с причинами (заборы ставить, атвопилот не будет проскакивать). Тогда даже если забить на все экстренные ситуации (сбивать бабку нах), аварийность всё равно будет меньше, чем сейчас</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399988" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399988">
+
+							</div>
+
+						<a class="parent-link" href="#399983">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="35202" href="http://dou.ua/users/eugenegontaev/">Eugene Gontaev</a>
+								<a user="45814" href="http://dou.ua/users/tim-tretyak/">Tim Tretyak</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="400069"></a>
+
+	<div parent_id="399896" id="comment_400069"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#400069">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>По ПДД — это применение экстренного торможения.</blockquote>
+
+<p>Пешеход — это тоже участник движения. За нарушение правил наконец-то начнут штрафовать пешеходов, причем вся доказательная база будет в черном ящике.</p>
+
+<p>Так что, когда бабка получит штрафов на пару пенсий — она будет очень осторожно переходить дорогу и в положенном месте.</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400069" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400069">
+
+							</div>
+
+						<a class="parent-link" href="#399896">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="400098"></a>
+
+	<div parent_id="400069" id="comment_400098"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#400098">
+					<span class="date">
+						3 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>За нарушение правил наконец-то начнут штрафовать пешеходов,</blockquote>А как же пешеходы-мажоры?<br><blockquote>когда бабка получит штрафов на пару пенсий</blockquote>Тогда за нее будут штраф платить разве что наследники :)</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400098" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400098">
+
+							</div>
+
+						<a class="parent-link" href="#400069">Alexandr Gavriluk</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="400070"></a>
+
+	<div parent_id="399896" id="comment_400070"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Soft/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3446.png" width="40" height="40" alt="Alexandr Gavriluk" title="Alexandr Gavriluk">
+						Alexandr Gavriluk
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.Net developer
+
+в Aspose
+					</span>
+
+				<a class="comment-link" href="#400070">
+					<span class="date">
+						4 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>следующий коммент 100% будет про выявление самоубийц по температуре тела и зрачкам глаз</blockquote>
+
+<p>Зачем? Если пешеход виноват в ДТП, то штраф, так чтобы прочувствовал. Барда нельзя решить технологически, бардак нужно решать административно. А гугло-мобиль предоставит съемку где будет видно что по вине пешехода произошло ДТП.</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400070" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400070">
+
+							</div>
+
+						<a class="parent-link" href="#399896">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="400099"></a>
+
+	<div parent_id="400070" id="comment_400099"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#400099">
+					<span class="date">
+						3 часа назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>будет видно что по вине пешехода произошло ДТП.</blockquote>Та один хрен. Видеорегистраторы уже изобрели.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_400099" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="400099">
+
+							</div>
+
+						<a class="parent-link" href="#400070">Alexandr Gavriluk</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399456"></a>
+
+	<div parent_id="None" id="comment_399456"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399456">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Уважаемые пассажиры, мы приветствуем вас на борту нашего первого в мире авиалайнера с полностью беспилотным и компьютеризированным управлением. Все системы работают нормально... ботают нормально... ботают нормально... ботают нормально...</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399456" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399456">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="70485" href="http://dou.ua/users/ilya-ilin/">Илья Ильин</a>
+								<a user="43336" href="http://dou.ua/users/skyboyer/">Евгений Козлов</a>
+								<a user="38011" href="http://dou.ua/users/valentin-nechayev/">Valentin Nechayev</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399749"></a>
+
+	<div parent_id="399456" id="comment_399749"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/NiCketT/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3314.png" width="40" height="40" alt="NiCketT" title="NiCketT">
+						NiCketT
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399749">
+					<span class="date">
+						21 час назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Прикиньте как все пдресрут если эту запись в реальном самолете включить ))))</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399749" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399749">
+
+							</div>
+
+						<a class="parent-link" href="#399456">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399764"></a>
+
+	<div parent_id="399749" id="comment_399764"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399764">
+					<span class="date">
+						20 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>А потом: «Улыбнитесь, вас снимала скрытая камера» )))</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399764" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399764">
+
+							</div>
+
+						<a class="parent-link" href="#399749">NiCketT</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="399910"></a>
+
+	<div parent_id="399764" id="comment_399910"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/trevor-phillips/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_960221_1382388482009804_1697115320_n.jpg" width="40" height="40" alt="Тревор Филлипс" title="Тревор Филлипс">
+						Тревор Филлипс
+					</a>
+				</div>
+
+
+					<span class="prof">
+							CEO
+
+в freelance
+					</span>
+
+				<a class="comment-link" href="#399910">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>все равно кресла уже придется чистить</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399910" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399910">
+
+							</div>
+
+						<a class="parent-link" href="#399764">св Антоний</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="18294" href="http://dou.ua/users/Ushat_Pomoev/">св Антоний</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399337"></a>
+
+	<div parent_id="None" id="comment_399337"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/DedushkaGrga/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_Screenshot.jpg" width="40" height="40" alt="Mr Nobody" title="Mr Nobody">
+						Mr Nobody
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Україна понад усе
+
+					</span>
+
+				<a class="comment-link" href="#399337">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Я слышал, что для более-менее надёжной квалификации опыт управления должен составлять несколько лет.</blockquote>Квалификации — да. Надёжной — немного не так. Есть мнение ©, что наиболее безопасные водители — с опытом до полутора-двух лет и после <nobr>8-10.</nobr> Первые ещё не рискуют отжигать, потому что умеют мало, вторые — уже не рискуют, потому что умеют много, но при этом отчётливо понимают, чего они НЕ сумеют.<br>ну и к тому ещё поправка, что решает всё же не опыт в годах, а пробег в тысячах километров</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399337" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399337">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="39761" href="http://dou.ua/users/vketsenko/">Виталий Кеценко</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399334"></a>
+
+	<div parent_id="None" id="comment_399334"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399334">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Уверен, что задача управления транспортным средством в таких условиях нерешаемая. Тем не менее, допускаю, что агрессивное, бессмысленное вращение руля и такое же бессмысленное управление газом, возможно, на каком-то интуитивном уровне снижает вероятность встречи с автомобилями со встречной или с кюветом.</blockquote>
+
+<p>Слова человека, который в вопросе БМП (без малейшего понятия)...</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399334" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399334">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="42485" href="http://dou.ua/users/sergii-sinelnychenko/">Sergii Sinelnychenko</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399333"></a>
+
+	<div parent_id="None" id="comment_399333"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399333">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>О единственной реальной опасности автомобилей-ботов — ни слова...</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399333" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399333">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="70485" href="http://dou.ua/users/ilya-ilin/">Илья Ильин</a>
+								<a user="2078" href="http://dou.ua/users/Ljt/">Ljt</a>
+								<a user="6267" href="http://dou.ua/users/DedushkaGrga/">Mr Nobody</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399338"></a>
+
+	<div parent_id="399333" id="comment_399338"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/DedushkaGrga/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_Screenshot.jpg" width="40" height="40" alt="Mr Nobody" title="Mr Nobody">
+						Mr Nobody
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Україна понад усе
+
+					</span>
+
+				<a class="comment-link" href="#399338">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>думаете, станут давить христианских младенцев?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399338" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399338">
+
+							</div>
+
+						<a class="parent-link" href="#399333">Anton Hoffman</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399352"></a>
+
+	<div parent_id="399338" id="comment_399352"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399352">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Можно и христианских младенцев . Просто чтобы сделать из робомобиля орудие убийства не нужен водитель-смертник...</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399352" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399352">
+
+							</div>
+
+						<a class="parent-link" href="#399338">Mr Nobody</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399418"></a>
+
+	<div parent_id="399338" id="comment_399418"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/yuriy-elyas/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Yuriy" title="Yuriy">
+						Yuriy
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.NET
+
+в Dot Com Solutions, Inc
+					</span>
+
+				<a class="comment-link" href="#399418">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Можно перефразировать — кто будет сидеть если наедет на пешехода робо-мобиль? Сисадмин?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399418" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399418">
+
+							</div>
+
+						<a class="parent-link" href="#399338">Mr Nobody</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="399469"></a>
+
+	<div parent_id="399418" id="comment_399469"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/testacc-testacc/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_397479492.291290.jpg" width="40" height="40" alt="Котэ гуляющее само по себэ" title="Котэ гуляющее само по себэ">
+						Котэ гуляющее само по себэ
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Senior QA, но, к сожалению, не 23-х летний. 
+
+					</span>
+
+				<a class="comment-link" href="#399469">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>QA team lead, и бизнес гель не поможет. </p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399469" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399469">
+
+							</div>
+
+						<a class="parent-link" href="#399418">Yuriy</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399146"></a>
+
+	<div parent_id="None" id="comment_399146"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/Ushat_Pomoev/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_b.jpg" width="40" height="40" alt="св Антоний" title="св Антоний">
+						св Антоний
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Экспортер кодоудобрений
+
+в Большую Забугорную Компанию
+					</span>
+
+				<a class="comment-link" href="#399146">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Когда</blockquote>Никогда</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399146" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399146">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399114"></a>
+
+	<div parent_id="None" id="comment_399114"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/notus/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="notus" title="notus">
+						notus
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399114">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>мне нравится, когда машину педалирует специалист, пусть это будет робот.<br>городская езда — удовольствие так себе.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399114" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399114">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399117"></a>
+
+	<div parent_id="399114" id="comment_399117"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399117">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Я про безопасность вообще-то. Зажмурится в нашем городском потоке это ещё то удовольствие.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399117" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399117">
+
+							</div>
+
+						<a class="parent-link" href="#399114">notus</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399118"></a>
+
+	<div parent_id="399117" id="comment_399118"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/notus/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="notus" title="notus">
+						notus
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399118">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><blockquote>Зажмурится в нашем городском потоке это ещё то удовольствие.</blockquote>или задуматься, что очень характерно для нашего брата -программиста.<br>возить свою задницу вручную — дело на любителя.<br>и вообще, при хорошем раскладе через пару лет многие из нас на работу станут ездить на велотренажере.<br>.<br>массовыми городскими перевозками должны заниматься профессионалы, это и есть самый безопасный вариант. и тем безопаснее, чем меньше на дорогах машин везущих (1) одну персону.</div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399118" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399118">
+
+							</div>
+
+						<a class="parent-link" href="#399117">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержали:						</span>
+
+								<a user="70485" href="http://dou.ua/users/ilya-ilin/">Илья Ильин</a>
+								<a user="57248" href="http://dou.ua/users/yuriy-elyas/">Yuriy</a>
+								<a user="33305" href="http://dou.ua/users/aleksej-2/">amigo</a>
+								<a user="33713" href="http://dou.ua/users/albert-tolokonnikov/">Albert Tolokonnikov</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 0px;">
+						<a href="#" class="scroll-wrapper" name="399100"></a>
+
+	<div parent_id="None" id="comment_399100"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399100">
+					<span class="date">
+						позавчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Кoгда скорость реакции и качество реакции водителя-робота будет сопоставимой со скоростью и качеством реакции среднего водителя-человека — различия между живым и автоматическим водителем не станет.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399100" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399100">
+
+							</div>
+
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399108"></a>
+
+	<div parent_id="399100" id="comment_399108"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399108">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Ну если бы у бабушки был кадык то она была бы дедушкой.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399108" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399108">
+
+							</div>
+
+						<a class="parent-link" href="#399100">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399113"></a>
+
+	<div parent_id="399108" id="comment_399113"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399113">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Не понял, о чём вы? :)</p>
+
+<p>Я не написал «если», а написал «когда». И это «когда» будет уже достаточно скоро.</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399113" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399113">
+
+							</div>
+
+						<a class="parent-link" href="#399108">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="399116"></a>
+
+	<div parent_id="399113" id="comment_399116"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399116">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Я имел в виду, что если бы технологии были не на картинках, а реальные, и в каждом доме, тогда и писать было бы не о чем.</p>
+
+<p>Запуск нового поколения игровых консолей сопровождался отзывом неисправных. Это мероприятие к которому две суперкорпорации готовились несколько лет.</p>
+
+<p>Вы слышали такую фразу «имеряк отзывает сто тысяч автомобилей из-за неисправности педали газа»</p>
+
+<p>Вы думаете что если они не могут сделать педаль газа то уж с автопилотом справятся?</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399116" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399116">
+
+							</div>
+
+						<a class="parent-link" href="#399113">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="399121"></a>
+
+	<div parent_id="399116" id="comment_399121"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399121">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Автомобили с автопилотами, из-за проблем с педалью газа отзывать будут вряд ли — по причиние отсутствия такой педали. :)</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399121" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399121">
+
+							</div>
+
+						<a class="parent-link" href="#399116">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 250px;">
+						<a href="#" class="scroll-wrapper" name="399123"></a>
+
+	<div parent_id="399121" id="comment_399123"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399123">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Думаю адаптивные органы управления исчезнут в последнюю очередь. И таки отзывать их будут скорее всего из-за неисправностей в автопилоте. Это даже звучит как то стрёмно. Хуже чем педаль.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399123" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399123">
+
+							</div>
+
+						<a class="parent-link" href="#399121">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 300px;">
+						<a href="#" class="scroll-wrapper" name="399125"></a>
+
+	<div parent_id="399123" id="comment_399125"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399125">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Автопилот, по-сравнению с обычным водителем, никаких больших рисков не добавляет. Более того, надёжность автопилота заведомо выше, чем живого водителя, т.к. водитель может заснуть за рулём, отвлечься, получить сердечный приступ, итп.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399125" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399125">
+
+							</div>
+
+						<a class="parent-link" href="#399123">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 350px;">
+						<a href="#" class="scroll-wrapper" name="399128"></a>
+
+	<div parent_id="399125" id="comment_399128"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399128">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Это вам из будущего статистику прислали? <br>На самолётах, например, для достижения более менее приемлемой надёжности многие системы дублируются, а некоторые триплируются. Это говорит о том, что сложное устройство не может быть достаточно надёжным. Чем сложнее устройство тем ниже надёжность.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399128" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399128">
+
+							</div>
+
+						<a class="parent-link" href="#399125">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399136"></a>
+
+	<div parent_id="399128" id="comment_399136"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399136">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Дык, в современных автомобилях уже всё электронное. Механики кот наплакал, а водитель — самое «слабое звено».</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399136" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399136">
+
+							</div>
+
+						<a class="parent-link" href="#399128">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399149"></a>
+
+	<div parent_id="399136" id="comment_399149"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author dou-official-person">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/albert-tolokonnikov/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_33605.png" width="40" height="40" alt="Albert Tolokonnikov" title="Albert Tolokonnikov">
+						Albert Tolokonnikov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Безработный
+
+					</span>
+
+				<a class="comment-link" href="#399149">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Слабое, но самое важное. Если это звено испорчено то автомобиль сразу попадает в ДТП. Если же бачок омывателя пусто, или пепельница полная, то можно доехать.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399149" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399149">
+
+							</div>
+
+						<a class="parent-link" href="#399136">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399152"></a>
+
+	<div parent_id="399149" id="comment_399152"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/max-dzyubenko/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Max Dzyubenko" title="Max Dzyubenko">
+						Max Dzyubenko
+					</a>
+				</div>
+
+
+
+				<a class="comment-link" href="#399152">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Поэтому, надо водителя заменять электроникой тоже. :)</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399152" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399152">
+
+							</div>
+
+						<a class="parent-link" href="#399149">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399420"></a>
+
+	<div parent_id="399152" id="comment_399420"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/yuriy-elyas/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Yuriy" title="Yuriy">
+						Yuriy
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.NET
+
+в Dot Com Solutions, Inc
+					</span>
+
+				<a class="comment-link" href="#399420">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Именно, тока сажать владельца если чо?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399420" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399420">
+
+							</div>
+
+						<a class="parent-link" href="#399152">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 400px;">
+						<a href="#" class="scroll-wrapper" name="399413"></a>
+
+	<div parent_id="399128" id="comment_399413"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/maard/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_36313.png" width="40" height="40" alt="Maxim Yemelyanov" title="Maxim Yemelyanov">
+						Maxim Yemelyanov
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Software Engineer/Perl Developer
+
+в <a href="http://jobs.dou.ua/companies/epam-systems/" class="company-favicon" style="background: url(http://s.developers.org.ua/img/static/favicons/epam.png) no-repeat; background-size: 16px;">EPAM Systems</a>
+					</span>
+
+				<a class="comment-link" href="#399413">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><div><p>Алгоритмы — это, конечно, хорошо и нужно. Но иногда человеческое вмешательство необходимо, чтобы исправить ситуацию, которую автопилот может только усугубить.</p>
+
+<p>Пример — крушение <a href="https://en.wikipedia.org/wiki/Scandinavian_Airlines_Flight_751">SAS 751</a>, к счастью профессионализм пилотов помог избежать жертв, которые могли возникнуть по вине компьютера. Который поступал, в общем-то правильно, для общего случая.</p>
+
+<p>Поэтому органы управления всё-таки у людей отнимать не надо :)</p></div></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399413" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399413">
+
+							</div>
+
+						<a class="parent-link" href="#399128">Albert Tolokonnikov</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399360"></a>
+
+	<div parent_id="399100" id="comment_399360"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399360">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Почему “когда”? <br>Скорость “реакции” автоматизированных систем безопасности (АБС той же) и так превышает реакцию... возможно даже водителя-профи, а не рядового “овоща” к коим себя отношу.<br>“Some ABS systems can cycle up to 15 times per second.”<br>“BMW’s ABS checks wheel speed approximately 330 times per second and can modulate braking force seven times per second (the mechanics of fluid management are the limiting factor — not the computer). ”</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399360" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399360">
+
+							</div>
+
+						<a class="parent-link" href="#399100">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="71262" href="http://dou.ua/users/trevor-phillips/">Тревор Филлипс</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399419"></a>
+
+	<div parent_id="399100" id="comment_399419"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/yuriy-elyas/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Yuriy" title="Yuriy">
+						Yuriy
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.NET
+
+в Dot Com Solutions, Inc
+					</span>
+
+				<a class="comment-link" href="#399419">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Сидеть кто будет?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399419" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399419">
+
+							</div>
+
+						<a class="parent-link" href="#399100">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+						<span>
+							Поддержал:						</span>
+
+								<a user="18294" href="http://dou.ua/users/Ushat_Pomoev/">св Антоний</a>
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399465"></a>
+
+	<div parent_id="399419" id="comment_399465"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/romashka/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_3469.png" width="40" height="40" alt="Roman Brunets" title="Roman Brunets">
+						Roman Brunets
+					</a>
+				</div>
+
+
+					<span class="prof">
+							Программист
+
+в ГЦБиТ
+					</span>
+
+				<a class="comment-link" href="#399465">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Программер. :))</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399465" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399465">
+
+							</div>
+
+						<a class="parent-link" href="#399419">Yuriy</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 100px;">
+						<a href="#" class="scroll-wrapper" name="399508"></a>
+
+	<div parent_id="399419" id="comment_399508"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399508">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>А кто сейчас сидит, когда сходит с ума электронный акселератор или ЭУР?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399508" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399508">
+
+							</div>
+
+						<a class="parent-link" href="#399419">Yuriy</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 150px;">
+						<a href="#" class="scroll-wrapper" name="399512"></a>
+
+	<div parent_id="399508" id="comment_399512"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/yuriy-elyas/">
+								<img class="g-avatar" src="http://s.developers.org.ua/assets/img/40x40_anon.png" width="40" height="40" alt="Yuriy" title="Yuriy">
+						Yuriy
+					</a>
+				</div>
+
+
+					<span class="prof">
+							.NET
+
+в Dot Com Solutions, Inc
+					</span>
+
+				<a class="comment-link" href="#399512">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Водила?</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399512" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399512">
+
+							</div>
+
+						<a class="parent-link" href="#399508">Anton Hoffman</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 200px;">
+						<a href="#" class="scroll-wrapper" name="399520"></a>
+
+	<div parent_id="399512" id="comment_399520"		class="comment g-approved-user">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/jabbervogue/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_38794.png" width="40" height="40" alt="Anton Hoffman" title="Anton Hoffman">
+						Anton Hoffman
+					</a>
+				</div>
+
+
+					<span class="prof">
+							отшельникъ
+
+в горахъ голливудскихъ
+					</span>
+
+				<a class="comment-link" href="#399520">
+					<span class="date">
+						вчера
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Нет (если докажут проблему в оборудовании).</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399520" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399520">
+
+							</div>
+
+						<a class="parent-link" href="#399512">Yuriy</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+			<div class="b-comment" style="margin-left: 50px;">
+						<a href="#" class="scroll-wrapper" name="399914"></a>
+
+	<div parent_id="399100" id="comment_399914"		class="comment">
+
+		<div class="l-comment">
+			<div class="details b-post-author ">
+				<div class="l-avatar">
+					<a class="avatar" href="http://dou.ua/users/trevor-phillips/">
+								<img class="g-avatar" src="http://s.developers.org.ua/img/avatars/40x40_960221_1382388482009804_1697115320_n.jpg" width="40" height="40" alt="Тревор Филлипс" title="Тревор Филлипс">
+						Тревор Филлипс
+					</a>
+				</div>
+
+
+					<span class="prof">
+							CEO
+
+в freelance
+					</span>
+
+				<a class="comment-link" href="#399914">
+					<span class="date">
+						7 часов назад
+					</span>
+				</a>
+			</div>
+
+			<div class="text b-typo"><p>Скорость реакции автопилота уже лучше чем у водителя, не говоря уже о том что два глаза человека обычно смотрят в одном направлении, тогда как датчики автопилота сразу во все стороны.</p></div>
+
+
+				<div class="bottom-line">
+							<a id="reply_399914" class="answer-link btn-reply" href="javascript:;">Ответить</a>
+								<div class="min-plus support "><a href="javascript:;">
+									Поддержать
+								</a></div>
+
+							<div class="edit-tool b-edit-delete" _id="399914">
+
+							</div>
+
+						<a class="parent-link" href="#399100">Max Dzyubenko</a>
+				</div>
+
+			<div class="sup-users">
+			</div>
+		</div>
+	</div>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		window.POST_ID = 22117;
+		window.SUBSCRIBED = false;
+		window.POST_TYPE = -1;
+		window.COMMENTS_URL = "http://dou.ua/comment-action/";
+		window.DELETE_ENTRY_URL = "http://dou.ua/comment-delete/";
+		window.CHANGE_URL = "http://dou.ua/comment-gettext/";
+		window.NEW_COMMENTS_IDS = [];
+	</script>
+
+		<div id="complainDialog" class="b-block b-comments-dialog">
+		<div class="container complain">
+			<h4 class="title">В интернете кто-то неправ</h4>
+
+			<div class="data">
+				<div class="comment">
+					<img class="avt" alt="">
+					<span class="text"></span>
+				</div>
+				<p>Изложите вкратце суть проблемы:</p>
+				<textarea class="first" name="complain"></textarea>
+			</div>
+			<div class="send">
+				<div class="table">
+					<div class="row">
+						<div class="cell">
+							<div class="b-buttons">
+								<button class="win-button disabled">
+									<span class="out"><span class="button">Поделиться</span></span>
+								</button>
+								<span class="hint">Ctrl+Enter</span><div class="little-loading"></div>
+							</div>
+						</div>
+						<div class="cell right-cell">
+							<div class="cancel">
+								<a href="javascript:;">Не делиться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="subscribeDialog" class="b-block b-comments-dialog">
+		<div class="container">
+			<h4 class="title">Подписаться на комментарии</h4>
+
+			<div class="data table">
+				<div class="row">
+					<div class="cell"><label for="sEmail">Ваша почта</label></div>
+					<div class="cell"><input id="sEmail" class="first" name="email" type="email" value=""></div>
+				</div>
+			</div>
+			<div class="send">
+				<div class="table">
+					<div class="row">
+						<div class="cell">
+							<div class="b-buttons">
+								<button class="win-button disabled">
+									<span class="out"><span class="button">Подписаться</span></span>
+								</button>
+								<span class="hint">Ctrl+Enter</span><div class="little-loading"></div>
+							</div>
+						</div>
+						<div class="cell right-cell">
+							<div class="cancel">
+								<a href="javascript:;">Не подписываться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			</div>
+
+				<div class="cell"></div>
+				<div class="cell b-right-side" id="fixedableRightSide">
+						<aside class="b-right">
+							<div class="right-wrap">
+										<div class="b-banner b-right-banner"><!-- Forum_240x350 -->
+<div id='div-gpt-ad-1323284253011-0' style='width:240px; height:350px;border:1px solid #ccc;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1323284253011-0'); });
+</script>
+</div></div>
+
+		<h4 class="g-adv-event-title">Не пропустите</h4>
+
+
+			<div class="g-adv-event-block">
+				<div class="wrap">
+					<div class="date">
+						11 декабря, Киев					</div>
+
+					<a class="link" href="http://dou.ua/calendar/4171/?from=premiumevents">
+							<div class="img">
+								<div class="sw"><img src="http://s.developers.org.ua/gstatic/adv_events/it.png"></div>
+							</div>
+
+						<span>Law&Accounting crash test – а у Вас все правильно в бухучете и финансах?</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="g-adv-event-block">
+				<div class="wrap">
+					<div class="date">
+						13 декабря, Минск					</div>
+
+					<a class="link" href="http://dou.ua/calendar/4192/?from=premiumevents">
+							<div class="img">
+								<div class="sw"><img src="http://s.developers.org.ua/gstatic/adv_events/bird_1.png"></div>
+							</div>
+
+						<span>Application Developer Days</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="g-adv-event-block">
+				<div class="wrap">
+					<div class="date">
+						14 декабря, Киев					</div>
+
+					<a class="link" href="http://dou.ua/calendar/4200/?from=premiumevents">
+							<div class="img">
+								<div class="sw"><img src="http://s.developers.org.ua/gstatic/adv_events/ek1.png"></div>
+							</div>
+
+						<span>Embedded Kyiv TechTalks. Video Delivery</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="g-adv-event-block">
+				<div class="wrap">
+					<div class="date">
+						20 — 24 января 2014, Киев					</div>
+
+					<a class="link" href="http://dou.ua/calendar/4212/?from=premiumevents">
+							<div class="img">
+								<div class="sw"><img src="http://s.developers.org.ua/gstatic/adv_events/lt.png"></div>
+							</div>
+
+						<span>Курс "Основы .NET разработки и языка C#"</span>
+					</a>
+				</div>
+			</div>
+							</div>
+						</aside>
+
+				<div class="b-block b-block-similar">
+			<div class="title"><h3 style="margin:5px 0 4px 0;">Похожие топики</h3></div>
+			<ul>
+					<li class="item" style="padding-left: 0;">
+						<div class="title"><a class="link" href="/forums/topic/2012/?from=similar_topics">Google запретил сотрудникам работать в Windows</a>&nbsp;<span class="comment">&nbsp;<a href="/forums/topic/2012/?from=similar_topics#comments" class="g-comments-round">20</a></span></div>
+					</li>
+					<li class="item" style="padding-left: 0;">
+						<div class="title"><a class="link" href="/forums/topic/5241/?from=similar_topics">Профессиональная трансформация</a>&nbsp;<span class="comment">&nbsp;<a href="/forums/topic/5241/?from=similar_topics#comments" class="g-comments-round">66</a></span></div>
+					</li>
+					<li class="item" style="padding-left: 0;">
+						<div class="title"><a class="link" href="/forums/topic/8560/?from=similar_topics">Объясните, пожалуйста, разницу между состоянием и функцией</a>&nbsp;<span class="comment">&nbsp;<a href="/forums/topic/8560/?from=similar_topics#comments" class="g-comments-round">129</a></span></div>
+					</li>
+			</ul>
+		</div>
+
+
+					<div class="g-clear"></div>
+					<div class="b-sticky-right-side">
+						<div class="l-sticky-wrap">
+							<div class="l-sticky-group">
+								<div class="l-sticky-item">
+													
+
+								</div>
+							</div>
+
+
+
+																		<div class="l-sticky-group">
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/articles/how-to-start-it-career/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_start1.jpg" alt="Старт ИТ-карьеры: советы вчерашних студентов сегодняшним">
+														<div class="title">Старт ИТ-карьеры: советы вчерашних студентов сегодняшним</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/articles/crash-test-1/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_eff.png" alt="Креш-тест: видение эффективного процесса разработки">
+														<div class="title">Креш-тест: видение эффективного процесса разработки</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/interviews/magento-2/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_sorokadima420.jpg" alt="Magento 2 — что под капотом?">
+														<div class="title">Magento 2 — что под капотом?</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/interviews/oleg-lebedev-interview/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_Photo_43.jpg" alt="Олег Лебедев: как пробежать 3100 миль">
+														<div class="title">Олег Лебедев: как пробежать 3100 миль</div>
+													</a>
+												</div>
+											</div>
+									</div>
+
+																		<div class="l-sticky-group">
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/interviews/profit-show-xiv-george-serebrennikov-grammarly/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_grammarly-420x230.jpg" alt="Профит-Шоу XIV: Георгий Серебренников, Grammarly">
+														<div class="title">Профит-Шоу XIV: Георгий Серебренников, Grammarly</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/articles/djinni-success-stories/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_420_27.jpg" alt="Кого хотят работодатели? Часть 2. Истории успеха">
+														<div class="title">Кого хотят работодатели? Часть 2. Истории успеха</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/articles/companies-websites-lynch/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_sorr-420.png" alt="Что интересно соискателям: линч сайтов крупнейших украинских компаний-аутсорсеров">
+														<div class="title">Что интересно соискателям: линч сайтов крупнейших украинских компаний-аутсорсеров</div>
+													</a>
+												</div>
+											</div>
+											<div class="l-sticky-item">
+												<div class="l-sticky-block">
+													<a class="link" href="/lenta/interviews/lohika-labs/?from=hover-news-widget" target="_blank">
+														<img class="img" src="http://s.developers.org.ua/img/announces/220x120_lohika420.JPG" alt="Lohika Labs: попытка создать райский оазис внутри большого аутсорса">
+														<div class="title">Lohika Labs: попытка создать райский оазис внутри большого аутсорса</div>
+													</a>
+												</div>
+											</div>
+									</div>
+
+
+		<div class="b-block b-block-similar l-sticky-group">
+			<div class="l-sticky-item">
+				<div class="title">
+					<h3>Лучшее</h3>
+				</div>
+
+				<ul>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/software-architect-position/?from=bestwidget" class="link">Карьера в IT: должность Software Architect</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/practice-n-job/?from=bestwidget" class="link">Практика на практике, или 7 секретов входа в IT</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/team-lead-position/?from=bestwidget" class="link">Карьера в IT: должность Team Lead</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/events/halloween-2013/?from=bestwidget" class="link">Парад страха и ужаса: Хэллоуин в офисах украинских IT-компаний</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/it-in-ukraine/?from=bestwidget" class="link">Информационные технологии в Украине: Колосс на глиняных ногах</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/20-company-names/?from=bestwidget" class="link">20 названий компаний с необычной историей</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/relocation-in-ukraine/?from=bestwidget" class="link">Релокация по Украине: тенденции и предложения</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/vrednye-sovety/?from=bestwidget" class="link">Вредные советы для джуниоров</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/startup-motivation/?from=bestwidget" class="link">Работа в стартапе: мотивация и компенсация</a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="title">
+								<a href="/lenta/articles/kuznica-pervaya-rabota/?from=bestwidget" class="link">Кузницы кадров: опыт в обмен на...</a>
+							</div>
+						</li>
+					<li class="item" style="padding-top:.5em;font-weight:bold;">
+						<div class="title">
+							<a href="http://dou.ua/lenta/best/?from=bestwidget" class="link">Все лучшее</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="cell"></div>
+		</div>
+	</div>
+
+	</div>
+
+<footer class="b-footer">
+	<div class="l-content m-db">
+		<div class="l-content-wrap m-db">
+			<div class="col2 m-hide"></div>
+			<div class="col18 m-db">
+				© 2006—2013 <strong><a href="http://dou.ua/">DOU.ua</a></strong>
+				<div class="b-users-head-link">
+						<div class="users-head">
+							Нас <a href="http://dou.ua/users/">53 057 специалистов</a>
+						</div>
+				</div>
+					<div class="m-bigmir" style="top:6px;position:relative;">
+<!--bigmir)net TOP 100-->
+<script type="text/javascript" language="javascript"><!--
+function BM_Draw(oBM_STAT){
+document.write('<div style="height:17px;padding-top:2px;"><a href="http://www.bigmir.net/" target="_blank" style="color:#0000ab;text-decoration:none;">bigmir<span style="color:#ff0000;">)<\/span>net<\/a>  <span style="color:#555;">хиты<\/span> <span style="color:#333;font:10px Tahoma;vertical-align:baseline;">'+oBM_STAT.hits+'<\/span> <span style="color:#555;">хосты<\/span> <span style="color:#333;font:10px Tahoma;vertical-align:baseline;">'+oBM_STAT.hosts+'<\/span><\/div>');
+}
+//-->
+</script>
+<script type="text/javascript" language="javascript"><!--
+bmN=navigator,bmD=document,bmD.cookie='b=b',i=0,bs=[],bm={o:1,v:112550,s:112550,t:0,c:bmD.cookie?1:0,n:Math.round((Math.random()* 1000000)),w:0};
+for(var f=self;f!=f.parent;f=f.parent)bm.w++;
+try{if(bmN.plugins&&bmN.mimeTypes.length&&(x=bmN.plugins['Shockwave Flash']))bm.m=parseInt(x.description.replace(/([a-zA-Z]\s)+/,''));
+else for(var f=3;f<20;f++)if(eval('new ActiveXObject("ShockwaveFlash.ShockwaveFlash.'+f+'")'))bm.m=f}catch(e){;}
+try{bm.y=bmN.javaEnabled()?1:0}catch(e){;}
+try{bmS=screen;bm.v^=bm.d=bmS.colorDepthbmS.pixelDepth;bm.v^=bm.r=bmS.width}catch(e){;}
+r=bmD.referrer.slice(7);if(r&&r.split('/')[0]!=window.location.host){bm.f=escape(r);bm.v^=r.length}
+bm.v^=window.location.href.length;for(var x in bm) if(/^[ovstcnwmydrf]/.test(x)) bs[i++]=x+bm[x];
+bmD.write('<sc'+'ript type="text/javascript" language="javascript" src="http://c.bigmir.net/?'+bs.join('&')+'"><\/sc'+'ript>');
+//-->
+</script>
+<noscript>
+<a href="http://www.bigmir.net/" target="_blank"><img src="http://c.bigmir.net/?v112550&s112550&t2" width="88" height="31" alt="bigmir)net TOP 100" title="bigmir)net TOP 100" border="0" /></a>
+</noscript>
+<!--bigmir)net TOP 100-->					</div>
+			</div>
+
+			<div class="col2 m-hide"></div>
+
+			<div class="col50 m-cola m-db">
+					<div class="social">
+						Мы в соцсетях:
+						<a href="https://www.facebook.com/devua">f</a>
+						<a href="https://twitter.com/devua">t</a>
+						<a href="http://vk.com/dou_ua">v</a>
+						<a href="https://plus.google.com/b/111272498647805184311/111272498647805184311/">g</a>
+					</div>
+
+			</div>
+
+			<div class="col2 m-hide"></div>
+
+			<div class="col24 m-db m-cola">
+				<ul class="vcard links">
+					<li><a href="http://dou.ua/contacts/">Контакты</a></li>
+					<li><a href="http://dou.ua/adv/">Услуги</a></li>
+					<li><a href="http://dou.ua/legal/">Legal</a></li>
+				</ul>
+			</div>
+
+			<div class="col2 m-hide"></div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script type="text/javascript" src="http://s.developers.org.ua/build/built.v574.c0d2b98.js"></script>
+
+
+	<!-- is_mobile: False -->
+	<!-- is_tablet: False -->
+
+	<script>
+		window.CSRF_TOKEN = "23TZBzfxeY1cbka6AyZ50wHz3rYWalvq";
+		window.LOGIN_URL = "http://dou.ua/ajax-login/";
+		window.RESET_PASSWORD_URL = "http://dou.ua/j-lost-password/";
+		window.USER_ID = 0;
+		window.IS_MOBILE = "False";
+		window.IS_TABLET = "False";
+
+			new FlowRightSideManager();
+
+				function loginshow() {
+					window.loginManager.showLogin({
+						realNameDescr: "",
+						success: function() {
+							window.location.reload();
+						},
+					});
+					return false;
+				}
+
+				window.loginManager = new LoginManager();
+
+					$('#login-link').click(loginshow);
+
+	var commentsManager = new CommentsManager();
+
+	window.COMMENT_ADDED_URL = '/forums/commentadded/';
+	new DeleteManager({selector: "section", url: "http://dou.ua/forums/delete/"});
+	</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-168613-2']);
+  _gaq.push(['_setCustomVar', 1, 'User Type', 'Visitor', 2]);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ var pageTracker = null;
+ window.gaTrack = function(url){
+	if(!pageTracker) pageTracker = _gat._getTracker("UA-168613-2");
+ 		pageTracker._trackPageview(url);
+ }
+</script>
+
+<script>
+/* GA tracking of JS errors http://habrahabr.ru/post/149926/ */
+var _gaq = window._gaq || [];
+window.onerror = function(msg, url, line) {
+  var preventErrorAlert = true;
+  _gaq.push(['_trackEvent', 'JS Error', msg, navigator.userAgent + ' -> ' + url + " : " + line, 0, true]);
+  return preventErrorAlert;
+};
+var timeout = setTimeout(function(){
+  if ($("div[id^=smi2adblock]").length > 0 ){
+    _gaq.push(['_trackEvent', 'SMI2 Shown', 'userID: ' + window.USER_ID, '/forums/topic/8751/' + ' ' + navigator.userAgent, 0, true]);
+  }
+}, 2000);
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter3092086 = new Ya.Metrika({id:3092086,
+                    clickmap:true,
+                    trackLinks:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/3092086" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

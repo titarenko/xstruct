@@ -1,0 +1,18 @@
+GET /blocks_search_ajax/search?marka=5&model=0&page=0&countpage=1000
+host: auto.ria.ua
+
+301 HTTP/1.1
+server: nginx
+date: Tue, 10 Dec 2013 18:51:11 GMT
+content-type: text/html; charset=utf-8
+location: http://auto.ria.ua/blocks_search_ajax/search/?marka=5&model=0&page=0&countpage=1000
+transfer-encoding: chunked
+connection: keep-alive
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

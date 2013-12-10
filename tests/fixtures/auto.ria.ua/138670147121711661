@@ -1,0 +1,201 @@
+GET /blocks_search/view/auto/8147436
+host: auto.ria.ua
+
+200 HTTP/1.1
+server: nginx
+date: Tue, 10 Dec 2013 18:51:11 GMT
+content-type: text/html; charset=utf-8
+transfer-encoding: chunked
+connection: keep-alive
+x-powered-by: PHP/5.5.5
+vary: Accept
+cache-control: public, max-age=600
+pragma: 
+
+<div class='ticket-item'  ticket_auto_id="8147436" ticket_status_id="0">
+        <a name="search_auto_id_8147436"> </a>
+        <div class="action-bar">
+            
+                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(8147436)" class="item icon-chips"
+                    title="Фишек нет. Что это такое?">
+                        0
+                    </a>
+            
+            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="8147436" content_type_id="1"></a>
+            <span class="item-check" title="Добавить к сравнению">
+                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="8147436" auto_name='Aston Martin Rapide ' content_type_id="1"  item_id="8147436"/>
+                    <span class="tooltip succes larr __top hide" pelement="auto_compare_popup">
+                        
+                    </span>
+            </span>
+        </div>
+
+        <div class="content-bar">
+
+            
+    <div class="ticket-photo">
+    <a href="/auto_aston_martin_rapide_8147436.html" nav_mem="8147436" class="
+    
+        
+            
+                
+                     photo photo-135x90
+                
+            
+        
+    
+" 
+    title="Aston Martin Rapide "
+>
+        <img src='
+    
+        
+            
+                
+                   
+                         http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_rapide__51890087sx.jpg
+                    
+                
+
+            
+        
+    
+' nav_mem="8147436" 
+    alt="Седан Aston Martin Rapide "
+ />
+    </a>
+        
+         
+                            <span class="item">
+                        <i class="icon-small-photo"></i>
+                        20 фото
+                    </span>
+              
+         
+
+    </div>
+
+            <div class="content">
+
+                <div class="head-ticket">
+
+                    <span class="city">
+                        <a href='city/kiev/' title="Поиск объявлений по региону Киев.">Киев</a>
+                        
+                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(8147436); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
+                        
+                    </span>
+
+                    <h3 class="head-car">
+
+                        <a href="/auto_aston_martin_rapide_8147436.html" nav_mem="8147436" title='Aston Martin Rapide &nbsp;2013'>Aston Martin Rapide </a>&nbsp;2013
+                    </h3>
+
+                </div>
+
+                
+                    <div class="if-dealer">
+                        
+                            <a class="dealer-logo" href='/?target=view&event=listcomp&user_id=1399877' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Logo_Avtosalon_[553]', 'Search_Oldcar']);">
+                        
+                            <img width="40" src='auto/new_autosalon/0/5/553/553s.jpg'  action="send_statistics" block="search" element="logo" internal="1" autosalon_id="553" marka_id="5" model_id="30262" auto_id="8147436"/>
+                        </a>
+                        <noindex>
+                                <!-- salon loader -->
+                            <script>
+                                setTimeout(function(){_gaq.push(['_trackEvent', 'Statistic_Loader_Salon', 'Loader_Logo_Avtosalon_[553]', 'Search_OldAuto']);}, 2000)
+                            </script>
+                        </noindex>
+                        
+                            <a class="link" href='/?target=view&event=listcomp&user_id=1399877' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Name_Avtosalon_[553]', 'Search_Oldcar']);">
+                        
+                            Саr Plaza
+                        </a>
+                    </div>
+                
+
+                <div class="definition-data">
+
+                    
+    <div class="price" currency_id="1">
+
+        
+            договорная
+        
+
+
+
+
+        
+        
+
+        
+        
+        
+        
+    </div>
+
+                    
+    <ul class="characteristic">
+
+        <li class="item-char" title="Тип топлива">
+            
+                <i class="icon-char-fuel"></i>
+                Бензин,&nbsp;6.00 л.
+                
+            
+        </li>
+
+
+        <li class="item-char" title="Пробег">
+            
+                <i class="icon-mileage"></i>
+                без пробега
+            
+        </li>
+        <li class="item-char" title="Тип коробки передач">
+            
+                <i class="icon-char-transmission"></i>
+                Автомат
+            
+        </li>
+
+        <li class="item-char" title="Цвет кузова">
+            
+                <i class="icon-color"></i>
+                Не указано
+            
+        </li>
+
+    </ul>
+
+
+    
+
+                </div>
+    <p class="descriptions-ticket" pelement="description" >Выбор цвета. Гибкая система скидок. Гарантия. Trad...</p>
+            
+            </div>
+
+
+           <div class="footer-ticket">
+        <span class="view-all">
+            <a href='/auto_aston_martin_rapide_8147436.html'>Подробно</a>
+            <i class="icon-view"></i>
+        </span>
+
+        <div class="charlist-data">
+            <span class="date-add" pelement='date_add' pvalue='16:45:47 01.12.2013' title="Объявление добавлено 01.12.2013">
+                <i class="icon-time-grey"></i>
+                <span>01.12.2013</span>
+            </span>
+
+            
+
+            
+            
+
+        </div>
+    </div>
+        </div>
+    </div>
