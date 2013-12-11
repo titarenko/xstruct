@@ -61,6 +61,9 @@ module.exports = class Api
 		@_promise.catch @_emitter.emit.bind @_emitter, "error"
 		@
 
+	promise: ->
+		@_promise
+
 	_download: (type, uri) ->
 		uri = @_getFullUrl uri
 		@_promise = Api._Download type, uri

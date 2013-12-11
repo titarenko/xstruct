@@ -87,7 +87,11 @@ advances progress by one unit (which means next element of array was processed)
 
 ### done
 
-should always close the chain of API calls
+should always close the chain of API calls unless you use promises
+
+### promise
+
+an alternative to node-style of doing async things, returns [`Q` promise](https://github.com/kriskowal/q)
 
 ## Low Level (HTML wrapper API)
 
