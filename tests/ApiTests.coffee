@@ -51,7 +51,7 @@ describe "API", ->
 						el
 							.css("h3.head-car a")
 							.attr("title")
-							.regex(/\(d{4})$/)
+							.regex(/(\d{4})$/)
 							.float()
 					mileage: html.get (el) -> 
 						el
