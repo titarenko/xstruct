@@ -27,7 +27,7 @@ module.exports = class HtmlProcessor
 		@_answer "text", @_result.text()
 
 	regex: (r) ->
-		@_answer "regex", (@_result.match r)?[0], 
+		@_answer "regex", (@_result.match r)?[1], 
 			regex: r.toString()
 
 	replace: (what, replacement) ->
