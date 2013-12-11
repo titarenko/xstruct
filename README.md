@@ -27,11 +27,10 @@ xstruct("http://dou.ua")
 
 	.then((html) -> 
 		html.get (el) -> 
-			el(".b-comment")
-				.map (el) ->
-					author: el.get (child) -> child(".avatar").text().trim()
-					time: el.get (child) -> child(".date").text().trim()
-					text: el.get (child) -> child(".text p").text()
+			el.css(".b-comment").map (el) ->
+				author: el.get (child) -> child.css(".avatar").text().trim()
+				time: el.get (child) -> child.css(".date").text().trim()
+				text: el.get (child) -> child.css(".text p").text()
 	)
 	
 	.on("progress", (percentage) -> 

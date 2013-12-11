@@ -8,7 +8,7 @@ module.exports = class HtmlProcessor
 
 	get: (func) ->
 		html = new HtmlProcessor @_initial, @_emitter
-		func(html.css.bind html)._result
+		func(html)._result
 
 	css: (css) ->
 		result = if typeof @_result is "function" then @_result(css) else @_result.find(css)

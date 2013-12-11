@@ -44,15 +44,18 @@ describe "API", ->
 				.then((html) ->
 					@advance()
 					link: @root + html.get (el) -> 
-						el("h3.head-car a")
+						el
+							.css("h3.head-car a")
 							.attr("href")
 					year: html.get (el) -> 
-						el("h3.head-car a")
+						el
+							.css("h3.head-car a")
 							.attr("title")
 							.regex(/\d{4}$/)
 							.float()
 					mileage: html.get (el) -> 
-						el(".characteristic .item-char")
+						el
+							.css(".characteristic .item-char")
 							.at(1)
 							.text()
 							.trim()
@@ -60,20 +63,24 @@ describe "API", ->
 							.float()
 							.coalesce(0)
 					location: html.get (el) -> 
-						el("span.city a")
+						el
+							.css("span.city a")
 							.text()
 					price: html.get (el) -> 
-						el("div.price strong.green")
+						el
+							.css("div.price strong.green")
 							.text()
 							.replace(" ", "")
 							.float()
 					date: html.get (el) -> 
-						el("span.date-add span")
+						el
+							.css("span.date-add span")
 							.text()
 							.parse("DD.MM.YYYY")
 							.format("YYYY-MM-DD")
 					phone: html.get (el) -> 
-						el(".phone")
+						el
+							.css(".phone")
 							.text()
 							.replace(/[() \-]/g, "")
 							.coalesce(null)
@@ -114,11 +121,10 @@ describe "API", ->
 
 			.then((html) -> 
 				html.get (el) -> 
-					el(".b-comment")
-						.map (el) ->
-							author: el.get (child) -> child(".avatar").text().trim()
-							time: el.get (child) -> child(".date").text().trim()
-							text: el.get (child) -> child(".text p").text()
+					el.css(".b-comment").map (el) ->
+						author: el.get (child) -> child.css(".avatar").text().trim()
+						time: el.get (child) -> child.css(".date").text().trim()
+						text: el.get (child) -> child.css(".text p").text()
 			)
 			
 			.on("progress", (percentage) -> 
