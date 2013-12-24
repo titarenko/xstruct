@@ -7,6 +7,8 @@ HtmlProcessor = require "./HtmlProcessor"
 
 module.exports = class Api
 
+	@concurrency: 100
+
 	constructor: (@root) ->
 		@_emitter = new events.EventEmitter
 	
@@ -29,7 +31,7 @@ module.exports = class Api
 				.then((value) -> done null, value)
 				.catch((error) -> done error)
 		@_promise = @_promise.then (value) =>
-			Api._Map(value, mapper.bind @).then Q.all
+			Api._Map(value, Api.concurrency, mapper.bind @).then Q.all
 		@
 
 	flatten: ->
@@ -81,7 +83,7 @@ module.exports = class Api
 			return done new Error "Can't handle unknown data type: #{type}. Known ones are: #{knownDataTypes}" if not handler
 			done null, dataTypeHandlerMap[type] body
 
-	@_Map: Q.denodeify async.map
+	@_Map: Q.denodeify async.mapLimit
 
 	_getFullUrl: (uri) ->
 		if uri[0] is '.'
