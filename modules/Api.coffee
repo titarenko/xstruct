@@ -11,6 +11,8 @@ module.exports = class Api
 
 	constructor: (@root) ->
 		@_emitter = new events.EventEmitter
+		@_done = []
+		@_total = []
 	
 	json: (uri) ->
 		@_download "json", uri
@@ -43,15 +45,21 @@ module.exports = class Api
 			Q(array)
 		@
 
-	start: ->
+	start: (marker) ->
+		marker = "default" unless marker
 		@_promise = @_promise.then (value) =>
-			@_total = value.length
+			@_total[marker] = value.length
 			value
 		@
 
-	advance: ->
-		@_done = if @_done? then @_done + 1 else 1
-		@_emitter.emit "progress", 100*@_done/@_total
+	advance: (marker) ->
+		marker = "default" unless marker
+		@_done[marker] = if @_done[marker]? then @_done[marker] + 1 else 1
+		@_emitter.emit "progress", 
+			marker: marker
+			fraction: @_done[marker]/@_total[marker] 
+			total: @_total[marker]
+			done: @_done[marker]
 		@
 
 	on: (eventName, handler) ->
