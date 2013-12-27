@@ -33,8 +33,8 @@ xstruct("http://dou.ua")
 				text: el.get (child) -> child.css(".text p").text()
 	)
 	
-	.on("progress", (percentage) -> 
-		progressBar.update percentage # this one will change from 0 to 100
+	.on("progress", (meta) -> 
+		progressBar.update meta.fraction # this one will change from 0 to 1
 	)
 	
 	.on("error", (error) ->
