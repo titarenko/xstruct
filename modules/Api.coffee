@@ -7,12 +7,15 @@ HtmlProcessor = require "./HtmlProcessor"
 
 module.exports = class Api
 
-	@concurrency: 100
-
 	constructor: (@root) ->
 		@_emitter = new events.EventEmitter
 		@_done = []
 		@_total = []
+		@_concurrency = 100
+
+	concurrency: (value) ->
+		@_concurrency = value
+		@
 	
 	json: (uri) ->
 		@_download "json", uri
@@ -33,7 +36,7 @@ module.exports = class Api
 				.then((value) -> done null, value)
 				.catch((error) -> done error)
 		@_promise = @_promise.then (value) =>
-			Api._Map(value, Api.concurrency, mapper.bind @).then Q.all
+			Api._Map(value, @_concurrency, mapper.bind @).then Q.all
 		@
 
 	flatten: ->
