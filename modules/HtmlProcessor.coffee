@@ -59,7 +59,10 @@ module.exports = class HtmlProcessor
 	map: (func) ->
 		mapper = (element, index) =>
 			html = new HtmlProcessor element, @_log
-			func(html, index)
+			result = func(html, index)
+			if result?._result
+				result = result._result
+			result
 		@_answer "map", @_result.toArray().map(mapper),
 			result: (r) -> r.length
 
