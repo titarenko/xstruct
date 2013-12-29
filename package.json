@@ -1,6 +1,6 @@
 {
   "name": "xstruct",
-  "version": "0.5.0-alpha",
+  "version": "0.5.0",
   "description": "Implementation of straightforward extraction of structured data from web pages.",
   "main": "index.js",
   "scripts": {
