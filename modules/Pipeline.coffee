@@ -63,15 +63,16 @@ module.exports = class Pipeline
 		Guard.mustBeFunction func
 		results = []
 		context = @_getInnerContext()
-		context._getFullUrl = @_getFullUrl.bind @
 		mapper = =>
 			args = Array::slice.call arguments 
 			result = func.apply context, args
-			result = result.promise() unless Q.isPromise result
-			result.then((result) =>
+			if result and not Q.isPromise(result) and result.promise
+				result = result.promise()
+			else if not Q.isPromise(result)
+				result = Q() 
+			result.then (result) =>
 				results.push result
 				@_advance() 
-			)
 		@_promise = @_promise.then((value) =>
 			@_total[@_marker] = value.length 
 			Util.each value, mapper, @_concurrency
@@ -81,14 +82,17 @@ module.exports = class Pipeline
 	each: (func) ->
 		Guard.mustBeFunction func
 		context = @_getInnerContext()
-		func = =>
+		proc = =>
 			args = Array::slice.call arguments
-			func.apply context, args
-			@_advance()
-			Q()
+			result = func.apply context, args
+			if result and not Q.isPromise(result) and result.promise
+				result = result.promise()
+			else if not Q.isPromise(result)
+				result = Q() 
+			result.then => @_advance()
 		@_promise = @_promise.then (value) => 
 			@_total[@_marker] = value.length
-			Util.each value, func, @_concurrency
+			Util.each value, proc, @_concurrency
 		@
 
 	flatten: ->

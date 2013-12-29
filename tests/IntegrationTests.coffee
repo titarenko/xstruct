@@ -83,14 +83,14 @@ describe "API", ->
 							.coalesce(null)
 				)
 			)
+			.each((ad) ->
+				should.exist ad
+				ad.should.be.ok
+				winston.info ad if isLogEnabled
+			)
 			.promise()
 			.catch((error) -> done error)			
-			.done((data) ->
-				should.exist data
-				data.should.be.ok
-				winston.info data if isLogEnabled
-				done()
-			)
+			.done(-> done())
 
 	it "should allow to do query for dou.ua forum data", (done) ->
 
