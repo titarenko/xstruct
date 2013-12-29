@@ -14,17 +14,24 @@ Usage
 npm install xstruct
 ```
 
-Example of how easy it is to extract comments from [dou.ua forum](http://dou.ua/forum).
+Example of how easy it is to extract, for example, comments from [dou.ua forum](http://dou.ua/forum).
 
 ```coffee
 xstruct = require "xstruct"
 
 # ...
 
+# setup pipeline
+
 xstruct("http://dou.ua")
 
-	.html("/forums/topic/8751")
+	# following two calls are optional
+	.progress((info) -> ...) # info will contain marker, total, done and fraction (which is done/total) properties  
+	.log((info) -> ...) # info will contain object describing log event
 
+# setup is done -- define steps
+
+	.html("/forums/topic/8751")
 	.then((html) -> 
 		html.get (el) -> 
 			el.css(".b-comment").map (el) ->
@@ -32,38 +39,38 @@ xstruct("http://dou.ua")
 				time: el.get (child) -> child.css(".date").text().trim()
 				text: el.get (child) -> child.css(".text p").text()
 	)
-	
-	.on("progress", (meta) -> 
-		progressBar.update meta.fraction # this one will change from 0 to 1
-	)
-	
-	.on("error", (error) ->
-		log.error error
-	)
-	
-	.on("log", (message, meta) ->
-		log.debug message, meta # message is textual info describing log event, meta is object with context data
-	)
 
-	.on("finished", (data) ->
-		db.store data # in this example data is array of objects with properties: author, time, text
-	)
+# pipeline is defined -- handle results
 
-	.done()
+	.promise() # returns Q's promise
+	.catch((error) -> done error)
+	.done((data) -> ...) # in this case data will be array of objects with "author", "time" and "text" properties 
 ```
 
 API
 ---
 
-## High Level (XStruct API)
+## High Level (Pipeline API)
+
+### progress(delay, function)
+
+setups progress reporting, which will be done by calling given function with frequency no more than 1 time per `delay` period
+
+### marker(string)
+
+sets marker as a parameter for progress reporting routine; this one will be used to distinguish different progressing processes; if not set, "default" will be used as marker
+
+### log(function)
+
+setups log event reporting, which will be done by calling given function
 
 ### json(url)
 
-downloads JSON using given URL
+downloads JSON using given URL; if URL is omitted, result of previous step will be used as URL
 
 ### html(url)
 
-downloads HTML using given URL, returns wrapper object to do low-level operations
+downloads page using given URL, returns instance of HtmlProcessor (see below) to do extraction from HTML; if URL is omitted, result of previous step will be used as URL
 
 ### then(function)
 
@@ -71,27 +78,19 @@ executes function feeding it with result of previous call
 
 ### map(mapper)
 
-allows to map result of previous call treating it as an array
+allows to map result of previous call treating it as an array; while doing mapping progress will be reported
+
+### each(function)
+
+executes given function on each item of previous step execution result; reports progress just like `map` does 
 
 ### flatten
 
 flattens result of previous call treating it as an array of arrays
 
-### start
-
-starts progress reporting, should be called before `map` and furtherly accompanied by `advance` calls from `mapper`
-
-### advance
-
-advances progress by one unit (which means next element of array was processed)
-
-### done
-
-should always close the chain of API calls unless you use promises
-
 ### promise
 
-an alternative to node-style of doing async things, returns [`Q` promise](https://github.com/kriskowal/q)
+returns [`Q` instance](https://github.com/kriskowal/q)
 
 ## Low Level (HTML wrapper API)
 
