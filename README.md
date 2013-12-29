@@ -64,6 +64,11 @@ sets marker as a parameter for progress reporting routine; this one will be used
 
 setups log event reporting, which will be done by calling given function
 
+
+### concurrency(number)
+
+limits number of simultaneoulsy running asynchronous operations
+
 ### json(url)
 
 downloads JSON using given URL; if URL is omitted, result of previous step will be used as URL
