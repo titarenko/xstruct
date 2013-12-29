@@ -1,13 +1,13 @@
 GET /blocks_search/view/auto/12197546
-host: auto.ria.ua
+host: auto.ria.com
 
 200 HTTP/1.1
 server: nginx
-date: Tue, 10 Dec 2013 18:51:11 GMT
+date: Sun, 29 Dec 2013 10:51:10 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive
-x-powered-by: PHP/5.5.5
+x-powered-by: PHP/5.5.7
 vary: Accept
 cache-control: public, max-age=600
 pragma: 
@@ -51,7 +51,7 @@ pragma:
             
                 
                    
-                        http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_rapide__90839776m.jpg
+                        http://cdn.img.ria.com/photosnew/auto/photo/aston_martin_rapide__90839776m.jpg
                     
                 
 
@@ -104,8 +104,8 @@ pragma:
     <div class="price" currency_id="1">
 
         
-            <span class="grey" title='UAH'>1 998 250 грн.</span>
-            <span class="nbu">по курсу НБУ</span> $<strong class="green" title='USD'>250 000</strong>
+            <span class="grey" title='UAH'>1 590 607 грн.</span>
+            <span class="nbu">по курсу НБУ</span> $<strong class="green" title='USD'>199 000</strong>
 
             
 
@@ -117,6 +117,7 @@ pragma:
         
         
 
+        
         
         
         
@@ -183,9 +184,9 @@ Hand built for 1st Rapide fo...</p>
         </span>
 
         <div class="charlist-data">
-            <span class="date-add" pelement='date_add' pvalue='11:00:10 28.11.2013' title="Объявление добавлено 28.11.2013">
+            <span class="date-add" pelement='date_add' pvalue='12:48:32 24.12.2013' title="Объявление добавлено 24.12.2013">
                 <i class="icon-time-grey"></i>
-                <span>28.11.2013</span>
+                <span>24.12.2013</span>
             </span>
 
             

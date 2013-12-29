@@ -1,13 +1,13 @@
 GET /blocks_search/view/auto/9361478
-host: auto.ria.ua
+host: auto.ria.com
 
 200 HTTP/1.1
 server: nginx
-date: Tue, 10 Dec 2013 18:51:11 GMT
+date: Sun, 29 Dec 2013 10:51:11 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive
-x-powered-by: PHP/5.5.5
+x-powered-by: PHP/5.5.7
 vary: Accept
 cache-control: public, max-age=600
 pragma: 
@@ -53,7 +53,7 @@ pragma:
             
                 
                    
-                         http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_db9__62911780sx.jpg
+                         http://cdn.img.ria.com/photosnew/auto/photo/aston_martin_db9__62911780sx.jpg
                     
                 
 
@@ -137,6 +137,7 @@ pragma:
         
         
         
+        
     </div>
 
                     
@@ -191,9 +192,9 @@ pragma:
         </span>
 
         <div class="charlist-data">
-            <span class="date-add" pelement='date_add' pvalue='10:35:04 06.12.2013' title="Объявление добавлено 06.12.2013">
+            <span class="date-add" pelement='date_add' pvalue='09:59:25 18.12.2013' title="Объявление добавлено 18.12.2013">
                 <i class="icon-time-grey"></i>
-                <span>06.12.2013</span>
+                <span>18.12.2013</span>
             </span>
 
             

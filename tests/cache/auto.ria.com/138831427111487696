@@ -1,29 +1,29 @@
-GET /blocks_search/view/auto/12332302
-host: auto.ria.ua
+GET /blocks_search/view/auto/8147502
+host: auto.ria.com
 
 200 HTTP/1.1
 server: nginx
-date: Tue, 10 Dec 2013 18:51:11 GMT
+date: Sun, 29 Dec 2013 10:51:11 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive
-x-powered-by: PHP/5.5.5
+x-powered-by: PHP/5.5.7
 vary: Accept
 cache-control: public, max-age=600
 pragma: 
 
-<div class='ticket-item'  ticket_auto_id="12332302" ticket_status_id="0">
-        <a name="search_auto_id_12332302"> </a>
+<div class='ticket-item'  ticket_auto_id="8147502" ticket_status_id="0">
+        <a name="search_auto_id_8147502"> </a>
         <div class="action-bar">
             
-                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(12332302)" class="item icon-chips"
+                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(8147502)" class="item icon-chips"
                     title="Фишек нет. Что это такое?">
                         0
                     </a>
             
-            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="12332302" content_type_id="1"></a>
+            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="8147502" content_type_id="1"></a>
             <span class="item-check" title="Добавить к сравнению">
-                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="12332302" auto_name='Aston Martin DB9 ' content_type_id="1"  item_id="12332302"/>
+                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="8147502" auto_name='Aston Martin DBS ' content_type_id="1"  item_id="8147502"/>
                     <span class="tooltip succes larr __top hide" pelement="auto_compare_popup">
                         
                     </span>
@@ -34,7 +34,7 @@ pragma:
 
             
     <div class="ticket-photo">
-    <a href="/auto_aston_martin_db9_12332302.html" nav_mem="12332302" class="
+    <a href="/auto_aston_martin_dbs_8147502.html" nav_mem="8147502" class="
     
         
             
@@ -45,7 +45,7 @@ pragma:
         
     
 " 
-    title="Aston Martin DB9 "
+    title="Aston Martin DBS "
 >
         <img src='
     
@@ -53,22 +53,22 @@ pragma:
             
                 
                    
-                         http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_db9__92320210sx.jpg
+                         http://cdn.img.ria.com/photosnew/auto/photo/aston_martin_dbs__51890814sx.jpg
                     
                 
 
             
         
     
-' nav_mem="12332302" 
-    alt="Купе Aston Martin DB9 "
+' nav_mem="8147502" 
+    alt="Купе Aston Martin DBS "
  />
     </a>
         
          
                             <span class="item">
                         <i class="icon-small-photo"></i>
-                        30 фото
+                        12 фото
                     </span>
               
          
@@ -82,13 +82,13 @@ pragma:
                     <span class="city">
                         <a href='city/kiev/' title="Поиск объявлений по региону Киев.">Киев</a>
                         
-                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(12332302); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
+                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(8147502); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
                         
                     </span>
 
                     <h3 class="head-car">
 
-                        <a href="/auto_aston_martin_db9_12332302.html" nav_mem="12332302" title='Aston Martin DB9 &nbsp;2011'>Aston Martin DB9 </a>&nbsp;2011
+                        <a href="/auto_aston_martin_dbs_8147502.html" nav_mem="8147502" title='Aston Martin DBS &nbsp;2013'>Aston Martin DBS </a>&nbsp;2013
                     </h3>
 
                 </div>
@@ -96,20 +96,20 @@ pragma:
                 
                     <div class="if-dealer">
                         
-                            <a class="dealer-logo" href='/?target=view&event=listcomp&user_id=310916' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Logo_Avtosalon_[161]', 'Search_Oldcar']);">
+                            <a class="dealer-logo" href='/?target=view&event=listcomp&user_id=1399877' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Logo_Avtosalon_[553]', 'Search_Oldcar']);">
                         
-                            <img width="40" src='auto/new_autosalon/0/1/161/161s.jpg'  action="send_statistics" block="search" element="logo" internal="1" autosalon_id="161" marka_id="5" model_id="963" auto_id="12332302"/>
+                            <img width="40" src='auto/new_autosalon/0/5/553/553s.jpg'  action="send_statistics" block="search" element="logo" internal="1" autosalon_id="553" marka_id="5" model_id="3207" auto_id="8147502"/>
                         </a>
                         <noindex>
                                 <!-- salon loader -->
                             <script>
-                                setTimeout(function(){_gaq.push(['_trackEvent', 'Statistic_Loader_Salon', 'Loader_Logo_Avtosalon_[161]', 'Search_OldAuto']);}, 2000)
+                                setTimeout(function(){_gaq.push(['_trackEvent', 'Statistic_Loader_Salon', 'Loader_Logo_Avtosalon_[553]', 'Search_OldAuto']);}, 2000)
                             </script>
                         </noindex>
                         
-                            <a class="link" href='/?target=view&event=listcomp&user_id=310916' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Name_Avtosalon_[161]', 'Search_Oldcar']);">
+                            <a class="link" href='/?target=view&event=listcomp&user_id=1399877' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Name_Avtosalon_[553]', 'Search_Oldcar']);">
                         
-                            Dynamic Motors
+                            Саr Plaza
                         </a>
                     </div>
                 
@@ -120,11 +120,7 @@ pragma:
     <div class="price" currency_id="1">
 
         
-            <span class="grey" title='UAH'>1 478 705 грн.</span>
-            <span class="nbu">по курсу НБУ</span> $<strong class="green" title='USD'>185 000</strong>
-
-            
-
+            договорная
         
 
 
@@ -133,6 +129,7 @@ pragma:
         
         
 
+        
         
         
         
@@ -145,7 +142,7 @@ pragma:
         <li class="item-char" title="Тип топлива">
             
                 <i class="icon-char-fuel"></i>
-                6.00 л.
+                Бензин,&nbsp;6.00 л.
                 
             
         </li>
@@ -153,8 +150,8 @@ pragma:
 
         <li class="item-char" title="Пробег">
             
-                <i class="icon-char-mileage"></i>
-                21 тыс.км.
+                <i class="icon-mileage"></i>
+                без пробега
             
         </li>
         <li class="item-char" title="Тип коробки передач">
@@ -166,8 +163,8 @@ pragma:
 
         <li class="item-char" title="Цвет кузова">
             
-                <i class="icon-color"></i>
-                Не указано
+                <i class="icon-char-color"></i>
+                Асфальт
             
         </li>
 
@@ -177,23 +174,21 @@ pragma:
     
 
                 </div>
-    <p class="descriptions-ticket" pelement="description" >ASTON MARTIN DB9 6.0I 
-Год выпуска 2011. 
-Пробег...</p>
+    <p class="descriptions-ticket" pelement="description" >Выбор цвета. Гибкая система скидок. Гарантия. Trad...</p>
             
             </div>
 
 
            <div class="footer-ticket">
         <span class="view-all">
-            <a href='/auto_aston_martin_db9_12332302.html'>Подробно</a>
+            <a href='/auto_aston_martin_dbs_8147502.html'>Подробно</a>
             <i class="icon-view"></i>
         </span>
 
         <div class="charlist-data">
-            <span class="date-add" pelement='date_add' pvalue='14:45:16 28.11.2013' title="Объявление добавлено 28.11.2013">
+            <span class="date-add" pelement='date_add' pvalue='16:46:03 01.12.2013' title="Объявление добавлено 01.12.2013">
                 <i class="icon-time-grey"></i>
-                <span>28.11.2013</span>
+                <span>01.12.2013</span>
             </span>
 
             

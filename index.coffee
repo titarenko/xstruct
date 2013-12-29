@@ -1,4 +1,4 @@
-Api = require "./modules/Api"
+Pipeline = require "./modules/Pipeline"
 
 module.exports = (root) ->
-	new Api root
+	new Pipeline root

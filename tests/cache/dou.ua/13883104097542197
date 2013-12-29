@@ -3,7 +3,7 @@ host: dou.ua
 
 301 HTTP/1.1
 server: nginx/1.1.19
-date: Tue, 10 Dec 2013 18:51:12 GMT
+date: Sun, 29 Dec 2013 09:46:50 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive

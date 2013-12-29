@@ -1,29 +1,29 @@
-GET /blocks_search/view/auto/12465717
-host: auto.ria.ua
+GET /blocks_search/view/auto/12377217
+host: auto.ria.com
 
 200 HTTP/1.1
 server: nginx
-date: Tue, 10 Dec 2013 18:51:11 GMT
+date: Sun, 29 Dec 2013 10:51:10 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive
-x-powered-by: PHP/5.5.5
+x-powered-by: PHP/5.5.7
 vary: Accept
 cache-control: public, max-age=600
 pragma: 
 
-<div class='ticket-item'  ticket_auto_id="12465717" ticket_status_id="0">
-        <a name="search_auto_id_12465717"> </a>
+<div class='ticket-item'  ticket_auto_id="12377217" ticket_status_id="0">
+        <a name="search_auto_id_12377217"> </a>
         <div class="action-bar">
             
-                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(12465717)" class="item icon-chips"
+                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(12377217)" class="item icon-chips"
                     title="Фишек нет. Что это такое?">
                         0
                     </a>
             
-            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="12465717" content_type_id="1"></a>
+            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="12377217" content_type_id="1"></a>
             <span class="item-check" title="Добавить к сравнению">
-                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="12465717" auto_name='Aston Martin DB9 V12 Mansory' content_type_id="1"  item_id="12465717"/>
+                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="12377217" auto_name='Aston Martin DBS ' content_type_id="1"  item_id="12377217"/>
                     <span class="tooltip succes larr __top hide" pelement="auto_compare_popup">
                         
                     </span>
@@ -34,7 +34,7 @@ pragma:
 
             
     <div class="ticket-photo">
-    <a href="/auto_aston_martin_db9_12465717.html" nav_mem="12465717" class="
+    <a href="/auto_aston_martin_dbs_12377217.html" nav_mem="12377217" class="
     
         
             
@@ -45,7 +45,7 @@ pragma:
         
     
 " 
-    title="Aston Martin DB9 V12 Mansory"
+    title="Aston Martin DBS "
 >
         <img src='
     
@@ -53,22 +53,22 @@ pragma:
             
                 
                    
-                         http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_db9__93823856sx.jpg
+                         http://cdn.img.ria.com/photosnew/auto/photo/aston_martin_dbs__92850779sx.jpg
                     
                 
 
             
         
     
-' nav_mem="12465717" 
-    alt="Купе Aston Martin DB9 V12 Mansory"
+' nav_mem="12377217" 
+    alt="Купе Aston Martin DBS "
  />
     </a>
         
          
                             <span class="item">
                         <i class="icon-small-photo"></i>
-                        20 фото
+                        1 фото
                     </span>
               
          
@@ -80,15 +80,15 @@ pragma:
                 <div class="head-ticket">
 
                     <span class="city">
-                        <a href='city/kiev/' title="Поиск объявлений по региону Киев.">Киев</a>
+                        <a href='city/uman/' title="Поиск объявлений по региону Черкассы.">Умань</a>
                         
-                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(12465717); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
+                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(12377217); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
                         
                     </span>
 
                     <h3 class="head-car">
 
-                        <a href="/auto_aston_martin_db9_12465717.html" nav_mem="12465717" title='Aston Martin DB9 V12 Mansory&nbsp;2006'>Aston Martin DB9 V12 Mansory</a>&nbsp;2006
+                        <a href="/auto_aston_martin_dbs_12377217.html" nav_mem="12377217" title='Aston Martin DBS &nbsp;2009'>Aston Martin DBS </a>&nbsp;2009
                     </h3>
 
                 </div>
@@ -98,14 +98,10 @@ pragma:
                 <div class="definition-data">
 
                     
-    <div class="price" currency_id="1">
+    <div class="price" currency_id="2">
 
         
-            <span class="grey" title='UAH'>839 265 грн.</span>
-            <span class="nbu">по курсу НБУ</span> $<strong class="green" title='USD'>105 000</strong>
-
-            
-
+            договорная
         
 
 
@@ -114,6 +110,7 @@ pragma:
         
         
 
+        
         
         
         
@@ -135,20 +132,20 @@ pragma:
         <li class="item-char" title="Пробег">
             
                 <i class="icon-char-mileage"></i>
-                32 тыс.км.
+                6 тыс.км.
             
         </li>
         <li class="item-char" title="Тип коробки передач">
             
-                <i class="icon-char-transmission"></i>
-                Автомат
+                <i class="icon-transmission"></i>
+                Не указано
             
         </li>
 
         <li class="item-char" title="Цвет кузова">
             
-                <i class="icon-char-color"></i>
-                Черный металик
+                <i class="icon-color"></i>
+                Не указано
             
         </li>
 
@@ -158,21 +155,21 @@ pragma:
     
 
                 </div>
-    <p class="descriptions-ticket" pelement="description" >Тюнинг Mansory - 70000$. Авто в идеальном сосотоян...</p>
+    <p class="descriptions-ticket" pelement="description" >Aston Martin DBS, 2009  года, г. Умань</p>
             
             </div>
 
 
            <div class="footer-ticket">
         <span class="view-all">
-            <a href='/auto_aston_martin_db9_12465717.html'>Подробно</a>
+            <a href='/auto_aston_martin_dbs_12377217.html'>Подробно</a>
             <i class="icon-view"></i>
         </span>
 
         <div class="charlist-data">
-            <span class="date-add" pelement='date_add' pvalue='22:30:07 21.11.2013' title="Объявление добавлено 21.11.2013">
+            <span class="date-add" pelement='date_add' pvalue='09:03:19 20.12.2013' title="Объявление добавлено 20.12.2013">
                 <i class="icon-time-grey"></i>
-                <span>21.11.2013</span>
+                <span>20.12.2013</span>
             </span>
 
             

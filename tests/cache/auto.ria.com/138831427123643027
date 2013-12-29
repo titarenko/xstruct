@@ -1,29 +1,29 @@
-GET /blocks_search/view/auto/8147502
-host: auto.ria.ua
+GET /blocks_search/view/auto/8147552
+host: auto.ria.com
 
 200 HTTP/1.1
 server: nginx
-date: Tue, 10 Dec 2013 18:51:11 GMT
+date: Sun, 29 Dec 2013 10:51:12 GMT
 content-type: text/html; charset=utf-8
 transfer-encoding: chunked
 connection: keep-alive
-x-powered-by: PHP/5.5.5
+x-powered-by: PHP/5.5.7
 vary: Accept
 cache-control: public, max-age=600
 pragma: 
 
-<div class='ticket-item'  ticket_auto_id="8147502" ticket_status_id="0">
-        <a name="search_auto_id_8147502"> </a>
+<div class='ticket-item'  ticket_auto_id="8147552" ticket_status_id="0">
+        <a name="search_auto_id_8147552"> </a>
         <div class="action-bar">
             
-                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(8147502)" class="item icon-chips"
+                    <a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'Paid_Promote', 'Click_on_Button_Icon', 'Search_Result']); fishkiObj.getForm(8147552)" class="item icon-chips"
                     title="Фишек нет. Что это такое?">
                         0
                     </a>
             
-            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="8147502" content_type_id="1"></a>
+            <a class="item icon-star" href="javascript:void(0);" title="Добавить в блокнот"  pelement="auto_add_to_notepad"  item_id="8147552" content_type_id="1"></a>
             <span class="item-check" title="Добавить к сравнению">
-                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="8147502" auto_name='Aston Martin DBS ' content_type_id="1"  item_id="8147502"/>
+                <input type="checkbox" disabled pelement="auto_compare_checkbox" auto_id="8147552" auto_name='Aston Martin V8 Vantage ' content_type_id="1"  item_id="8147552"/>
                     <span class="tooltip succes larr __top hide" pelement="auto_compare_popup">
                         
                     </span>
@@ -34,7 +34,7 @@ pragma:
 
             
     <div class="ticket-photo">
-    <a href="/auto_aston_martin_dbs_8147502.html" nav_mem="8147502" class="
+    <a href="/auto_aston_martin_v8_vantage_8147552.html" nav_mem="8147552" class="
     
         
             
@@ -45,7 +45,7 @@ pragma:
         
     
 " 
-    title="Aston Martin DBS "
+    title="Aston Martin V8 Vantage "
 >
         <img src='
     
@@ -53,22 +53,22 @@ pragma:
             
                 
                    
-                         http://cdn.img.ria.ua/photosnew/auto/photo/aston_martin_dbs__51890814sx.jpg
+                         http://cdn.img.ria.com/photosnew/auto/photo/aston_martin_v8_vantage__51891306sx.jpg
                     
                 
 
             
         
     
-' nav_mem="8147502" 
-    alt="Купе Aston Martin DBS "
+' nav_mem="8147552" 
+    alt="Купе Aston Martin V8 Vantage "
  />
     </a>
         
          
                             <span class="item">
                         <i class="icon-small-photo"></i>
-                        12 фото
+                        17 фото
                     </span>
               
          
@@ -82,13 +82,13 @@ pragma:
                     <span class="city">
                         <a href='city/kiev/' title="Поиск объявлений по региону Киев.">Киев</a>
                         
-                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(8147502); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
+                            <a href="/fishki-group/" class="icon-up-ticket" onclick="fishkiObj.getForm(8147552); _gaq.push(['_trackEvent', 'Popup_Fishek', 'Strelka', 'Search_Oldcar']); return false;" target="_blank" title="Поднять вверх при поиске"></a>
                         
                     </span>
 
                     <h3 class="head-car">
 
-                        <a href="/auto_aston_martin_dbs_8147502.html" nav_mem="8147502" title='Aston Martin DBS &nbsp;2013'>Aston Martin DBS </a>&nbsp;2013
+                        <a href="/auto_aston_martin_v8_vantage_8147552.html" nav_mem="8147552" title='Aston Martin V8 Vantage &nbsp;2013'>Aston Martin V8 Vantage </a>&nbsp;2013
                     </h3>
 
                 </div>
@@ -98,7 +98,7 @@ pragma:
                         
                             <a class="dealer-logo" href='/?target=view&event=listcomp&user_id=1399877' onclick="_gaq.push(['_trackEvent', 'NewAuto', 'Click_on_Logo_Avtosalon_[553]', 'Search_Oldcar']);">
                         
-                            <img width="40" src='auto/new_autosalon/0/5/553/553s.jpg'  action="send_statistics" block="search" element="logo" internal="1" autosalon_id="553" marka_id="5" model_id="3207" auto_id="8147502"/>
+                            <img width="40" src='auto/new_autosalon/0/5/553/553s.jpg'  action="send_statistics" block="search" element="logo" internal="1" autosalon_id="553" marka_id="5" model_id="3145" auto_id="8147552"/>
                         </a>
                         <noindex>
                                 <!-- salon loader -->
@@ -133,6 +133,7 @@ pragma:
         
         
         
+        
     </div>
 
                     
@@ -141,7 +142,7 @@ pragma:
         <li class="item-char" title="Тип топлива">
             
                 <i class="icon-char-fuel"></i>
-                Бензин,&nbsp;6.00 л.
+                Бензин,&nbsp;4.70 л.
                 
             
         </li>
@@ -162,8 +163,8 @@ pragma:
 
         <li class="item-char" title="Цвет кузова">
             
-                <i class="icon-char-color"></i>
-                Асфальт
+                <i class="icon-color"></i>
+                Не указано
             
         </li>
 
@@ -180,7 +181,7 @@ pragma:
 
            <div class="footer-ticket">
         <span class="view-all">
-            <a href='/auto_aston_martin_dbs_8147502.html'>Подробно</a>
+            <a href='/auto_aston_martin_v8_vantage_8147552.html'>Подробно</a>
             <i class="icon-view"></i>
         </span>
 

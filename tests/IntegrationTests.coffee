@@ -3,10 +3,9 @@ replay = require "replay"
 xstruct = require "../index"
 
 isLogEnabled = false
-isLiveHttp = false
 
-replay.mode = if isLiveHttp then "record" else "replay"
-replay.fixtures = __dirname + "/../../tests/fixtures"
+replay.mode = "record"
+replay.fixtures = "#{__dirname}/../../tests/cache"
 
 if isLogEnabled
 	winston = require "winston"
@@ -15,35 +14,33 @@ if isLogEnabled
 
 describe "API", ->
 
-	it "should allow to do query for auto.ria.ua data", (done) ->
-
+	it "should allow to do query for auto.ria.com data", (done) ->
 		brand = 5
 		model = 0
-
-		xstruct("http://auto.ria.ua")
-
-			.json("/blocks_search_ajax/search?marka=#{brand}&model=#{model}")
-		
-			.then((json) -> 
-				x for x in [0..json.result.search_result.count] by 1000
+		xstruct("http://auto.ria.com")
+			.progress((info) -> 
+				should.exist info
+				info.should.be.ok
+				winston.info info.marker, info if isLogEnabled
 			)
-		
-			.map((page) -> 
+			.log((info) ->
+				should.exist info
+				info.should.be.ok
+				winston.info meta.func, meta if isLogEnabled
+			)
+			.json("/blocks_search_ajax/search/?marka=#{brand}&model=#{model}")
+			.then((json) -> x for x in [0..json.result.search_result.count] by 1000)
+			.marker("id")
+			.map((page) ->
 				@json(".&page=#{page}&countpage=1000")
-				.then((json) -> 
-					json.result.search_result.ids
-				)
+				.then((json) -> json.result.search_result.ids)
 			)
-		
 			.flatten()
-		
-			.start()
-		
+			.marker("ad")
 			.map((id) ->
 				@html("/blocks_search/view/auto/#{id}")
 				.then((html) ->
-					@advance()
-					link: @root + html.get (el) -> 
+					link: @rootUrl + html.get (el) -> 
 						el
 							.css("h3.head-car a")
 							.attr("href")
@@ -85,40 +82,30 @@ describe "API", ->
 							.replace(/[() \-]/g, "")
 							.coalesce(null)
 				)
-			)	
-
-			.on("progress", (percentage) -> 
-				should.exist percentage
-				percentage.should.be.ok
 			)
-			
-			.on("error", (error) ->
-				done error
-			)
-			
-			.on("log", (message, meta) ->
-				should.exist message
-				should.exist meta
-				message.should.be.ok
-				meta.should.be.ok
-				winston.info message, meta if isLogEnabled
-			)
-
-			.on("finished", (data) ->
+			.promise()
+			.catch((error) -> done error)			
+			.done((data) ->
 				should.exist data
 				data.should.be.ok
 				winston.info data if isLogEnabled
 				done()
 			)
 
-			.done()
-
 	it "should allow to do query for dou.ua forum data", (done) ->
 
 		xstruct("http://dou.ua")
-
+			.progress((info) -> 
+				should.exist info
+				info.should.be.ok
+				winston.info info.marker, info if isLogEnabled
+			)
+			.log((info) ->
+				should.exist info
+				info.should.be.ok
+				winston.info info.func, info if isLogEnabled
+			)
 			.html("/forums/topic/8751")
-
 			.then((html) -> 
 				html.get (el) -> 
 					el.css(".b-comment").map (el) ->
@@ -126,29 +113,11 @@ describe "API", ->
 						time: el.get (child) -> child.css(".date").text().trim()
 						text: el.get (child) -> child.css(".text p").text()
 			)
-			
-			.on("progress", (percentage) -> 
-				should.exist percentage
-				percentage.should.be.ok
-			)
-			
-			.on("error", (error) ->
-				done error
-			)
-			
-			.on("log", (message, meta) ->
-				should.exist message
-				should.exist meta
-				message.should.be.ok
-				meta.should.be.ok
-				winston.info message, meta if isLogEnabled
-			)
-
-			.on("finished", (data) ->
+			.promise()
+			.catch((error) -> done error)
+			.done((data) ->
 				should.exist data
 				data.should.be.ok
-				winston.info "result", data if isLogEnabled
+				winston.info data if isLogEnabled
 				done()
 			)
-
-			.done()

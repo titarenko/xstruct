@@ -1,13 +1,17 @@
 moment = require "moment"
 cheerio = require "cheerio"
+Guard = require "./Guard"
 
 module.exports = class HtmlProcessor
 
-	constructor: (@_result, @_emitter) ->
-		@_initial = @_result
+	constructor: (body, @_log) ->
+		Guard.mustExist body, "Body"
+		Guard.mustBeFunction @_log
+		@_initial = body
+		@_result = if typeof body is "string" then cheerio.load body else cheerio body
 
 	get: (func) ->
-		html = new HtmlProcessor @_initial, @_emitter
+		html = new HtmlProcessor @_initial, @_log
 		func(html)._result
 
 	css: (css) ->
@@ -54,7 +58,7 @@ module.exports = class HtmlProcessor
 
 	map: (func) ->
 		mapper = (element, index) =>
-			html = new HtmlProcessor cheerio(element), @_emitter
+			html = new HtmlProcessor element, @_log
 			func(html, index)
 		@_answer "map", @_result.toArray().map(mapper),
 			result: (r) -> r.length
@@ -70,5 +74,6 @@ module.exports = class HtmlProcessor
 			meta.result = meta.result @_result
 		else
 			meta.result = @_result
-		@_emitter name, meta
+		meta.func = name
+		@_log meta
 		@
