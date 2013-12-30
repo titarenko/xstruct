@@ -43,7 +43,7 @@ xstruct("http://dou.ua")
 # pipeline is defined -- handle results
 
 	.promise() # returns Q's promise
-	.catch((error) -> done error)
+	.catch((error) -> ...)
 	.done((data) -> ...) # in this case data will be array of objects with "author", "time" and "text" properties 
 ```
 
