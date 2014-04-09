@@ -34,7 +34,7 @@ module.exports =
 			if error
 				deferred.reject error
 			else if response.statusCode isnt 200
-				deferred.reject new Error "Bad response code: #{response.statusCode}."
+				deferred.reject new Error "Bad response code (#{response.statusCode}) while trying to fetch #{url}."
 			else
 				deferred.resolve body
 		deferred.promise
