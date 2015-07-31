@@ -44,13 +44,13 @@ return $.getHtml('http://dou.ua/forums/topic/14416/')
 
 ## Description
 
-### getHtml(url[, encoding])
+### getHtml(url[, qs][, encoding])
 
-Returns promise with downloaded and cheerio-wrapped HTML (optionally, if encoding is specified, document will be converted before passing it to cheerio).
+Returns promise with downloaded and cheerio-wrapped HTML (optionally, if encoding is specified, document will be converted before passing it to cheerio). If qs (query string object) is specified, query string will be appended to url.
 
-### getJson(url)
+### getJson(url[, qs])
 
-Returns promise with downloaded and parsed JSON.
+Returns promise with downloaded and parsed JSON. If qs (query string object) is specified, query string will be appended to url.
 
 ### postForm(url, form)
 

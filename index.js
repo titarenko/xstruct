@@ -33,14 +33,27 @@ function decode(encoding) {
 	};
 }
 
-function getJson (url) {
-	return doRequest({ url: url }).then(JSON.parse);
+function getJson (url, qs) {
+	var options = { url: url };
+	if (qs) {
+		options.qs = qs;
+	}
+	return doRequest(options).then(JSON.parse);
 }
 
-function getHtml (url, encoding) {
+function getHtml (url, qs, encoding) {
+	var options = { url: url };
+	if (_.isObject(qs)) {
+		options.qs = qs;
+	} else {
+		encoding = qs;
+	}
+	if (encoding) {
+		options.encoding = null;
+	}
 	return (encoding
-		? doRequest({ url: url, encoding: null }).then(decode(encoding))
-		: doRequest({ url: url })
+		? doRequest(options).then(decode(encoding))
+		: doRequest(options)
 	).then(cheerio.load);
 }
 
