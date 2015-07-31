@@ -56,7 +56,7 @@ Returns promise with downloaded and parsed JSON.
 
 Returns promise with result of form posting. Activates cookie persistence.
 
-## request(options)
+### request(options)
 
 Promised version of request.js root function.
 
@@ -84,7 +84,7 @@ Acts like `cleanText`, but casts result to date in the end (using moment.js). If
 
 Returns object as is or null if all its properties do not have value.
 
-## _.*
+### _.*
 
 Exposes all function from lodash.
 
