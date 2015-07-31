@@ -1,163 +1,81 @@
-XStruct
-=======
+# xstruct
 
-Implementation of straightforward extraction of structured data from web pages.
+Set of tools for structured data extraction from web.
 
 [![Build Status](https://secure.travis-ci.org/titarenko/xstruct.png?branch=master)](https://travis-ci.org/titarenko/xstruct) [![Coverage Status](https://coveralls.io/repos/titarenko/xstruct/badge.png)](https://coveralls.io/r/titarenko/xstruct)
 
 [![NPM](https://nodei.co/npm/xstruct.png?downloads=true&stars=true)](https://nodei.co/npm/xstruct/)
 
-Usage
------
+## Installation
 
 ```bash
-npm install xstruct
+npm i xstruct --save
 ```
+
+## Example
 
 Example of how easy it is to extract, for example, comments from [dou.ua forum](http://dou.ua/forum).
 
-```coffee
-xstruct = require "xstruct"
+```js
+var $ = require('xstruct');
 
-# ...
-
-# setup pipeline
-
-xstruct("http://dou.ua")
-
-	# following two calls are optional
-	.progress((info) -> ...) # info will contain marker, total, done and fraction (which is done/total) properties  
-	.log((info) -> ...) # info will contain object describing log event
-
-# setup is done -- define steps
-
-	.html("/forums/topic/8751")
-	.then((html) -> 
-		html.get (el) -> 
-			el.css(".b-comment").map (el) ->
-				author: el.get (child) -> child.css(".avatar").text().trim()
-				time: el.get (child) -> child.css(".date").text().trim()
-				text: el.get (child) -> child.css(".text p").text()
-	)
-
-# pipeline is defined -- handle results
-
-	.promise() # returns Q's promise
-	.catch((error) -> ...)
-	.done((data) -> ...) # in this case data will be array of objects with "author", "time" and "text" properties 
+return $.getHtml('http://dou.ua/forums/topic/14416/')
+	.then(function (html) {
+		return html('.b-comment').map(function () {
+			var el = $.wrapHtml(this);
+			return {
+				author: el.find('.avatar').text(),
+				time: el.find('.comment-link').text(),
+				text: el.find('.text').contents().map(function () {
+					return $.wrapHtml(this).text();
+				}).get()
+			};
+		}).toArray();
+	})
+	.map(function (post) {
+		return {
+			author: $.cleanText(post, 'author'),
+			time: $.cleanText(post, 'time'),
+			text: $.cleanText(post, 'text', { singleline: true })
+		};
+	})
+	.done(console.log, console.log);
 ```
 
-API
----
+## Description
 
-## High Level (Pipeline API)
+### getHtml(url[, encoding])
 
-### progress(delay, function)
+Returns promise with downloaded and cheerio-wrapped HTML (optionally, if encoding is specified, document will be converted before passing it to cheerio).
 
-setups progress reporting, which will be done by calling given function with frequency no more than 1 time per `delay` period
+### getJson(url)
 
-### marker(string)
+Returns promise with downloaded and parsed JSON.
 
-sets marker as a parameter for progress reporting routine; this one will be used to distinguish different progressing processes; if not set, "default" will be used as marker
+### wrapHtml(cheerioElement)
 
-### log(function)
+Calls `cheerio(cheerioElement)` and returns result synchronously.
 
-setups log event reporting, which will be done by calling given function
+### format(string[, args...])
 
+Alias for `util.format`.
 
-### concurrency(number)
+### cleanText(obj, path[, options])
 
-limits number of simultaneoulsy running asynchronous operations
+Takes text from object using path and cleans it by removing heading and trailing spaces, removing space and period repetitions, converting to single-line text if `options.singleline` is specified, and also removing any characters from ones specified via `options.remove` (if specified). Returns null if result is empty string or nothing.
 
-### json(url)
+### cleanNumber(obj, path)
 
-downloads JSON using given URL; if URL is omitted, result of previous step will be used as URL
+Acts like `cleanText`, but casts result to number in the end. If result is not-a-number, returns null.
 
-### html(url)
+### cleanDateTime(obj, path[, options])
 
-downloads page using given URL, returns instance of HtmlProcessor (see below) to do extraction from HTML; if URL is omitted, result of previous step will be used as URL
+Acts like `cleanText`, but casts result to date in the end (using moment.js). If result is not a valid date, returns null. You can optionally specify date-time format via `options.format`.
 
-### then(function)
+## cleanObject(obj)
 
-executes function feeding it with result of previous call
+Returns object as is or null if all its properties do not have value.
 
-### map(mapper)
+# License
 
-allows to map result of previous call treating it as an array; while doing mapping progress will be reported
-
-### each(function)
-
-executes given function on each item of previous step execution result; reports progress just like `map` does 
-
-### flatten
-
-flattens result of previous call treating it as an array of arrays
-
-### promise
-
-returns [`Q` instance](https://github.com/kriskowal/q)
-
-## Low Level (HTML wrapper API)
-
-### get(function)
-
-starts extraction by calling specified function feeding it with query root which should be treated as jQuery instance ($)
-
-### attr(name)
-
-extracts attribute by its name
-
-### trim
-
-trims result of previous call
-
-### text
-
-gets text of HTML node
-
-### regex(regex)
-
-returns first match using given regex
-
-### replace(...)
-
-acts like `String::replace` on result of previous call
-
-### float
-
-parses float (converts result of previous call to float)
-
-### parse(format)
-
-parses string to date using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
-
-### format(format)
-
-formats date to string using given format ([moment.js style](http://momentjs.com/docs/#/parsing/string-format/))
-
-### at(index)
-
-selects element from an array using given index
-
-### map(mapper)
-
-acts like `Array::map` on result of previous call
-
-### coalesce(value)
-
-coalesces result of previous call with given value
-
-License (BSD)
--------------
-
-Copyright (c) 2013, Constantin Titarenko
-
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+MIT
