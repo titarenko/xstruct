@@ -52,6 +52,14 @@ Returns promise with downloaded and cheerio-wrapped HTML (optionally, if encodin
 
 Returns promise with downloaded and parsed JSON.
 
+### postForm(url, form)
+
+Returns promise with result of form posting. Activates cookie persistence.
+
+## request(options)
+
+Promised version of request.js root function.
+
 ### wrapHtml(cheerioElement)
 
 Calls `cheerio(cheerioElement)` and returns result synchronously.
@@ -75,6 +83,14 @@ Acts like `cleanText`, but casts result to date in the end (using moment.js). If
 ## cleanObject(obj)
 
 Returns object as is or null if all its properties do not have value.
+
+## _.*
+
+Exposes all function from lodash.
+
+## Building blocks
+
+This library is built with heavy usage of `request`, `cheerio`, `lodash` and `bluebird`. Also it uses `iconv-lite`, `moment` and `util` as additional utils.
 
 # License
 

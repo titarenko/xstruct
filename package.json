@@ -34,7 +34,8 @@
     "iconv-lite": "^0.4.11",
     "lodash": "^3.10.0",
     "moment": "^2.10.6",
-    "request": "^2.60.0"
+    "request": "^2.60.0",
+    "tough-cookie": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.3",

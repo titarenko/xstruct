@@ -6,18 +6,21 @@ var iconv = require('iconv-lite');
 var _ = require('lodash');
 var moment = require('moment');
 
-function get (url) {
+var defaultOptions = {};
+
+function doRequest (options) {
+	if (!_.isEmpty(defaultOptions)) {
+		options = _.clone(options);
+		_.defaults(options, defaultOptions);
+	}
 	return new Promise(function (resolve, reject) {
-		request({
-			url: url,
-			encoding: null
-		}, function (error, response, body) {
+		request(options, function (error, response, body) {
 			if (error) {
 				return reject(error);
 			}
 			var code = response.statusCode;
 			if (code != 200) {
-				throw new Error(util.format('GET %s failed with code %d!', url, code));
+				throw new Error(util.format('Request %j failed with code %d!', options, code));
 			}
 			return resolve(body);
 		});
@@ -31,11 +34,19 @@ function decode(encoding) {
 }
 
 function getJson (url) {
-	return get(url).then(JSON.parse);
+	return doRequest({ url: url }).then(JSON.parse);
 }
 
 function getHtml (url, encoding) {
-	return get(url).then(decode(encoding)).then(cheerio.load);
+	return (encoding
+		? doRequest({ url: url, encoding: null }).then(decode(encoding))
+		: doRequest({ url: url })
+	).then(cheerio.load);
+}
+
+function postForm(url, form) {
+	defaultOptions.jar = true;
+	return doRequest({ method: 'POST', url: url, form: form });
 }
 
 function cleanText (obj, path, options) {
@@ -115,6 +126,8 @@ function compactObject (o) {
 module.exports = _.assign({
 	getJson: getJson,
 	getHtml: getHtml,
+	postForm: postForm,
+	request: doRequest,
 	wrapHtml: cheerio,
 	format: util.format,
 	cleanText: cleanText,
