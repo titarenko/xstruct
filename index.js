@@ -19,7 +19,7 @@ function doRequest (options) {
 				return reject(error);
 			}
 			var code = response.statusCode;
-			if (code != 200) {
+			if (code >= 400) {
 				throw new Error(util.format('Request %j failed with code %d!', options, code));
 			}
 			return resolve(body);
