@@ -58,13 +58,13 @@ Returns promise with result of form posting. Activates cookie persistence.
 
 ### request(options)
 
-Promised version of request.js root function.
+Promised version of `request.js` root function.
 
 ### wrapHtml(cheerioElement)
 
 Calls `cheerio(cheerioElement)` and returns result synchronously.
 
-### format(string[, args...])
+### format
 
 Alias for `util.format`.
 
@@ -86,7 +86,7 @@ Returns object as is or null if all its properties do not have value.
 
 ### _.*
 
-Exposes all function from lodash.
+Exposes all functions from `lodash`.
 
 ## Building blocks
 
