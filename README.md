@@ -88,6 +88,10 @@ Returns object as is or null if all its properties do not have value.
 
 Exposes all functions from `lodash`.
 
+### limit(requests, period)
+
+Limits library to do at most `requests` number of HTTP-requests per `period` in milliseconds.
+
 ## Building blocks
 
 This library is built with heavy usage of `request`, `cheerio`, `lodash` and `bluebird`. Also it uses `iconv-lite`, `moment` and `util` as additional utils.

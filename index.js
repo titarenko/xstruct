@@ -5,6 +5,7 @@ var util = require('util');
 var iconv = require('iconv-lite');
 var _ = require('lodash');
 var moment = require('moment');
+var limit = require('simple-rate-limiter');
 
 var defaultOptions = {};
 
@@ -137,6 +138,9 @@ function compactObject (o) {
 }
 
 module.exports = _.assign({
+	limit: function (count, period) {
+		request = limit(require('request')).to(count).per(period);
+	},
 	getJson: getJson,
 	getHtml: getHtml,
 	postForm: postForm,
