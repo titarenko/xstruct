@@ -14,17 +14,20 @@ function doRequest (options) {
 		options = _.clone(options);
 		_.defaults(options, defaultOptions);
 	}
-	return new Promise(function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		request(options, function (error, response, body) {
 			if (error) {
 				return reject(error);
 			}
-			var code = response.statusCode;
-			if (code >= 400) {
-				throw new Error(util.format('Request %j failed with code %d!', options, code));
-			}
-			return resolve(body);
+			return resolve(response);
 		});
+	});
+	return promise.then(function (response) {
+		var code = response.statusCode;
+		if (code >= 400) {
+			throw new Error(util.format('Request %j failed with code %d!', options, code));
+		}
+		return response.body;
 	});
 }
 
