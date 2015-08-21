@@ -104,7 +104,8 @@ function cleanDateTime (obj, path, options) {
 	if (/\d{10}/.test(t)) {
 		return new Date(+t);
 	}
-	var m = options && options.format ? moment(t, options.format) : moment(t);
+	var func = options && options.utc ? moment.utc : moment;
+	var m = options && options.format ? func(t, options.format) : func(t);
 	if (!m.isValid()) {
 		return null;
 	}
