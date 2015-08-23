@@ -20,7 +20,7 @@ function doRequest (options) {
 				return reject(error);
 			}
 			return resolve(response);
-		});
+		}).on('error', reject);
 	});
 	return promise.then(function (response) {
 		var code = response.statusCode;
