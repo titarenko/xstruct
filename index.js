@@ -102,7 +102,7 @@ function cleanDateTime (obj, path, options) {
 		return t;
 	}
 	if (/\d{10}/.test(t)) {
-		return new Date(+t);
+		return new Date(+t*1000);
 	}
 	var func = options && options.utc ? moment.utc : moment;
 	var m = options && options.format ? func(t, options.format) : func(t);
