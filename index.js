@@ -112,10 +112,14 @@ function cleanDateTime (obj, path, options) {
 	return m.toDate();
 }
 
-function cleanNumber (obj, path) {
+function cleanNumber (obj, path, aggressiveMode) {
 	var t = cleanText(obj, path);
 	if (!t) {
 		return t;
+	}
+	if (aggressiveMode) {
+		t = t.replace(',', '.');
+		t = t.replace(/[^\-\d\.]/g, '');
 	}
 	var n = +t;
 	if (isNaN(n)) {
