@@ -1,6 +1,6 @@
 {
   "name": "xstruct",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "description": "Data extraction tools.",
   "main": "index.js",
   "directories": {

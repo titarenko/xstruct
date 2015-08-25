@@ -155,6 +155,7 @@ module.exports = _.assign({
 	request: doRequest,
 	wrapHtml: cheerio,
 	format: util.format,
+	moment: moment,
 	cleanText: cleanText,
 	cleanDateTime: cleanDateTime,
 	cleanNumber: cleanNumber,
